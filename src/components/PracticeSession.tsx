@@ -9,6 +9,7 @@ import Badge from '@/components/ui/Badge';
 import Progress from '@/components/ui/Progress';
 import { Button } from '@/components/ui/Button';
 import { gradeQuestion } from '@/lib/scoring';
+import { useT } from '@/i18n/provider';
 import type { Question, Section } from '@/lib/types';
 
 interface PracticeSessionProps {
@@ -23,6 +24,7 @@ export default function PracticeSession({
   onAnswer,
   onRestart,
 }: PracticeSessionProps) {
+  const t = useT();
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false);
@@ -63,23 +65,23 @@ export default function PracticeSession({
       <Card variant="elevated" size="lg" className="text-center">
         <div className="flex flex-col items-center gap-3">
           <PartyPopper className="h-10 w-10 text-violet-500" />
-          <CardTitle size="lg">¡Sesión completada!</CardTitle>
+          <CardTitle size="lg">{t('ps.completed')}</CardTitle>
           <p className="text-4xl font-bold tabular-nums">
             {stats.correct}
             <span className="text-2xl text-neutral-400">/{stats.answered}</span>
           </p>
           <Badge variant={pct >= 75 ? 'success' : pct >= 50 ? 'warning' : 'error'}>
-            {pct}% de aciertos
+            {t('ps.accuracy', { pct })}
           </Badge>
           <div className="mt-2 flex gap-3">
             <Button onClick={onRestart}>
               <RotateCcw className="h-4 w-4" />
-              Otra ronda
+              {t('ps.another')}
             </Button>
             <Link href="/">
               <Button variant="ghost">
                 <Home className="h-4 w-4" />
-                Inicio
+                {t('common.home')}
               </Button>
             </Link>
           </div>
@@ -121,8 +123,11 @@ export default function PracticeSession({
           ].join(' ')}
         >
           {lastScore.perfect
-            ? `¡Correcto! +${lastScore.score} puntos.`
-            : `Obtuviste ${lastScore.score}/${lastScore.maxScore}. Revisá las opciones correctas (en verde).`}
+            ? t('ps.correct', { score: lastScore.score })
+            : t('ps.partial', {
+                score: lastScore.score,
+                max: lastScore.maxScore,
+              })}
         </div>
       )}
 
@@ -134,11 +139,11 @@ export default function PracticeSession({
             onClick={check}
           >
             <Check className="h-4 w-4" />
-            Comprobar
+            {t('ps.check')}
           </Button>
         ) : (
           <Button className="ml-auto" onClick={next}>
-            {isLast ? 'Ver resultado' : 'Siguiente'}
+            {isLast ? t('ps.seeResult') : t('common.next')}
             <ChevronRight className="h-4 w-4" />
           </Button>
         )}

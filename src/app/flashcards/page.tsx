@@ -23,11 +23,13 @@ import {
 } from '@/lib/questions';
 import { useProgress } from '@/lib/storage';
 import { SECTIONS } from '@/lib/constants';
+import { useI18n } from '@/i18n/provider';
 import type { Question, Section } from '@/lib/types';
 
 const DECK_SIZE = 20;
 
 export default function FlashcardsPage() {
+  const { t, ts } = useI18n();
   const { markFlashcard } = useProgress();
   const counts = countBySection();
   const [selected, setSelected] = useState<Section[]>([]);
@@ -71,10 +73,8 @@ export default function FlashcardsPage() {
                 <Layers className="h-6 w-6" />
               </span>
               <div>
-                <CardTitle size="lg">Flashcards</CardTitle>
-                <CardDescription>
-                  Volteá la tarjeta y marcá si la sabías. Memorización rápida.
-                </CardDescription>
+                <CardTitle size="lg">{t('mode.flashcards.title')}</CardTitle>
+                <CardDescription>{t('fc.desc')}</CardDescription>
               </div>
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -91,7 +91,7 @@ export default function FlashcardsPage() {
                         : 'border-neutral-200 text-neutral-600 hover:border-neutral-300 dark:border-neutral-800 dark:text-neutral-400',
                     ].join(' ')}
                   >
-                    {s}
+                    {ts(s)}
                     <Badge variant={active ? 'primary' : 'default'}>
                       {counts[s] ?? 0}
                     </Badge>
@@ -101,12 +101,12 @@ export default function FlashcardsPage() {
             </div>
             <div className="mt-6 flex items-center gap-3">
               <Button size="lg" onClick={start}>
-                Empezar mazo de {DECK_SIZE}
+                {t('fc.start', { n: DECK_SIZE })}
               </Button>
               <Link href="/" className="ml-auto">
                 <Button variant="ghost">
                   <Home className="h-4 w-4" />
-                  Inicio
+                  {t('common.home')}
                 </Button>
               </Link>
             </div>
@@ -125,19 +125,19 @@ export default function FlashcardsPage() {
           <Card variant="elevated" size="lg" className="text-center">
             <div className="flex flex-col items-center gap-3">
               <PartyPopper className="h-10 w-10 text-violet-500" />
-              <CardTitle size="lg">¡Mazo terminado!</CardTitle>
+              <CardTitle size="lg">{t('fc.deckDone')}</CardTitle>
               <p className="text-sm text-neutral-500">
-                Sabías {stats.known} de {deck.length}.
+                {t('fc.knewCount', { known: stats.known, total: deck.length })}
               </p>
               <div className="mt-2 flex gap-3">
                 <Button onClick={() => setDeck(null)}>
                   <RotateCcw className="h-4 w-4" />
-                  Otro mazo
+                  {t('fc.another')}
                 </Button>
                 <Link href="/">
                   <Button variant="ghost">
                     <Home className="h-4 w-4" />
-                    Inicio
+                    {t('common.home')}
                   </Button>
                 </Link>
               </div>
@@ -177,7 +177,7 @@ export default function FlashcardsPage() {
             className="flex min-h-[20rem] flex-col items-center justify-center text-center"
           >
             <Badge variant="primary" className="mb-4">
-              {q.section}
+              {ts(q.section)}
             </Badge>
             {!flipped ? (
               <>
@@ -186,7 +186,7 @@ export default function FlashcardsPage() {
                 </p>
                 <span className="mt-6 flex items-center gap-1 text-xs text-neutral-400">
                   <RotateCw className="h-3.5 w-3.5" />
-                  Tocá para ver la respuesta
+                  {t('fc.tapToSee')}
                 </span>
               </>
             ) : (
@@ -217,7 +217,7 @@ export default function FlashcardsPage() {
             className="border-red-300 text-red-600 hover:bg-red-50 dark:border-red-800 dark:text-red-400 dark:hover:bg-red-950/30"
           >
             <ThumbsDown className="h-4 w-4" />
-            No la sabía
+            {t('fc.didntKnow')}
           </Button>
           <Button
             variant="outline"
@@ -226,7 +226,7 @@ export default function FlashcardsPage() {
             className="border-green-300 text-green-600 hover:bg-green-50 dark:border-green-800 dark:text-green-400 dark:hover:bg-green-950/30"
           >
             <ThumbsUp className="h-4 w-4" />
-            La sabía
+            {t('fc.knew')}
           </Button>
         </div>
       </main>

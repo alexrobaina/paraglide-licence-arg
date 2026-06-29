@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Mountain } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import LanguageToggle from './LanguageToggle';
 
 export default function SiteHeader() {
   return (
@@ -16,7 +17,10 @@ export default function SiteHeader() {
             Paraglide<span className="text-sky-500">Exam</span>
           </span>
         </Link>
-        <ThemeToggle />
+        <div className="flex items-center gap-1">
+          <LanguageToggle />
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );

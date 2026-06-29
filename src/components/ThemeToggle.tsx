@@ -4,9 +4,11 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { useT } from '@/i18n/provider';
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
+  const t = useT();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
@@ -16,7 +18,7 @@ export default function ThemeToggle() {
     <Button
       variant="ghost"
       size="icon"
-      aria-label="Cambiar tema"
+      aria-label={t('header.themeToggle')}
       onClick={() => setTheme(isDark ? 'light' : 'dark')}
     >
       {mounted && isDark ? (

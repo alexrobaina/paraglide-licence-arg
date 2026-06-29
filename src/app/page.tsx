@@ -11,11 +11,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import SiteHeader from '@/components/SiteHeader';
-import {
-  Card,
-  CardTitle,
-  CardDescription,
-} from '@/components/ui/Card';
+import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import Progress from '@/components/ui/Progress';
 import { useProgress } from '@/lib/storage';
@@ -26,45 +22,60 @@ import {
   EXAM_QUESTION_COUNT,
   SECTIONS,
 } from '@/lib/constants';
+import { useI18n } from '@/i18n/provider';
+import type { MessageKey } from '@/i18n/messages';
 
-const MODES = [
+const MODES: Array<{
+  href: string;
+  titleKey: MessageKey;
+  descKey: MessageKey;
+  icon: typeof Timer;
+  accent: string;
+}> = [
   {
     href: '/examen',
-    title: 'Simulacro de examen',
-    desc: `${EXAM_QUESTION_COUNT} preguntas al azar, cronómetro y puntaje real. Aprobás con ${EXAM_PASS_MARK}/${EXAM_MAX_SCORE}.`,
+    titleKey: 'mode.exam.title',
+    descKey: 'mode.exam.desc',
     icon: Timer,
     accent: 'from-sky-500 to-cyan-500',
   },
   {
     href: '/practica',
-    title: 'Práctica por tema',
-    desc: 'Elegí uno o varios temas y practicá con feedback inmediato.',
+    titleKey: 'mode.practice.title',
+    descKey: 'mode.practice.desc',
     icon: BookOpen,
     accent: 'from-emerald-500 to-teal-500',
   },
   {
     href: '/repaso',
-    title: 'Repaso de errores',
-    desc: 'Volvé a las preguntas que fallaste hasta dominarlas.',
+    titleKey: 'mode.review.title',
+    descKey: 'mode.review.desc',
     icon: RefreshCcw,
     accent: 'from-amber-500 to-orange-500',
   },
   {
     href: '/flashcards',
-    title: 'Flashcards',
-    desc: 'Tarjetas pregunta/respuesta para memorizar rápido.',
+    titleKey: 'mode.flashcards.title',
+    descKey: 'mode.flashcards.desc',
     icon: Layers,
     accent: 'from-violet-500 to-fuchsia-500',
   },
 ];
 
 export default function HomePage() {
+  const { t, ts } = useI18n();
   const { progress, ready } = useProgress();
   const counts = countBySection();
   const wrongCount = Object.keys(progress.wrongQueue).length;
 
   const best = progress.bestExamScore;
   const bestPct = best != null ? Math.round((best / EXAM_MAX_SCORE) * 100) : null;
+
+  const descVars = {
+    count: EXAM_QUESTION_COUNT,
+    pass: EXAM_PASS_MARK,
+    max: EXAM_MAX_SCORE,
+  };
 
   return (
     <>
@@ -73,16 +84,14 @@ export default function HomePage() {
         {/* Hero */}
         <section className="mb-8">
           <Badge variant="primary" className="mb-3">
-            Federación Argentina de Vuelo Libre
+            {t('home.org')}
           </Badge>
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Examen teórico · Piloto Básico{' '}
-            <span className="text-sky-500">Nivel 3</span>
+            {t('home.title.pre')}
+            <span className="text-sky-500">{t('home.title.level')}</span>
           </h1>
           <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
-            Preparate con {QUESTIONS.length} preguntas oficiales en 5 temas.
-            Simulá el examen real, practicá por tema, repasá tus errores y memorizá
-            con flashcards.
+            {t('home.subtitle', { count: QUESTIONS.length })}
           </p>
         </section>
 
@@ -90,29 +99,27 @@ export default function HomePage() {
         <section className="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
           <StatCard
             icon={<Trophy className="h-5 w-5 text-amber-500" />}
-            label="Mejor simulacro"
-            value={
-              ready && best != null ? `${best}/${EXAM_MAX_SCORE}` : '—'
-            }
-            sub={bestPct != null ? `${bestPct}%` : 'Sin intentos'}
+            label={t('home.stat.best')}
+            value={ready && best != null ? `${best}/${EXAM_MAX_SCORE}` : '—'}
+            sub={bestPct != null ? `${bestPct}%` : t('home.stat.best.empty')}
           />
           <StatCard
             icon={<Target className="h-5 w-5 text-sky-500" />}
-            label="Simulacros"
+            label={t('home.stat.exams')}
             value={ready ? String(progress.examsTaken) : '—'}
-            sub="completados"
+            sub={t('home.stat.exams.sub')}
           />
           <StatCard
             icon={<BookOpen className="h-5 w-5 text-emerald-500" />}
-            label="Practicadas"
+            label={t('home.stat.practiced')}
             value={ready ? String(progress.questionsAnswered) : '—'}
-            sub="respuestas"
+            sub={t('home.stat.practiced.sub')}
           />
           <StatCard
             icon={<RefreshCcw className="h-5 w-5 text-orange-500" />}
-            label="Para repasar"
+            label={t('home.stat.review')}
             value={ready ? String(wrongCount) : '—'}
-            sub="preguntas"
+            sub={t('home.stat.review.sub')}
           />
         </section>
 
@@ -121,17 +128,10 @@ export default function HomePage() {
           {MODES.map((m) => {
             const Icon = m.icon;
             const badge =
-              m.href === '/repaso' && ready && wrongCount > 0
-                ? wrongCount
-                : null;
+              m.href === '/repaso' && ready && wrongCount > 0 ? wrongCount : null;
             return (
               <Link key={m.href} href={m.href} className="group">
-                <Card
-                  variant="modern"
-                  interactive
-                  size="lg"
-                  className="h-full"
-                >
+                <Card variant="modern" interactive size="lg" className="h-full">
                   <div className="flex items-start gap-4">
                     <span
                       className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${m.accent} text-white shadow-sm`}
@@ -140,13 +140,11 @@ export default function HomePage() {
                     </span>
                     <div className="flex-1">
                       <div className="flex items-center gap-2">
-                        <CardTitle size="md">{m.title}</CardTitle>
-                        {badge != null && (
-                          <Badge variant="error">{badge}</Badge>
-                        )}
+                        <CardTitle size="md">{t(m.titleKey)}</CardTitle>
+                        {badge != null && <Badge variant="error">{badge}</Badge>}
                       </div>
                       <CardDescription className="mt-1">
-                        {m.desc}
+                        {t(m.descKey, descVars)}
                       </CardDescription>
                     </div>
                     <ArrowRight className="h-5 w-5 shrink-0 self-center text-neutral-400 transition-transform group-hover:translate-x-1" />
@@ -159,7 +157,7 @@ export default function HomePage() {
 
         {/* Progreso por tema */}
         <section className="mt-8">
-          <h2 className="mb-3 text-lg font-semibold">Tu dominio por tema</h2>
+          <h2 className="mb-3 text-lg font-semibold">{t('home.mastery')}</h2>
           <Card variant="default" size="lg" spacing="normal">
             <div className="flex flex-col gap-4">
               {SECTIONS.map((s) => {
@@ -171,11 +169,11 @@ export default function HomePage() {
                 return (
                   <div key={s}>
                     <div className="mb-1 flex items-center justify-between text-sm">
-                      <span className="font-medium">{s}</span>
+                      <span className="font-medium">{ts(s)}</span>
                       <span className="text-neutral-500">
                         {answered > 0
                           ? `${correct}/${answered} · ${pct}%`
-                          : `${counts[s] ?? 0} preguntas`}
+                          : t('home.section.questions', { count: counts[s] ?? 0 })}
                       </span>
                     </div>
                     <Progress

@@ -11,9 +11,11 @@ import { Button } from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
 import { QUESTIONS_BY_ID } from '@/lib/questions';
 import { useProgress } from '@/lib/storage';
+import { useT } from '@/i18n/provider';
 import type { Question } from '@/lib/types';
 
 export default function RepasoPage() {
+  const t = useT();
   const { progress, ready, recordAnswer } = useProgress();
   const [session, setSession] = useState<Question[] | null>(null);
 
@@ -61,29 +63,26 @@ export default function RepasoPage() {
               <RefreshCcw className="h-6 w-6" />
             </span>
             <div>
-              <CardTitle size="lg">Repaso de errores</CardTitle>
-              <CardDescription>
-                Las preguntas que fallás aparecen acá hasta que las domines.
-              </CardDescription>
+              <CardTitle size="lg">{t('mode.review.title')}</CardTitle>
+              <CardDescription>{t('repaso.desc')}</CardDescription>
             </div>
           </div>
 
           {queue.length === 0 ? (
             <div className="mt-6 flex flex-col items-center gap-3 py-8 text-center">
               <CheckCircle2 className="h-12 w-12 text-green-500" />
-              <p className="text-lg font-semibold">¡No tenés errores pendientes!</p>
+              <p className="text-lg font-semibold">{t('repaso.emptyTitle')}</p>
               <p className="max-w-sm text-sm text-neutral-500">
-                Practicá o hacé un simulacro: las preguntas que falles se
-                guardarán acá para repasarlas.
+                {t('repaso.emptyDesc')}
               </p>
               <div className="mt-2 flex gap-3">
                 <Link href="/practica">
-                  <Button>Ir a practicar</Button>
+                  <Button>{t('repaso.goPractice')}</Button>
                 </Link>
                 <Link href="/">
                   <Button variant="ghost">
                     <Home className="h-4 w-4" />
-                    Inicio
+                    {t('common.home')}
                   </Button>
                 </Link>
               </div>
@@ -93,18 +92,18 @@ export default function RepasoPage() {
               <div className="mt-4 flex items-center gap-2">
                 <Badge variant="error">{queue.length}</Badge>
                 <span className="text-sm text-neutral-500">
-                  preguntas para repasar
+                  {t('repaso.count')}
                 </span>
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <Button size="lg" onClick={() => setSession(queue)}>
                   <Sparkles className="h-4 w-4" />
-                  Repasar las {queue.length}
+                  {t('repaso.reviewAll', { n: queue.length })}
                 </Button>
                 <Link href="/" className="ml-auto">
                   <Button variant="ghost">
                     <Home className="h-4 w-4" />
-                    Inicio
+                    {t('common.home')}
                   </Button>
                 </Link>
               </div>

@@ -9,7 +9,8 @@ import Progress from '@/components/ui/Progress';
 import { Button } from '@/components/ui/Button';
 import QuestionCard from '@/components/QuestionCard';
 import { formatTime } from '@/lib/scoring';
-import type { ExamResult } from '@/lib/types';
+import { useI18n } from '@/i18n/provider';
+import type { ExamResult, Section } from '@/lib/types';
 
 export default function ExamResults({
   result,
@@ -18,6 +19,7 @@ export default function ExamResults({
   result: ExamResult;
   onRetry: () => void;
 }) {
+  const { t, ts } = useI18n();
   const [showReview, setShowReview] = useState(false);
   const pct = Math.round((result.total / result.maxTotal) * 100);
 
@@ -40,7 +42,7 @@ export default function ExamResults({
             </span>
           )}
           <Badge variant={result.passed ? 'success' : 'error'}>
-            {result.passed ? 'APROBADO' : 'DESAPROBADO'}
+            {result.passed ? t('result.passed') : t('result.failed')}
           </Badge>
           <div>
             <p className="text-5xl font-bold tabular-nums">
@@ -50,7 +52,7 @@ export default function ExamResults({
               </span>
             </p>
             <p className="mt-1 text-sm text-neutral-500">
-              {pct}% · Necesitás {result.passMark} para aprobar
+              {t('result.needPass', { pct, pass: result.passMark })}
             </p>
           </div>
           <div className="w-full max-w-md">
@@ -64,11 +66,13 @@ export default function ExamResults({
           <div className="mt-2 flex flex-wrap justify-center gap-4 text-sm text-neutral-500">
             <span className="flex items-center gap-1">
               <CheckCircle2 className="h-4 w-4 text-green-500" />
-              {result.correctCount} perfectas
+              {t('result.perfect', { n: result.correctCount })}
             </span>
             <span>·</span>
             <span>
-              {result.questionCount - result.correctCount} con error
+              {t('result.withError', {
+                n: result.questionCount - result.correctCount,
+              })}
             </span>
             <span>·</span>
             <span>⏱ {formatTime(result.elapsedMs)}</span>
@@ -78,14 +82,14 @@ export default function ExamResults({
 
       {/* Desglose por tema */}
       <Card variant="default" size="lg">
-        <CardTitle size="md">Desglose por tema</CardTitle>
+        <CardTitle size="md">{t('result.breakdown')}</CardTitle>
         <div className="mt-3 flex flex-col gap-4">
           {Object.entries(result.perSection).map(([sec, s]) => {
             const p = Math.round((s.correct / s.total) * 100);
             return (
               <div key={sec}>
                 <div className="mb-1 flex items-center justify-between text-sm">
-                  <span className="font-medium">{sec}</span>
+                  <span className="font-medium">{ts(sec as Section)}</span>
                   <span className="text-neutral-500">
                     {s.correct}/{s.total} · {p}%
                   </span>
@@ -104,18 +108,18 @@ export default function ExamResults({
       <div className="flex flex-wrap gap-3">
         <Button onClick={onRetry} variant="primary">
           <RotateCcw className="h-4 w-4" />
-          Nuevo simulacro
+          {t('result.newExam')}
         </Button>
         <Button
           variant="outline"
           onClick={() => setShowReview((v) => !v)}
         >
-          {showReview ? 'Ocultar' : 'Revisar'} respuestas
+          {showReview ? t('result.hideReview') : t('result.showReview')}
         </Button>
         <Link href="/" className="ml-auto">
           <Button variant="ghost">
             <Home className="h-4 w-4" />
-            Inicio
+            {t('common.home')}
           </Button>
         </Link>
       </div>

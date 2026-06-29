@@ -26,6 +26,7 @@ import {
   EXAM_PASS_MARK,
   EXAM_MAX_SCORE,
 } from '@/lib/constants';
+import { useT } from '@/i18n/provider';
 import type { ExamResult, Question, Section } from '@/lib/types';
 
 type Phase = 'intro' | 'running' | 'done';
@@ -108,33 +109,32 @@ export default function ExamPage() {
 }
 
 function IntroScreen({ onStart }: { onStart: () => void }) {
+  const t = useT();
   return (
     <Card variant="elevated" size="lg" className="text-center" spacing="normal">
       <div className="flex flex-col items-center gap-4">
         <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-cyan-500 text-white shadow-lg">
           <Timer className="h-8 w-8" />
         </span>
-        <h1 className="text-2xl font-bold">Simulacro de examen</h1>
+        <h1 className="text-2xl font-bold">{t('mode.exam.title')}</h1>
         <p className="max-w-md text-neutral-600 dark:text-neutral-400">
-          {EXAM_QUESTION_COUNT} preguntas al azar de todos los temas. Tenés
-          cronómetro y podés navegar entre preguntas. Aprobás con{' '}
-          <strong>
-            {EXAM_PASS_MARK}/{EXAM_MAX_SCORE}
-          </strong>{' '}
-          puntos (75%).
+          {t('exam.intro.desc', {
+            count: EXAM_QUESTION_COUNT,
+            pass: EXAM_PASS_MARK,
+            max: EXAM_MAX_SCORE,
+          })}
         </p>
         <Alert variant="info" className="text-left">
-          Ojo: muchas preguntas tienen <strong>más de una</strong> respuesta
-          correcta. Sumás los puntos de las opciones correctas que marques.
+          {t('exam.intro.warn')}
         </Alert>
         <div className="flex gap-3">
           <Button size="lg" onClick={onStart}>
-            Comenzar simulacro
+            {t('exam.intro.start')}
           </Button>
           <Link href="/">
             <Button size="lg" variant="ghost">
               <Home className="h-4 w-4" />
-              Inicio
+              {t('common.home')}
             </Button>
           </Link>
         </div>
@@ -162,6 +162,7 @@ function RunningScreen({
   answeredCount: number;
   onFinish: () => void;
 }) {
+  const t = useT();
   const [confirming, setConfirming] = useState(false);
   const q = questions[current];
   const total = questions.length;
@@ -201,7 +202,7 @@ function RunningScreen({
           onClick={() => setCurrent(Math.max(0, current - 1))}
         >
           <ChevronLeft className="h-4 w-4" />
-          Anterior
+          {t('exam.prev')}
         </Button>
         {!isLast ? (
           <Button
@@ -209,7 +210,7 @@ function RunningScreen({
             className="ml-auto"
             onClick={() => setCurrent(Math.min(total - 1, current + 1))}
           >
-            Siguiente
+            {t('common.next')}
             <ChevronRight className="h-4 w-4" />
           </Button>
         ) : (
@@ -219,7 +220,7 @@ function RunningScreen({
             onClick={() => setConfirming(true)}
           >
             <Flag className="h-4 w-4" />
-            Finalizar
+            {t('exam.finish')}
           </Button>
         )}
       </div>
@@ -254,7 +255,7 @@ function RunningScreen({
         className="self-center text-neutral-500"
         onClick={() => setConfirming(true)}
       >
-        Finalizar y ver resultado
+        {t('exam.finishView')}
       </Button>
 
       {confirming && (
@@ -262,17 +263,16 @@ function RunningScreen({
           <Card variant="elevated" size="lg" className="max-w-sm">
             <div className="flex flex-col items-center gap-3 text-center">
               <AlertTriangle className="h-8 w-8 text-amber-500" />
-              <h3 className="text-lg font-semibold">¿Finalizar simulacro?</h3>
+              <h3 className="text-lg font-semibold">{t('exam.confirm.title')}</h3>
               <p className="text-sm text-neutral-500">
-                Respondiste {answeredCount} de {total}. Las no respondidas cuentan
-                como 0.
+                {t('exam.confirm.desc', { answered: answeredCount, total })}
               </p>
               <div className="mt-2 flex gap-3">
                 <Button variant="outline" onClick={() => setConfirming(false)}>
-                  Seguir
+                  {t('exam.confirm.keep')}
                 </Button>
                 <Button variant="primary" onClick={onFinish}>
-                  Finalizar
+                  {t('exam.finish')}
                 </Button>
               </div>
             </div>

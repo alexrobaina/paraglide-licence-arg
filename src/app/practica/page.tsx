@@ -11,11 +11,13 @@ import { Button } from '@/components/ui/Button';
 import { getQuestionsBySection, sampleQuestions, countBySection } from '@/lib/questions';
 import { useProgress } from '@/lib/storage';
 import { SECTIONS } from '@/lib/constants';
+import { useI18n } from '@/i18n/provider';
 import type { Question, Section } from '@/lib/types';
 
 const SESSION_SIZE = 15;
 
 export default function PracticaPage() {
+  const { t, ts } = useI18n();
   const { recordAnswer } = useProgress();
   const counts = countBySection();
   const [selectedSections, setSelectedSections] = useState<Section[]>([]);
@@ -62,10 +64,8 @@ export default function PracticaPage() {
               <BookOpen className="h-6 w-6" />
             </span>
             <div>
-              <CardTitle size="lg">Práctica por tema</CardTitle>
-              <CardDescription>
-                Elegí los temas (o ninguno = todos). Feedback inmediato.
-              </CardDescription>
+              <CardTitle size="lg">{t('mode.practice.title')}</CardTitle>
+              <CardDescription>{t('practica.desc')}</CardDescription>
             </div>
           </div>
 
@@ -83,7 +83,7 @@ export default function PracticaPage() {
                       : 'border-neutral-200 text-neutral-600 hover:border-neutral-300 dark:border-neutral-800 dark:text-neutral-400',
                   ].join(' ')}
                 >
-                  {s}
+                  {ts(s)}
                   <Badge variant={active ? 'success' : 'default'}>
                     {counts[s] ?? 0}
                   </Badge>
@@ -95,18 +95,18 @@ export default function PracticaPage() {
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button size="lg" onClick={start}>
               <Sparkles className="h-4 w-4" />
-              Practicar {Math.min(SESSION_SIZE, totalSelected)} preguntas
+              {t('practica.start', { n: Math.min(SESSION_SIZE, totalSelected) })}
             </Button>
             <span className="text-sm text-neutral-500">
               {selectedSections.length === 0
-                ? 'Todos los temas'
-                : `${selectedSections.length} tema(s)`}{' '}
-              · {totalSelected} disponibles
+                ? t('practica.allTopics')
+                : t('practica.someTopics', { n: selectedSections.length })}{' '}
+              · {t('practica.available', { n: totalSelected })}
             </span>
             <Link href="/" className="ml-auto">
               <Button variant="ghost">
                 <Home className="h-4 w-4" />
-                Inicio
+                {t('common.home')}
               </Button>
             </Link>
           </div>

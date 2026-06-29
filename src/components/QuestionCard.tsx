@@ -4,6 +4,7 @@ import { Check, X, Minus } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { cn } from '@/lib/cn';
+import { useI18n } from '@/i18n/provider';
 import type { Question } from '@/lib/types';
 
 interface QuestionCardProps {
@@ -25,6 +26,7 @@ export default function QuestionCard({
   index,
   total,
 }: QuestionCardProps) {
+  const { t, ts } = useI18n();
   const correctCount = question.options.filter((o) => o.correct).length;
   const isLocked = revealed || disabled;
 
@@ -46,14 +48,14 @@ export default function QuestionCard({
       <div className="flex flex-wrap items-center gap-2">
         {index != null && total != null && (
           <Badge variant="default">
-            Pregunta {index + 1} / {total}
+            {t('q.counter', { index: index + 1, total })}
           </Badge>
         )}
-        <Badge variant="primary">{question.section}</Badge>
+        <Badge variant="primary">{ts(question.section)}</Badge>
         <Badge variant={question.multi ? 'warning' : 'outline'}>
           {question.multi
-            ? `Múltiple · ${correctCount} correctas`
-            : 'Una correcta'}
+            ? t('q.multi', { n: correctCount })
+            : t('q.single')}
         </Badge>
         <span className="ml-auto text-xs text-neutral-400">#{question.id}</span>
       </div>
