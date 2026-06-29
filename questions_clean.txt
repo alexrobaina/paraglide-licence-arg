@@ -1,0 +1,2341 @@
+
+                  FEDERACION ARGENTINA DE VUELO LIBRE
+
+
+         CUESTIONARIO PARA LA PREPARACION DEL EXAMEN TEORICO
+               DE LICENCIA DE PARAPENTE - NIVEL : PILOTO BASICO-Nivel3
+
+Examen : 60 preguntas de el total de este cuestionario
+Aprobacion : 75% del puntaje total de 60 preguntas : 270 de 360 puntos
+
+TEMAS:
+-----
+
+*  METEOROLOGIA
+*  AERODINAMICA
+*  MATERIAL
+*  REGLAMENTACION
+*  TECNICA DE VUELO
+
+
+
+METEOROLOGIA
+
+001 Las nubes pueden estar constituidas: 
+-6  A... de vapor de agua en suspensión.
+ 2  B... de cristales de hielo.
+ 4  C... de gotitas de agua.
+ 
+002 La causa de la formación de las nubes es: 
+ 6  A... el enfriamiento del aire hasta su punto de condensación.
+-6  B... una fuerte descendente.
+-6  C... calentamiento del aire ascendente.
+ 
+ 
+009 Una nube orográfica: 
+ 3  A... está fija con respecto al suelo.
+-6  B... indica ausencia de viento.
+-6  C... se debe a una ascendente térmica.
+ 3  D... se debe a una ascendente dinámica.
+ 
+010 Las nubes de tipo estratos: 
+ 3  A... se desarrollan horizontalmente.
+-6  B... caracterizan capas más bien inestables.
+-6  C... se desarrollan verticalmente.
+ 3  D... caracterizan capas más bien estables.
+ 
+011 Las nubes del tipo cúmulos: 
+-6  A... caracterizan capas más bien estables.
+ 3  B... caracterizan capas más bien inestables.
+ 3  C... se desarrollan verticalmente.
+-6  D... se desarrollan horizontalmente.
+ 
+013 Cumulonimbos y nimbostratos son nubes de fuerte extensión vertical,
+    presentes en todos los estadios. Debajo, ambos poseen una base oscura
+    borrosa por las precipitaciones pero se los puede reconocer por:
+-6  A... los Ns van acompañados de tormenta y los Cb de un halo.
+ 6  B... los Ns dan lluvia continua y los Cb lluvias violentas, refucilos y
+         vientos fuertes turbulentos.
+-6  C... los Ns dan precipitaciones violentas, los Cb lluvia continua.
+ 
+014 Las calles de nubes se producen generalmente: 
+ 6  A... cuando se instala la convección y aumenta el viento con la altura.
+-6  B... cuando el viento es nulo.
+-6  C... cuando la masa de aire es estable.
+ 
+015 Se pueden encontrar turbulencias peligrosas bajo nubes de tipo: 
+ 4  A... rotores de onda de resalte.
+ 2  B... cúmulos.
+-6  C... estratos.
+ 
+016 Entre las siguientes nubes, las más peligrosas para el vuelo libre son: 
+-6  A... estratocúmulos.
+ 4  B... cumulonimbos.
+ 2  C... nubes de rotor.
+ 
+017 Un cumulonimbo es peligroso: 
+ 2  A... debajo.
+ 2  B... dentro.
+ 2  C... varios kilómetros a su alrededor.
+ 
+018 Los cumulonimbos son peligrosos porque: 
+ 2  A... engendran turbulencias violentas.
+ 2  B... originan brisas en el suelo haciendo problemática la aproximación y
+         el aterrizaje.
+ 2  C... son la base de ascendentes poderosas que pueden aspirar el ala al
+         interior de la nube.
+ 
+019 Las nubes favorables para los vuelos de perfomance son: 
+-6  A... nimbostratos, altostratos y cumulonimbos.
+-6  B... estratos.
+ 6  C... cúmulos.
+-6  D... cirrocúmulos, nimbostratos y estratocúmulos.
+ 
+
+021 La atmósfera está formada por capas. La capa en la que vivimos se llama: 
+-6  A... ionósfera.
+ 6  B... tropósfera.
+-6  C... estratósfera.
+ 
+022 En meteorología una masa de aire se caracteriza por: 
+ 2  A... su temperatura y su presión.
+ 2  B... su humedad.
+ 2  C... la distribución vertical de la temperatura.
+ 
+023 El hectoPascal es una unidad de: 
+ 6  A... presión.
+-6  B... temperatura.
+-6  C... humedad.
+ 
+024 La presión atmosférica se debe: 
+-6  A... a la rotación de la tierra sobre si misma.
+ 6  B... al peso de la columna de aire situada encima.
+-6  C... al calentamiento solar.
+ 
+025 El aire caliente : 
+ 6  A... es más liviano que el aire frío.
+-6  B... tiende a bajar con respecto al aire frío.
+-6  C... se mezcla con el aire frío.
+ 
+026 Con respecto al aire caliente, a presión y volúmenes iguales, el aire
+    frío es:
+ 6  A... más pesado.
+-6  B... más liviano.
+-6  C... idéntico.
+ 
+027 Cuando una partícula atmosférica no saturada se eleva sin intercambiar
+    calor con el aire circundante, su temperatura:
+ 6  A... disminuye 1 grado cada 100 mts.
+-6  B... aumenta 1 grado cada 100 mts.
+-6  C... queda constante.
+ 
+028 Dentro de una masa de aire sin nubes, la temperatura es de 15 grados a
+    ras del suelo y de 12 grados a 500 mts. Esta franja de aire es:
+ 6  A... más bien estable.
+-6  B... más bien inestable.
+-6  C... probablemente el asentamiento de una inversión.
+ 
+030 El calor solar se propaga dentro de la atmósfera según los siguientes
+    procesos:
+ 3  A... conducción, radiación y convección.
+-6  B... vibración y gradiente.
+ 3  C... evaporación/condensación y turbulencia.
+ 
+031 El sol calienta la atmósfera principalmente: 
+-6  A... directamente por radiación.
+-6  B... directamente por convección.
+ 6  C... indirectamente por intermedio del suelo.
+ 
+032 El calor se propaga por: 
+ 2  A... convección.
+ 2  B... conducción.
+ 2  C... radiación.
+ 
+035 Llamamos brisa de ladera descendente (catabática): 
+-6  A... un viento frío que baja por los valles.
+-6  B... un viento meteo que baja a lo largo de una pendiente.
+ 6  C... un viento que como consecuencia de la convección baja a lo largo de
+         una pendiente.
+ 
+036 La turbulencia: 
+ 4  A... es un movimiento desordenado de partículas de aire.
+ 2  B... provoca variaciones de incidencia y de velocidad de vuelo.
+-6  C... siempre es visible.
+ 
+037 Las turbulencias pueden producirse por: 
+ 2  A... el relieve.
+ 2  B... el encuentro de dos vientos diferentes.
+ 2  C... ascendentes térmicas.
+ 
+038 Un viento de 20kt (nudos) sopla a: 
+-6  A... 18 km/h.
+ 6  B... 36 km/h.
+-6  C... 20 km/h.
+ 
+039 La dirección del viento dada por los servicios meteorológicos siempre es: 
+ 6  A... la dirección de donde viene el viento.
+-6  B... la dirección adonde va el viento.
+ 
+040 Un viento "de 225 grados" es un viento: 
+-6  A... que sopla hacia el rumbo 225 grados.
+ 3  B... que proviene del rumbo 225 grados.
+ 3  C... que sopla hacia el nord-este.
+-6  D... que sopla hacia el sud-oeste.
+ 
+042 La siguiente situación se llama inversión de la temperatura: 
+-6  A... una capa de aire frío está por encima de una capa de aire caliente.
+ 6  B... una capa de aire caliente está por encima de una capa de aire frío.
+ 0  C... una capa de aire bloquea el desarrollo de las ascendentes.
+ 
+043 Dentro de una atmósfera con tendencia inestable: 
+-6  A... hay pocas ascendentes.
+ 3  B... la temperatura decrece rápidamente cuando uno gana altura.
+ 3  C... los cúmulos tienen tendencia a desarrollarse.
+-6  D... los estratos tienen tendencia a desarrollarse.
+ 
+044 Cuando dos masas de aire de temperaturas diferentes se encuentran: 
+-6  A... se mezclan fácilmente.
+ 6  B... el aire más caliente se eleva por encima del aire más frío.
+-6  C... el aire más caliente se infiltra por debajo del aire más frío.
+ 
+045 Cuando pasa un frente, el aire caliente: 
+ 6  A... se eleva.
+-6  B... levanta al aire frío.
+-6  C... puede ser enviado hacia abajo o elevado según la situación.
+ 
+046 Las tendencias generales de un frente frío son: 
+ 6  A... empeoramiento rápido con lluvia, tormentas, viento fuerte,
+         turbulencias.
+-6  B... empeoramiento lento con lluvia moderada.
+-6  C... tiempo brumoso, cubierto con llovizna.
+ 
+047 Un frente frío: 
+-6  A... es confiable (aire frío = aire estable).
+ 4  B... puede dar lugar a fuertes precipitaciones y turbulencias.
+ 2  C... puede provocar golpes de viento.
+-6  D... origina poco viento.
+ 
+048 Cuando pasa un frente cálido: 
+-6  A... las lluvias son intermitentes y violentas.
+ 3  B... las lluvias son continuas.
+ 3  C... el aire está muy húmedo y el sistema nuboso es importante.
+ 
+052 Una ascendencia dinámica pura es el resultado: 
+-6  A... de la aceleración del viento en la cima de una montaña.
+ 6  B... del desvío hacia arriba del viento a causa de un obstáculo.
+-6  C... de la dilatación del aire cuando sube por una pendiente.
+ 
+053 La zona de ascendencia dinámica varía con: 
+ 2  A... la fuerza del viento.
+ 2  B... la forma de la pendiente.
+ 2  C... la orientación de la pendiente con respecto al viento.
+ 
+054 El viento puede ser peligroso: 
+ 2  A... en el fondo del valle donde se acelera (venturi).
+ 2  B... cuando su velocidad se aproxima o supera la del ala.
+ 2  C... cerca de algunos filos (riesgo de ser llevado a sotavento).
+ 
+055 Una cortina de árboles de cara al viento provoca turbulencias: 
+-6  A... a barlovento de los mismos.
+ 6  B... a sotavento de los mismos.
+ 0  C... en su vertical.
+ 
+056 El gradiente de viento existe: 
+ 2  A... con viento fuerte.
+ 2  B... sobre terreno plano y despejado.
+ 2  C... sobre terreno accidentado donde se mezcla con las turbulencias.
+ 
+057 El gradiente de viento en el aterrizaje: 
+ 2  A... depende del estado del suelo.
+ 2  B... depende de la velocidad del viento.
+-6  C... obliga a volar más lento.
+ 2  D... aumenta la tasa de caída.
+ 
+058 Podemos encontrar una zona de cizalladura: 
+ 2  A... atravesando una capa de inversión.
+ 2  B... entrando y saliendo de una térmica.
+ 2  C... en una confluencia.
+ 
+059 Una confluencia se encuentra habitualmente: 
+ 2  A... en la cima de un filo entre dos valles alimentados cada uno por una
+         brisa.
+ 2  B... a lo largo de un frente de brisa de mar.
+ 2  C... entre una brisa y un viento meteo.
+ 
+060 Con buen tiempo, al principio de la tarde, las brisas de montaña: 
+ 3  A... se fortalecen.
+-6  B... disminuyen.
+ 3  C... suben las pendientes.
+-6  D... bajan las pendientes.
+ 
+061 Con buen tiempo, la brisa de mar sopla cuando: 
+ 6  A... la tierra está más caliente que el mar.
+-6  B... la tierra está más fría que el mar.
+-6  C... la marea está bajando.
+-6  D... la marea está subiendo.
+ 
+062 Con buen tiempo la brisa de tierra sopla cuando: 
+-6  A... la tierra está más caliente que el mar.
+ 6  B... la tierra está más fría que el mar.
+-6  C... la marea está bajando.
+-6  D... la marea está subiendo.
+ 
+063 Hace buen tiempo en el valle (orientado norte-sur), de mañana, sin viento: 
+ 6  A... se va a desarrollar una brisa de montaña sobre las laderas orientadas
+         al este.
+-6  B... se va a desarrollar una brisa de montaña sobre las laderas orientadas
+         al oeste.
+-6  C... se van a desarrollar ascendentes en el centro del valle.
+ 
+064 Las brisas de ladera en la montaña: 
+ 2  A... aparecen antes que las brisas del valle.
+ 2  B... se originan sobre las caras con sol.
+ 1  C... son turbulentas cuando pasan térmicas.
+ 1  D... pueden ser fortalecidas o desviadas por los vientos meteo.
+ 
+065 Las brisas de ladera son descendentes: 
+-6  A... durante el día.
+ 6  B... durante la noche.
+-6  C... en todo momento ya que siempre son descendentes en las capas
+         inferiores.
+ 
+066 Una brisa de valle: 
+ 3  A... se fortalece donde el valle se hace más angosto.
+ 3  B... pueden desarrollar grandes velocidades.
+-6  C... nunca es turbulenta.
+ 
+067 Una brisa de valle: 
+ 2  A... aumenta cuando se desciende a las capas bajas.
+-6  B... a veces se manifiesta en varios miles de metros de espesor.
+ 2  C... acelera cuando el valle se cierra.
+ 2  D... puede alcanzar los 30 km/h en verano.
+ 
+068 El viento de Foehn se caracteriza por: 
+ 2  A... una nube de sombrero sobre el relieve en la cara orientada al viento.
+ 4  B... un descenso de aire cálido, seco y muy turbulento, por debajo del
+         relieve en la zona ubicada a sotavento.
+-6  C... un enfriamiento de la masa de aire ubicada a sotavento del relieve.
+ 
+069 Factores que favorecen la inestabilidad: 
+ 3  A... el calentamiento del suelo.
+-6  B... el enfriamiento del suelo.
+ 3  C... la llegada de aire caliente en los niveles inferiores.
+-6  D... la llegada de aire caliente en altura.
+ 
+070 En un lindo día de verano, la temperatura máxima se alcanza (horario
+    solar):
+-6  A... 12 hs.
+ 6  B... 14 hs.
+-6  C... 16 hs.
+ 
+073 Una partícula de aire se eleva si su temperatura con respecto al aire
+    ambiente es:
+-6  A... inferior.
+ 6  B... superior.
+-6  C... igual.
+ 
+075 El desprendimiento de térmicas: 
+ 4  A... fortalece las brisas de pendiente y del valle.
+-6  B... permite aprovechar la brisa de pendiente lejos del relieve.
+ 2  C... vuelve irregular la brisa de pendiente.
+ 
+076 Las ascendentes térmicas: 
+ 2  A... pueden presentarse bajo forma de burbujas o de columnas.
+-6  B... suben siempre verticalmente.
+ 2  C... se originan sobre suelos constrastantes.
+ 2  D... están rodeadas de descendentes.
+ 
+082 El fenómeno de restitución se encuentra en general: 
+ 6  A... por la tarde.
+-6  B... por la mañana en el centro del valle.
+-6  C... en el centro de los valles durante todo el día.
+ 
+
+
+AERODINAMICA
+
+002 Con respecto al intradós, la distancia que debe recorrer una molécula de
+    aire sobre el extradós:
+-6  A... es igual.
+ 6  B... es superior.
+-6  C... es inferior.
+ 
+003 El centro de presión es el punto de aplicación: 
+-6  A... de la resultante de fuerzas de gravedad.
+ 6  B... de la resultante de fuerzas aerodinámicas.
+ 
+004 El centro de presión de un ala en vuelo se encuentra aproximadamente: 
+-6  A... en el centro geométrico del ala.
+-6  B... en la parte posterior del ala.
+ 6  C... en la parte delantera del ala.
+ 
+005 En vuelo rectilíneo estabilizado: 
+ 3  A... la resistencia se opone al desplazamiento del ala en su trayectoria.
+ 3  B... la sustentación es perpendicular a la trayectoria.
+-6  C... la R.F.A. es ligeramente inferior al peso ala + piloto.
+ 
+006 Cuando un ala planea en línea recta a velocidad constante, el peso total
+    es:
+ 6  A... compensado exactamente por la R.F.A.
+-6  B... inferior a la R.F.A.
+-6  C... superior a la R.F.A.
+ 
+008 La sustentación y la resistencia de un ala aumentan, entre otras en
+    función del aumento de:
+-6  A... la velocidad del viento meteorológico.
+ 6  B... la velocidad relativa al aire del ala.
+-6  C... la velocidad relativa al suelo del ala.
+ 
+009 La sustentación de un ala está dada por: 
+ 3  A... la desviación de filetes de aire por el perfil del ala.
+-6  B... una depresión que aparece debajo del perfil y una sobrepresión
+         encima.
+ 3  C... una depresión que aparece encima del perfil y una sobrepresión
+         debajo.
+ 
+010 La sustentación en vuelo planeado estabilizado, siempre es: 
+ 3  A... más débil que el peso total ala/piloto.
+ 3  B... perpendicular a la trayectoria.
+-6  C... constante cualquiera sea la velocidad del ala.
+ 
+011 Cuando el ángulo de incidencia aumenta a partir de 0 grados, la
+    sustentación:
+-6  A... casi no varía.
+ 6  B... aumenta, pasa por un máximo, disminuye, y luego cae bruscamente
+         cuando el ala entra en pérdida.
+-6  C... aumenta progresivamente hasta la pérdida.
+ 
+012 Sobre un ala en vuelo rectilíneo estabilizado, cuando el piloto provoca un
+    incremento de la incidencia:
+ 3  A... la trayectoria se curva hacia arriba.
+-6  B... la velocidad aumenta.
+-6  C... la trayectoria se curva hacia abajo.
+ 3  D... la velocidad disminuye.
+ 
+013 Sobre un ala en vuelo rectilíneo estabilizado, cuando el piloto provoca
+    una disminución de la incidencia:
+-6  A... la trayectoria se curva hacia arriba.
+ 3  B... la velocidad aumenta.
+ 3  C... la trayectoria se curva hacia abajo.
+-6  D... la velocidad disminuye.
+ 
+014 Sobre un ala en vuelo, hay varias fuentes de resistencia de naturalezas
+    bien distintas:
+ 2  A... la fricción.
+ 2  B... las turbulencias detrás del borde de fuga.
+ 2  C... los torbellinos en las puntas del ala.
+ 
+015 La resistencia sobre el conjunto ala/piloto: 
+-6  A... es independiente de la velocidad del vuelo.
+-6  B... es independiente de la forma del ala.
+ 6  C... se divide en resistencia de forma + resistencia inducida +
+         resistencia de fricción.
+ 
+016 La resistencia total de una aeronave se divide en: 
+ 2  A... resistencia inducida.
+ 2  B... resistencia de forma.
+ 2  C... resistencia de fricción.
+ 
+017 La resistencia inducida se debe: 
+-6  A... al piloto y a las suspensiones.
+-6  B... a las turbulencias del borde de fuga del ala.
+-6  C... a las irregularidades de la superficie del ala.
+ 6  D... a los torbellinos de punta de ala.
+ 
+018 La resistencia de forma se debe: 
+ 3  A... al piloto y a las suspensiones.
+ 3  B... a las turbulencias del borde de fuga del ala.
+-6  C... a las irregularidades de la superficie del ala.
+-6  D... a los torbellinos de punta de ala.
+ 
+019 La resistencia de fricción se debe: 
+ 3  A... al piloto y a las suspensiones.
+-6  B... a las turbulencias del borde de fuga del ala.
+ 3  C... a las irregularidades de la superficie del ala.
+-6  D... a los torbellinos de punta de ala.
+ 
+020 Los torbellinos marginales responsables de la resistencia inducida: 
+-6  A... existen sólo detrás de las alas grandes.
+-6  B... existen sobre todo con viento fuerte.
+ 6  C... existen detrás de todas las alas.
+ 
+021 La resistencia parásita se debe: 
+ 6  A... a todo aquello que no sustenta.
+-6  B... a las irregularidades de la superficie del ala.
+-6  C... a los torbellinos marginales.
+ 
+022 Si aumentamos su resistencia el ala tiende a: 
+-6  A... ir más despacio.
+-6  B... acelerar.
+ 6  C... hundirse.
+ 
+023 En final, cuando el piloto se incorpora, él: 
+-6  A... mejora su penetración.
+ 3  B... deteriora su penetración.
+ 3  C... aumenta su tasa de caída.
+ 
+024 Entre los siguientes puntos algunos mejoran la penetración: 
+ 4  A... perfil limpio sin pliegues ni roturas.
+ 2  B... suspensiones finas.
+-6  C... posición vertical del piloto.
+ 
+025 Un ala puede pivotar alrededor de los ejes de: 
+ 2  A... dirección (vertical, giro).
+ 2  B... alabeo (longitudinal, balanceo)
+-6  C... cuerda (vertical, cabeceo).
+ 2  D... profundidad (transversal, cabeceo).
+ 
+026 La polar de las velocidades es una curva: 
+-6  A... que muestra la forma del perfil del ala.
+ 4  B... que muestra las diferentes velocidades a las que puede llegar un ala
+         en vuelo rectilíneo estabilizado, por una carga determinada.
+ 2  C... trazada para un peso/piloto determinado.
+ 
+027 Todos los regímenes de vuelo con un ángulo de incidencia superior al de
+    la tasa de caída mínima:
+ 6  A... corresponden a bajos rendimientos para el ala.
+-6  B... son los más alejados de la pérdida.
+-6  C... corresponden a la mejor manejabilidad del ala.
+-6  D... están aconsejados para volar cerca del suelo.
+ 
+028 Se llama viento relativo, al viento: 
+-6  A... creado por la velocidad/suelo del aparato.
+ 3  B... creado por el desplazamiento del aparato en el aire.
+ 3  C... sentido por el piloto en su cara.
+ 
+029 La velocidad del viento relativo es: 
+ 6  A... igual a la velocidad del aparato en su trayectoria.
+-6  B... influenciada por el viento meteorológico.
+-6  C... siempre la misma.
+ 
+030 La velocidad relativa aire se define con respecto: 
+ 6  A... al aire atravesado.
+-6  B... al piso.
+ 
+031 El viento relativo: 
+-6  A... no varía nunca.
+ 6  B... tiene por eje la trayectoria/aire del ala.
+-6  C... tiene por eje la trayectoria/suelo del ala.
+ 
+032 La tasa de caída: 
+ 3  A... es la velocidad vertical del parapente con respecto al aire.
+-6  B... es la velocidad vertical del parapente con respecto al suelo.
+ 3  C... tiene un valor mínimo para cada ala que depende del peso del piloto.
+ 
+033 Un viento regular en fuerza y dirección no tiene influencia: 
+-6  A... sobre la velocidad/suelo.
+ 6  B... sobre la velocidad/aire.
+-6  C... sobre la fineza/suelo.
+ 
+034 Usted vuela con fuerte viento de atrás, esto provoca: 
+-6  A... una disminución de la R.F.A.
+-6  B... un aumento de la incidencia.
+ 3  C... un aumento de la velocidad/suelo.
+ 3  D... un aumento de la fineza/suelo.
+ 
+035 Usted vuela a 35 km/h con 10 km/h de viento de cola, su velocidad/suelo: 
+-6  A... queda igual.
+-6  B... es de alrededor de 25 km/h.
+ 6  C... es de alrededor de 45 km/h.
+ 
+036 Al atravesar una masa  de aire turbulento, el conjunto ala + piloto se
+    somete a variaciones:
+ 2  A... de incidencia.
+ 2  B... de velocidad/aire.
+-6  C... de masa.
+ 2  D... de R.F.A.
+ 
+037 Cuando usted entra en una ascendente, la incidencia: 
+-6  A... disminuye.
+ 6  B... aumenta.
+-6  C... no cambia.
+ 
+038 Cuando usted entra en un descendente, la incidencia: 
+ 6  A... disminuye.
+-6  B... aumenta.
+-6  C... no cambia.
+ 
+039 Cuando el ala entra en una ascendente: 
+-6  A... la velocidad disminuye.
+-6  B... la incidencia disminuye.
+ 3  C... la R.F.A. aumenta y el ala acelera hacia arriba.
+ 3  D... la incidencia aumenta.
+ 
+040 Cuando el ala entra en una descendente: 
+-6  A... la incidencia aumenta.
+-6  B... la velocidad aumenta.
+ 3  C... la incidencia disminuye.
+ 3  D... la R.F.A. disminuye, el ala acelera hacia abajo.
+ 
+041 En una ascendente un ala en planeo: 
+-6  A... sube con respecto al aire ascendente.
+ 6  B... baja con respecto al aire ascendente.
+-6  C... sube a la misma velocidad que el aire ascendente.
+ 
+042 Con una posición de los comandos igual que en aire inmóvil, en una
+    ascendente regular:
+-6  A... mi velocidad es más elevada.
+ 3  B... mi velocidad/aire es la misma.
+ 3  C... mi incidencia es la misma.
+-6  D... mi incidencia es más elevada.
+ 
+043 Usted está en una descendente, la fineza/suelo: 
+-6  A... mejora.
+ 6  B... disminuye.
+-6  C... es la misma.
+ 
+044 El ángulo de incidencia está definido por la cuerda alar y: 
+ 6  A... la dirección del viento relativo.
+-6  B... la horizontal.
+-6  C... la resultante de fuerzas aerodinámicas.
+ 
+045 El ángulo entre el planeo del ala y el viento relativo se llama: 
+-6  A... ángulo de planeo.
+ 6  B... ángulo de incidencia.
+-6  C... ángulo de abertura.
+ 
+046 Se llama ángulo de planeo, al ángulo entre: 
+-6  A... la cuerda del ala y la trayectoria.
+ 6  B... la trayectoria y la horizontal.
+-6  C... la horizontal y la cuerda del ala.
+ 
+047 En un giro el ala se inclina gracias a un movimiento de: 
+-6  A... dirección.
+ 6  B... alabeo.
+-6  C... profundidad.
+ 
+048 Durante un  giro estabilizado a la derecha, el movimiento de alabeo: 
+ 6  A... es nulo.
+-6  B... es hacia la derecha.
+-6  C... es hacia la izquierda.
+ 
+049 Durante un giro estabilizado a la derecha, el movimiento de dirección es: 
+-6  A... nulo.
+ 6  B... hacia la derecha.
+-6  C... hacia la izquierda.
+ 
+050 El peso aparente sobre un aparato en giro es: 
+-6  A... igual al peso total ala/piloto.
+ 6  B... superior al peso total ala/piloto.
+-6  C... inferior al peso total ala/piloto.
+ 
+051 La fineza es la relación: 
+-6  A... velocidad vertical sobre velocidad horizontal.
+ 6  B... velocidad horizontal sobre velocidad vertical.
+-6  C... velocidad de vuelo sobre tasa de caída.
+ 
+052 La fineza es la relación: 
+ 2  A... sustentación sobre resistencia.
+-6  B... resistencia sobre sustentación.
+ 2  C... distancia recorrida horizontalmente sobre distancia recorrida
+         verticalmente.
+ 2  D... velocidad horizontal sobre tasa de caída.
+ 
+053 La fineza/aire: 
+ 3  A... varía con la incidencia del aparato.
+ 3  B... pasa por un máximo para un cierto valor de incidencia.
+-6  C... es máxima cuando la tasa de caída es mínima.
+-6  D... es máxima justo antes de la pérdida.
+ 
+054 Con una incidencia dada, la fineza/aire es independiente: 
+ 3  A... del viento meteo.
+ 3  B... del peso del piloto.
+-6  C... de la velocidad/aire.
+ 
+055 La fineza/aire es: 
+-6  A... el ángulo entre la trayectoria/aire y la horizontal.
+ 6  B... la relación entre la sustentación y la resistencia.
+-6  C... siempre lo mismo que la fineza/suelo.
+ 
+056 La fineza/aire máxima es: 
+ 3  A... una característica propia del aparato.
+-6  B... proporcional a la carga alar.
+ 3  C... obtenida a una velocidad superior a aquella correspondiente a la de
+         tasa de caída mínima.
+ 
+057 La fineza es más elevada cuando: 
+-6  A... el ángulo de planeo es grande.
+-6  B... la incidencia es pequeña.
+ 6  C... el ángulo de planeo es pequeño.
+ 
+058 La fineza/suelo: 
+ 6  A... es idéntica a la fineza/aire en una masa de aire inmóvil.
+-6  B... no varía jamás.
+-6  C... es siempre inferior a la fineza/aire.
+ 
+059 La fineza/suelo: 
+ 6  A... aumenta con viento de atrás.
+-6  B... disminuye con viento de atrás.
+-6  C... aumenta con viento de frente.
+ 
+060 La fineza/suelo: 
+-6  A... es independiente de la fineza/aire.
+ 3  B... varía en función de la velocidad/aire.
+ 3  C... varía en función del viento meteorológico.
+ 
+061 Para avanzar 4800 mts. en el plano horizontal, usted perdió 600 mts. de
+    altura, su fineza está cerca de:
+-6  A... 6
+-6  B... 7
+ 6  C... 8
+-6  D... 9
+ 
+062 Llamamos carga alar a la relación: 
+-6  A... superficie del ala sobre peso total (ala+piloto).
+ 6  B... peso total (ala+piloto) sobre superficie del ala.
+-6  C... peso del piloto sobre la superficie del ala.
+-6  D... peso del piloto sobre peso del ala.
+ 
+063 Usted toma el ala de un piloto más liviano: 
+ 3  A... con la misma incidencia, vuela más rápido que él.
+-6  B... con la misma incidencia, vuela más lento que él.
+ 3  C... usted debe correr más rápido en el despegue.
+-6  D... usted tendrá más dificultad en mantener el ala en turbulencia.
+ 
+064 Si dos pilotos tienen el mismo ala, el más pesado: 
+-6  A... vuela menos rápido.
+ 3  B... desciende más rápido.
+-6  C... tiene un ala menos manejable.
+ 3  D... vuela más rápido.
+ 
+065 Para el mismo ala, un aumento  de la carga alar produce un aumento: 
+ 2  A... de la velocidad horizontal.
+-6  B... de la fineza.
+ 2  C... de deformaciones del ala.
+ 2  D... de tasa de caída.
+ 
+066 A igual superficie de ala un piloto más pesado tendrá: 
+ 3  A... una velocidad máxima superior.
+-6  B... una penetración menor.
+ 3  C... una tasa de caída más elevada.
+-6  D... una velocidad de pérdida idéntica.
+ 
+067 Dos alas idénticas sometidas a cargas alares diferentes despegan: 
+ 6  A... con la misma incidencia pero con velocidades diferentes.
+-6  B... con la misma velocidad pero con incidencias diferentes.
+-6  C... con la misma velocidad e incidencia.
+ 
+068 Dos alas idénticas pero con cargas alares diferentes atraviesan una zona
+    ascendente larga. Cada piloto usa el ala a la velocidad de tasa de caída
+    mínima:
+-6  A... las dos alas ganarán la misma altura.
+-6  B... el ala más cargada ganará más altura.
+ 6  C... el ala menos cargada ganará más altura.
+ 
+072 La pérdida tiene lugar: 
+-6  A... con diferentes incidencias.
+ 6  B... siempre con la misma incidencia.
+-6  C... siempre con la misma velocidad.
+ 
+073 La pérdida se produce cuando: 
+-6  A... la velocidad es demasiado fuerte.
+-6  B... la incidencia es demasiado débil.
+ 6  C... la incidencia es demasiado fuerte.
+ 
+074 La caída que sigue a la pérdida se debe a: 
+-6  A... un avance transitorio del centro de presión.
+ 6  B... un retroceso transitorio del centro de presión.
+-6  C... la caída del piloto en la vela.
+ 
+075 La pérdida origina generalmente: 
+-6  A... un momento de subida.
+ 3  B... un momento de picado.
+ 3  C... una variación de calado con tendencia a picar.
+-6  D... una variación de calado con tendencia a subir.
+ 
+076 En la pérdida: 
+ 5  A... la sustentación disminuye.
+-6  B... la sustentación aumenta.
+-6  C... la resistencia disminuye.
+ 1  D... la resistencia aumenta.
+ 
+077 La pérdida se produce en general: 
+-6  A... a la velocidad de tasa de caída mínima.
+ 6  B... a una velocidad inferior a la de la tasa de caída mínima.
+-6  C... a una velocidad superior a la de la tasa de caída mínima.
+ 
+078 La velocidad de pérdida para un ala determinada: 
+-6  A... es independiente del peso del piloto.
+ 3  B... es más elevada durante el remolque.
+ 3  C... es más elevada en giro.
+ 
+079 La velocidad de pérdida: 
+-6  A... disminuye cuando el peso del piloto aumenta.
+ 3  B... aumenta cuando el peso del piloto aumenta.
+-6  C... disminuye cuando el factor de carga aumenta.
+ 3  D... aumenta cuando el factor de carga aumenta.
+ 
+081 Llamamos pérdida dinámica a la pérdida: 
+-6  A... seguida de una trepada.
+ 3  B... precedida por una trepada.
+ 3  C... provocada por un aumento brusco de la incidencia.
+-6  D... provocada por una caída brusca de la incidencia.
+ 
+082 Con respecto al vuelo normal, durante un remolque, la R.F.A. es: 
+-6  A... más débil.
+ 3  B... más fuerte.
+ 3  C... inclinada hacia atrás.
+-6  D... vertical.
+ 
+083 Durante un remolque, la R.F.A. es: 
+-6  A... igual a la fuerza de tracción.
+ 3  B... igual a la suma vectorial fuerza de tracción + peso total.
+ 3  C... inclinada hacia atrás.
+ 
+084 El centro de presión de un parapente: 
+-6  A... varía poco, siendo el parapente más bien estable.
+-6  B... está situado a nivel de los elevadores.
+ 6  C... efectúa grandes variaciones, siendo el parapente más bien inestable.
+ 
+085 El punto de impacto de un perfil: 
+ 2  A... separa el flujo de aire del intradós y del extradós.
+ 2  B... varía en función de la incidencia.
+ 2  C... es el punto del perfil donde la presión de aire es máxima.
+-6  D... define la frontera entre las zonas de depresión y de sobrepresión
+         de una y otra parte del perfil.
+ 
+086 Si por una determinada incidencia, el punto de impacto del perfil se
+    ubica por encima de la boca de entrada del cajón, mi ala puede:
+-6  A... entrar en pérdida.
+ 6  B... plegarse.
+ 
+087 Cuanto más se reduce la carga alar, el ala: 
+-6  A... despega a más velocidad.
+-6  B... tiene una fineza más elevada.
+ 3  C... tiene una tasa de caída mínima menor.
+ 3  D... es menos estable.
+ 
+088 Para evitar las plegadas, es mejor: 
+-6  A... frenar al máximo para dar más presión.
+-6  B... desfrenar al máximo ya que la presión es proporcional al cuadrado
+         de la velocidad/aire.
+ 6  C... volar con incidencias alejadas de aquellas coincidentes con los
+         límites en los que el parapente deja de volar.
+ 
+089 Si usted vuela con viento fuerte de cola: 
+-6  A... tiene menos sustentación en el parapente.
+ 6  B... su velocidad/suelo aumenta.
+-6  C... los cajones pueden desinflarse.
+-6  D... el efecto del viento sobre su rostro es bastante menos fuerte.
+ 
+091 En parapente es posible volar: 
+ 3  A... con tasa de caída mínima.
+ 3  B... más lento que con tasa de caída mínima.
+-6  C... sin riesgo a la velocidad de pérdida porque es un paracaídas.
+ 
+092 Incorporarse sobre la silla en final, aumenta en el parapente: 
+-6  A... la resistencia inducida.
+ 0  B... la resistencia de fricción.
+ 6  C... la resistencia de forma.
+ 
+093 Cuando entramos en un giro, el ala se inclina del lado deseado porque: 
+ 3  A... la carga aumenta del lado del comando bajado.
+-6  B... la carga disminuye del lado del comando bajado.
+ 3  C... la resistencia aumenta del lado del comando bajado.
+-6  D... la carga disminuye del lado del comando bajado.
+ 
+095 Cuando entramos en giro, el ala pivota sobre el eje de dirección porque: 
+-6  A... la carga disminuye del lado del comando bajado.
+ 6  B... la resistencia aumenta del lado del comando bajado.
+-6  C... la resistencia disminuye del lado del comando bajado.
+ 
+096 Si usted usa el ala de un piloto más liviano: 
+-6  A... ésta se plegará más fácilmente en las turbulencias
+-6  B... volará más lento.
+ 3  C... ésta se plegará menos en las turbulencias.
+ 3  D... las pérdidas de control en caso de plegadas serán más violentas.
+ 
+097 Usted usa el ala de un piloto más pesado: 
+ 2  A... la tasa de caída será un poco más favorable.
+-6  B... ésta será más maniobrable.
+ 2  C... ésta se plegará más fácilmente en las turbulencias.
+ 2  D... los comandos serán menos eficaces.
+ 
+099 Factores que favorecen la entrada en barrena o giro en negativo: 
+ 3  A... un gran alargamiento.
+-6  B... un bajo alargamiento.
+-6  C... poca incidencia.
+ 3  D... incidencia elevada.
+ 
+100 Factores que favorecen la entrada en auto-rotación luego de una plegada: 
+ 3  A... un gran alargamiento.
+-6  B... un bajo alargamiento.
+ 3  C... mucha velocidad.
+-6  D... poca velocidad.
+ 
+101 Un ala que se pliega seguido en turbulencia es un ala: 
+ 0  A... peligrosa.
+ 6  B... inestable aerodinámicamente en profundidad.
+-6  C... insuficientemente rígida.
+-6  D... poco amortiguada aerodinámicamente en el eje de profundidad.
+ 
+
+
+MATERIAL
+
+001 Un paracaídas de reserva redondo es: 
+-6  A... un planeador ultraligero.
+ 6  B... un freno aerodinámico.
+-6  C... un 100% de garantía de salvarse en caso de accidente.
+ 
+002 Para una máxima seguridad, desplegar y plegar el paracaídas de reserva,
+    debe hacerse:
+ 6  A... dos veces por año.
+-6  B... una vez por año.
+-6  C... dejarlo tal cual nos lo vendieron.
+ 
+003 Cuando transportamos o guardamos un parapente o un paracaídas de reserva
+    lo protegemos del contacto o cercanía de:
+ 2  A... solventes y cuerpos grasos.
+ 1  B... humedad y calor.
+ 3  C... los rayos del sol.
+ 
+004 Llevar un paracaídas de reserva: 
+ 3  A... implica un control de los velcros del cierre del contenedor.
+ 3  B... expone al piloto a aperturas imprevistas.
+-6  C... no exige ninguna medida especial.
+ 
+005 Un casco de vuelo libre debe: 
+ 2  A... permitir una buena audición y visibilidad.
+ 2  B... ser sólido y absorver los golpes.
+ 2  C... ser liviano para no perjudicar el cuello.
+ 
+006 El anemómetro es un instrumento que indica: 
+-6  A... la dirección del viento.
+ 3  B... la velocidad del viento.
+ 3  C... la velocidad del viento relativo en vuelo.
+ 
+007 Un altímetro mide: 
+-6  A... el gradiente vertical de presión atmosférica.
+-6  B... la variación de la tasa de humedad.
+ 6  C... la altura.
+ 
+008 El altímetro: 
+-6  A... mide la velocidad con que varía la presión.
+ 3  B... incluso en buen estado puede mostrar para una determinada altura
+         valores que varían según la hora y el lugar.
+-6  C... no sufre la influencia de variaciones de temperatura.
+ 3  D... utiliza una escala de altura calibrada para los valores
+         meteorológicos promedio (atmósfera estandar).
+ 
+009 Un altímetro: 
+ 2  A... puede estar regulado a valores diferentes (nivel del mar, del
+         despegue, del aterrizaje...).
+ 2  B... da una indicación que varía según las condiciones atmosféricas.
+-6  C... es calibrado definitivamente al momento de su construcción.
+ 2  D... siempre debe ser comparado y regulado con respecto a valores
+         conocidos (despegue, puntos de referencia, aterrizaje...).
+ 
+010 Un variómetro de vuelo libre mide: 
+-6  A... la velocidad del viento si se utiliza en el suelo.
+ 6  B... la componente vertical de la velocidad/suelo del ala.
+-6  C... la componente vertical de la velocidad/aire del ala.
+-6  D... la velocidad de subida de la masa de aire en una térmica.
+ 
+011 Un variómetro de vuelo libre mide la velocidad vertical: 
+-6  A... de la masa de aire con respecto al suelo.
+-6  B... de la masa de aire con respecto al ala.
+ 6  C... del ala con respecto al suelo.
+-6  D... del ala con respecto a la masa de aire.
+ 
+012 Un variómetro de vuelo libre indica: 
+ 6  A... la velocidad vertical del ala con respecto al suelo.
+-6  B... la altura del ala.
+-6  C... la dirección del ala con respecto al norte.
+ 
+013 Un variómetro de vuelo libre da las indicaciones en función de la
+    variación:
+-6  A... de temperatura.
+ 6  B... de presión atmosférica.
+-6  C... de humedad.
+ 
+014 La forma del perfil de un ala: 
+-6  A... es prácticamente la misma para todas las alas.
+ 6  B... es estudiada para cada ala en función del rendimiento deseado.
+-6  C... tiene muy poca influencia sobre el rendimiento ya que sólo la
+         habilidad del piloto lo puede mejorar.
+ 
+015 Los agujeros en las costillas entre los cajones sirven: 
+ 3  A... para repartir la presión entre los cajones.
+ 3  B... acelerar el inflado.
+-6  C... dar flexibilidad al perfil.
+-6  D... aligerar el ala.
+ 
+016 El extradós del ala es la parte: 
+-6  A... delantera del ala.
+ 6  B... superior del ala.
+-6  C... inferior del ala.
+ 
+017 Los estábilos: 
+ 2  A... reducen los torbellinos marginales.
+ 2  B... crean resitencia parásita.
+ 2  C... pueden mejorar el rendimiento.
+ 
+018 La superficie de un parapente dada por los constructores generalmente se
+    refiere a:
+-6  A... la proyección del ala inflada sobre un plano.
+-6  B... la superficie del extradós en plano.
+ 6  C... la superficie del intradós en plano.
+ 
+019 La cuerda del ala: 
+-6  A... está relacionada con el espesor del perfil.
+ 3  B... es la distancia entre el borde de ataque y el borde de fuga.
+-6  C... es la relación entre el largo de las suspensiones de adelante y
+         atrás.
+ 3  D... varía generalmente a todo el largo de la envergadura.
+ 
+020 La envergadura es: 
+ 6  A... la mayor distancia entre los extremos del ala.
+-6  B... el número de cajones o alvéolos.
+-6  C... la distancia entre el borde de ataque y el borde de fuga.
+ 
+021 El alargamiento de un ala es igual: 
+-6  A... a la cuerda al cuadrado, sobre la superficie.
+ 6  B... a la envergadura al cuadrado, sobre la superficie.
+-6  C... a la superficie al cuadrado, por la envergadura.
+ 
+022 El calado del ala: 
+-6  A... depende de la regulación de los frenos.
+ 3  B... está ligado directamente al largo de las suspensiones delanteras y
+         traseras.
+ 3  C... define la incidencia de calado del ala en vuelo.
+-6  D... puede ser modificado sin riesgo por el usuario ya que está
+         compensado por el peso del piloto en vuelo.
+ 
+023 Un cambio del calado de un parapente influye sobre: 
+ 2  A... la polar de las velocidades.
+ 2  B... la estabilidad y la pérdida.
+ 2  C... la velocidad máxima y la fineza máxima.
+ 
+024 Darle a un ala una calado alto: 
+-6  A... aumenta el riesgo de plegada.
+ 3  B... aumenta el riesgo de entrada en parachutaje estabilizado.
+ 3  C... torna el ala más lenta para el inflado.
+-6  D... torna el ala más nerviosa en el despegue.
+ 
+025 Darle a un ala un calado picado: 
+ 3  A... aumenta el riesgo de plegada.
+-6  B... aumenta el riesgo de entrada en parachutaje estabilizado.
+-6  C... torna el ala más lenta para el inflado.
+ 3  D... torna el ala más nerviosa en el despegue.
+ 
+026 Las partes de un ala que sufren el mayor esfuerzo en vuelo son: 
+ 3  A... las suspensiones delanteras (A y B).
+-6  B... la parte trasera del ala.
+ 3  C... la parte delantera del ala.
+-6  D... las suspensiones traseras.
+ 
+027 Los comandos: 
+-6  A... reducen el riesgo de pérdida.
+-6  B... impiden la deformación del ala.
+ 3  C... permiten que el ala se deforme para efectuar movimientos alrededor
+         de los tres ejes de rotación.
+ 3  D... producen migraciones en el centro de presión del perfil.
+ 
+028 Las sillas de parapente: 
+-6  A... son todas parecidas.
+ 3  B... son de diferentes tipos 
+ 3  C... influyen sobre las características del pilotaje.
+-6  D... pueden cambiarse sin riesgos.
+ 
+030 La utilización de trims y/o aceleradores: 
+-6  A... sólo presenta ventajas.
+ 0  B... no se recomienda.
+ 6  C... debe realizarse con precaución y en modelos previstos por el
+         constructor.
+-6  D... no tiene efectos.
+ 
+031 La utilización de trims y/o aceleradores puede: 
+ 2  A... aumentar los riesgos de plegada.
+ 1  B... mejorar la penetración.
+ 1  C... facilitar el inflado.
+ 2  D... aumentar los riesgos de entrada en parachutaje estabilizado.
+ 
+032 En vuelo, la posición de manos arriba corresponde: 
+-6  A... a la velocidad mínima.
+-6  B... a la tasa de caída mínima.
+-6  C... a la fineza/aire máxima.
+ 6  D... a la velocidad máxima.
+ 
+033 Criterios para la elección de un ala: 
+-6  A... la carga alar, la fineza/suelo.
+ 2  B... la fineza máxima, la tasa de caída mínima, la penetración.
+ 2  C... la manejabilidad, el comportamiento en turbulencias.
+ 2  D... la estabilidad.
+ 
+034 Para su seguridad usted hace verificar el ala por  el constructor cuando
+    constata:
+ 2  A... una disminución de la velocidad máxima.
+ 2  B... una lentitud desacostumbrada en el inflado.
+ 2  C... las costuras estropeadas.
+ 
+035 Su ala nueva gira sistemáticamente de un lado, sin frenar y con las
+    cuerdas de los frenos extendidas:
+-6  A... usted alarga el comando del lado opuesto.
+-6  B... usted modifica el nivel de las bandas en la silla.
+-6  C... usted afloja el cinturón de la pierna del costado opuesto.
+ 6  D... usted contacta al revendedor para un control en fábrica y/o a un
+         instructor o piloto experimentado.
+ 
+036 Alargar los elevadores delanteros: 
+ 2  A... disminuye la penetración del ala.
+ 2  B... favorece la entrada en parachutaje.
+ 2  C... torna el ala lenta en el inflado.
+-6  D... torna el ala más nerviosa para despegar.
+ 
+037 Alargar los elevadores traseros: 
+ 2  A... aumenta la penetración del ala.
+ 2  B... favorece las plegadas en turbulencia.
+-6  C... torna el ala más lenta en el inflado.
+ 2  D... torna el ala más nerviosa para despegar.
+ 
+038 Los sistemas de regulación de calado en vuelo (trims, aceleradores): 
+-6  A... deben prohibirse.
+ 2  B... son desaconsejados a los principiantes.
+ 2  C... deben ser empleados con prudencia en turbulencias, sobre todo en el
+         proceso de regulación.
+ 2  D... deben poder ser desaplicados fácilmente en vuelo.
+ 
+039 Durante el guardado y el transporte, el parapente debe estar protegido
+    de la cercanía o contacto:
+ 0  A... de campos eléctricos.
+ 2  B... de solvente y cuerpos grasos.
+ 2  C... de la humedad.
+ 2  D... del sol.
+ 
+040 Cite los factores de envejecimiento de un ala: 
+ 3  A... el sol.
+ 3  B... las técnicas de descenso rápido.
+-6  C... las turbulencias.
+ 
+041 Los comandos regulados demasiado tensos: 
+ 2  A... pueden impedir el ascenso del ala en el inflado.
+ 2  B... disminuyen la posibilidad de toma de velocidad en vuelo en caso de
+         necesidad.
+ 2  C... aumentan el riesgo de pérdida.
+-6  D... son favorables sobre todo en el caso de los principiantes.
+ 
+042 Cada suspensión resiste un peso del orden de los : 
+-6  A... 8 kg.
+ 6  B... 80 kg.
+-6  C... 800 kg.
+ 
+043 Las suspensiones están generalmente fabricadas: 
+ 2  A... con fibras de kevlar.
+ 2  B... con hilos de polietileno trenzados.
+ 2  C... con cintas de poliester.
+ 
+044 La fibra de kevlar: 
+ 2  A... posee un bajo porcentaje de estiramiento.
+-6  B... posee una buena elasticidad.
+ 2  C... posee una buena resistencia a la tracción, es débil al corte y la
+         flexión.
+ 2  D... debe estar encintada para una protección eficaz contra la abrasión y
+         los rayos ultravioletas.
+ 
+045 El polietileno: 
+-6  A... es sensible a la humedad.
+-6  B... posee un bajo porcentaje de estiramiento.
+ 3  C... posee una baja temperatura de fusión (riesgo importante de ruptura
+         por frotamiento).
+ 3  D... posee una buena resistencia a la tracción.
+ 
+046 Un nudo en la suspensión: 
+-6  A... aumenta la resistencia a la tracción.
+ 6  B... puede disminuir la resistencia a la tracción hasta un 50%.
+-6  C... no influye sobre la resistencia a la tracción.
+ 
+047 La A.F.N.O.R.  tiene por fin:
+-6  A... promover la practica del vuelo libre en competición.
+ 0  B... promover el comercio del vuelo libre.
+ 2  C... hacer progresar la tecnología del material.
+ 4  D... ofrecer una homologación francesa para las alas de vuelo libre.
+ 
+049 El sticker de homologacion en un parapente: 
+-6  A... no es obligatorio sobre todos los ejemplares de un modelo homologado.
+ 2  B... da indicaciones sobre el comportamiento de ese modelo en ciertas
+         configuraciones de vuelo.
+ 2  C... permite hacerse una idea sobre el nivel de pilotaje requerido para
+         ese modelo (principiante, intermedio...)
+ 2  D... indica con qué tipo de silla han sido realizadas las pruebas.
+ 
+050 La homologacion para un parapente: 
+-6  A... certifica que todo parapente homologado es utilizable sin riesgo por
+         cualquier piloto (incluso principiantes).
+ 3  B... permite hacerse una idea del comportamiento de ese modelo.
+ 3  C... obliga al constructor a conservar las características técnicas en
+         todos los ejemplares producidos.
+-6  D... es válida sin importar la silla montada sobre el ala.
+ 
+
+
+REGLAMENTACION
+
+001 Un ala de vuelo libre es: 
+-6  A... un freno aerodinámico.
+ 3  B... un planeador ultraliviano.
+ 3  C... una aeronave no sometida a matriculación.
+-6  D... un paracaídas.
+ 
+002 Prioridades entre aeronaves no motorizadas: 
+ 3  A... Los P.U.L. tiene prioridad sobre los planeadores.
+-6  B... los P.U.L. deben dar prioridad a los planeadores.
+ 3  C... los P.U.L. tienen prioridad sobre los conjuntos remolcados
+         (avión + planeador, U.L.M. + delta, U.L.M. + bandera publicitaria,
+         etc...).
+ 
+003 Prioridades entre P.U.L.: 
+-6  A... el delta debe dar prioridad al parapente.
+-6  B... el parapente debe dar prioridad al delta.
+ 6  C... delta y parapente deben observar las mismas reglas de prioridad en
+         el aire.
+ 
+004 Un ala viene de frente a usted, usted efectúa: 
+-6  A... un giro a la izquierda (el otro también gira a la izquierda).
+ 6  B... un giro a la derecha (el otro también gira a la derecha).
+-6  C... un descenso (el otro queda en el mismo nivel).
+ 
+005 En vuelo, un P.U.L viene de su derecha con una ruta convergente: 
+-6  A... usted tiene prioridad.
+ 6  B... usted debe ceder la prioridad.
+-6  C... la prioridad es en función del tamaño de las aeronaves.
+ 
+006 Lejos del relieve usted sigue la misma ruta y al mismo nivel que un ala
+    más lenta, usted la sobrepasa por:
+-6  A... la izquierda.
+-6  B... arriba.
+ 6  C... la derecha.
+ 
+007 Volando a la misma altura la prioridad la tiene: 
+ 4  A... el ala que llega por la derecha.
+-6  B... el biplaza sobre el monoplaza.
+ 2  C... el ala que llega primero a la ascendente.
+-6  D... el ala piloteada por un principiante.
+ 
+008 En vuelo de ladera, la prioridad la tiene el ala que: 
+ 6  A... tiene la ladera a su derecha.
+-6  B... tiene la ladera a su izquierda.
+-6  C... está situada a barlovento del relieve.
+-6  D... está situada a sotavento del relieve.
+ 
+009 Usted está en vuelo de ladera, el relieve está a su izquierda. Un ala
+    llega de frente a la misma altura:
+ 6  A... el otro tiene prioridad.
+-6  B... usted tiene prioridad y mantiene su rumbo.
+-6  C... usted intenta pasarla por debajo.
+ 
+010 Dos alas se siguen cerca de un relieve situado a su derecha, la segunda
+    ala es más rapida:
+-6  A... debe sobrepasar por la izquierda.
+-6  B... debe sobrepasar por la derecha entre el relieve y el otro ala.
+ 6  C... da media vuelta.
+ 
+011 Usted es el primero en entrar en una ascendente: 
+ 3  A... las alas que llegan después deben adoptar su sentido de giro.
+ 3  B... un ala que entra en la ascendente al mismo nivel que usted debe
+         girar a 180 grados y en el mismo sentido.
+-6  C... usted tiene prioridad sobre un ala situada por debajo y que lo
+         alcanza.
+-6  D... ningún otro ala tiene derecho a usar esta ascendente.
+ 
+012 Usted quiere entrar en una ascendente mientras que otra ala  gira 50 mts.
+    por debajo:
+ 6  A... usted gira en el mismo sentido que el otro ala.
+-6  B... gira en sentido inverso para poder vigilarlo.
+ 0  C... espera que pase por encima para entrar ya que si no la descendente
+         periférica puede llevarlo a su misma altura.
+ 
+013 El vuelo en el interior de las nubes está permitido: 
+-6  A... a más de 300 metros por encima de todo relieve.
+-6  B... a más de 900 metros por encima del nivel del mar.
+ 6  C... en ninguna parte.
+ 
+014 Sobrevolar obstáculos aislados debe efectuarse con un margen vertical y
+    horizontal mínimo de:
+-6  A... 50 metros.
+-6  B... 100 metros.
+ 6  C... 150 metros.
+-6  D... 200 metros.
+ 
+015 Sobrevolar zonas urbanizadas o un aglomeramiento de personas debe hacerse
+    con un margen mínimo de:
+-6  A... 50 metros en vertical y 100 metros en horizontal.
+-6  B... 100 metros en vertical y 200 metros en horizontal.
+ 6  C... 300 metros en vertical y 600 metros en horizontal.
+ 
+016 Las reglas de vuelo obligan a cada piloto: 
+ 2  A... a respetar una distancia suficiente para prevenir las colisiones.
+ 2  B... a tomar por la derecha en caso de cruce a la misma altura.
+-2  C... a pasar un ala más lenta por la izquierda.
+ 2  D... a girar en el mismo sentido que la primer ala que entra en la
+         ascendencia térmica.
+ 
+
+
+TECNICA DE VUELO
+
+001 El cuidado de los sitios de vuelo concierne a: 
+ 1  A... la Federación.
+ 1  B... las ligas y los clubes.
+-6  C... el Ministerio del Interior.
+ 4  D... cada piloto.
+ 
+002 Aplicar la regla de la adición es: 
+ 2  A... evitar la acumulación de factores estresantes que por separado no
+         conducen a accidentes pero sumados tornan el riesgo inaceptable.
+ 2  B... medir los riesgos y no sumarlos.
+ 2  C... identificar los elementos nuevos de una situación y no aceptar más
+         que uno por vez.
+ 
+003 La hipoxia: 
+ 2  A... se debe a un déficit de oxígeno en la sangre.
+-6  B... se debe al enfriamiento de la atmósfera.
+ 2  C... se puede manifestar como una sensación de bienestar.
+ 2  D... provoca alteración del juicio y una disminución de la coordinación
+         muscular.
+ 
+004 La hipoxia: 
+ 2  A... los primeros síntomas pueden aparecer hacia los 2000 mts. sobre el
+         nivel del mar.
+-6  B... no concierne a los pilotos de vuelo libre.
+ 2  C... puede alterar el juicio.
+ 2  D... tiene efectos diferentes sobre cada piloto.
+ 
+005 Factores que agravan el riesgo de hipoxia: 
+ 2  A... fatiga corporal.
+ 2  B... alcohol y tabaco.
+ 1  C... alimentación rica en grasas.
+ 1  D... piloto poco abrigado.
+ 
+006 Previendo la posibilidad de ganar mucha altura o un vuelo prolongado, es
+    recomendable equiparse con:
+-6  A... vestimenta deportiva ligera.
+-6  B... medicamentos antináuseas.
+ 6  C... buen calzado, vestimentas abrigadas, guantes, gafas de sol, agua
+         potable.
+ 
+007 Con viento fuerte, el vuelo cautivo sobre un punto fijo (cuerda atada al
+    suelo):
+-6  A... no es nunca peligroso.
+-6  B... puede ser usado en escuela.
+ 3  C... está desaconsejado.
+ 3  D... puede provocar situaciones en las que el ala se torna incontrolable.
+ 
+010 Al establecer un plan de vuelo se tiene en cuenta: 
+ 2  A... la situación de los terrenos de despegue y aterrizaje.
+ 2  B... las perfomances del ala.
+ 1  C... el viento en altura.
+ 1  D... el viento del valle.
+ 
+011 Para despegar en seguridad, es mejor elegir una pendiente: 
+-6  A... cóncava, con un corte neto.
+ 3  B... convexa y progresiva.
+ 3  C... sin obstáculos.
+ 
+012 La inclinación de un área de despegue debe ser: 
+-6  A... inferior o igual a la inclinación de la fineza máxima del ala.
+ 6  B... superior a la inclinación de fineza máxima del ala.
+-6  C... no se debe comparar con la inclinación de fineza del ala.
+ 
+013 Usted se prepara a despegar a las 15 hs. de una ladera soleada donde se
+    establece una ligera brisa de montaña. El viento meteo es nulo:
+-6  A... el viento será nulo o muy débil en el valle.
+ 3  B... se debe preveer la eventualidad de viento fuerte en el valle, sobre
+         todo si es estrecho.
+ 3  C... en todos los casos es prudente preveer las posibilidades de
+         aterrizajes alternativos teniendo en cuenta un eventual viento
+         fuerte en el valle.
+ 
+014 Su despegue está orientado hacia el oeste, hay buen tiempo. Para
+    encontrar las mejores condiciones de partida, es mejor despegar:
+-6  A... en la mañana.
+-6  B... el momento del día no importa.
+ 6  C... al comienzo de la tarde.
+ 
+015 Su despegue está orientado hacia el este, hay buen tiempo. Para encontrar
+    las mejores condiciones, es mejor despegar:
+ 6  A... en la mañana.
+-6  B... el momento del día no importa.
+-6  C... durante la tarde.
+ 
+016 Está en la montaña, no hay viento, en teoría con la fineza del ala usted
+    llegaría exactamente al terreno del aterrizaje. Usted:
+ 6  A... no vuela.
+-6  B... vuela.
+-6  C... vuela a mediodía para aprovechar las ascendencias.
+-6  D... el efecto del suelo lo va a ayudar en el aterrizaje.
+ 
+017 Una capa de estratos de 40 metros de espesor está situada por debajo del
+    despegue:
+-6  A... 40 mts. es poco, Ud. despega.
+ 6  B... espera a que se despeje si no, no despega.
+-6  C... si hay suficiente viento para un vuelo de pendiente, Ud. despega y
+         se mantiene por encima de la capa.
+ 
+018 Con respecto al viento medido en el despegue a 2 metros del suelo, existe
+    el riesgo que 30 metros más arriba sea:
+-6  A... de la misma fuerza.
+ 6  B... más fuerte.
+-6  C... menos fuerte.
+ 
+019 Viento de 10 km/h cruzado en el despegue: 
+ 3  A... Ud. espera mejores condiciones.
+-6  B... una buena carrera y listo.
+-6  C... uin viento cruzado pero poco fuerte no es problema.
+ 3  D... Ud. busca un despegue mejor orientado.
+ 
+020 Durante la corrida para despegar, si la pendiente del suelo aumenta y el
+    calado no varía, la incidencia:
+-6  A... no cambia.
+-6  B... disminuye.
+ 6  C... aumenta.
+ 
+021 Durante la corrida del despegue, su incidencia es el ángulo entre el
+    plano del ala y:
+ 6  A... el suelo.
+-6  B... la vertical.
+-6  C... la horizontal.
+ 
+022 Durante el despegue el viento es de atrás. Las posibilidades de no
+    despegar se deben a:
+-6  A... ausencia del efecto suelo.
+ 0  B... a los efectos del gradiente del viento.
+ 6  C... a la fuerte velocidad que debería alcanzar mientras corre.
+ 
+023 En el despegue hay 20 km/h sobre la ladera, su ala vuela a partir de los
+    30 km/h, en su trayectoria para despegar usted debe correr a:
+ 6  A... 10 km/h.
+-6  B... 20 km/h.
+-6  C... 30 km/h.
+-6  D... 40 km/h.
+ 
+024 En alta montaña, la densidad del aire disminuye con la altitud y para que
+    mi ala pueda despegar, debo correr:
+ 3  A... más rápido.
+-6  B... menos rápido.
+ 3  C... por más tiempo.
+-6  D... por menos tiempo.
+ 
+025 Después de una carrera de despegue rozando el suelo con la silla, usted
+    logra despegar por muy poco:
+-6  A... está seguramente en régimen de vuelo rápido, puede disminuir la
+         velocidad para entrar en tasa de caída mínima.
+ 3  B... está en régimen de vuelo lento y debe rasar el relieve tomando
+         velocidad para pasar a régimen de vuelo normal.
+ 3  C... está probablemente en peligro, si no toma inmediatamente
+         velocidad/aire, puede caer.
+ 
+026 Un amigo acaba de despegar, usted lo alcanza para volar juntos: 
+ 6  A... es peligroso porque se encontrará con la turbulencia de su ala.
+-6  B... es la única manera de hacer buenas fotos.
+-6  C... es delicado pero posible.
+ 
+027 La turbulencia que provoca otra ala es peligrosa: 
+-6  A... varios minutos después de su paso.
+ 4  B... sobre algunas decenas de metros detrás en su trayectoria/aire.
+ 2  C... porque puede provocar plegadas en la propia.
+ 
+028 Las turbulencias de un ala son peligrosas para otra aeronave situada: 
+-6  A... delante.
+ 0  B... detrás.
+-6  C... debajo.
+ 6  D... en la trayectoria/aire.
+ 
+029 Volar asegurándose un lugar de aterrizaje es: 
+ 6  A... tener una autonomía que permite alcanzarlo en todo momento sin
+         importar las condiciones aerológicas encontradas.
+-6  B... quedarse sobre el sitio habitual sin hacer distancia.
+ 
+030 En el caso que el viento meteo cambie de orientación o de intensidad
+    durante el vuelo, conviene:
+ 3  A... cambiar a tiempo el plan de vuelo para tener mejor chance de un
+         aterrizaje seguro.
+-6  B... poner rumbo inmediatamente hacia el terreno para volver cueste lo
+         que cueste.
+-6  C... desacelerar al máximo para retardar el momento de aterrizaje que
+         será delicado.
+ 3  D... localizar inmediatamente terrenos alternativos para prepararse ante
+         la eventualidad de un aterrizaje de emergencia.
+ 
+031 Un ala vuela de cara al viento, avanza con respecto al suelo, el viento
+    es:
+-6  A... más fuerte que la velocidad/aire del ala.
+ 6  B... menos fuerte que la velocidad/aire del ala.
+-6  C... no se puede saber.
+ 
+032 Usted vuela con viento de cola, su velocidad/aire de crucero es igual a
+    la velocidad del viento meteo, el suelo:
+ 6  A... desfila dos veces más rápido que con viento nulo.
+-6  B... desfila dos veces menos rápido que con viento nulo.
+-6  C... parece fijo.
+ 
+033 La velocidad de su aparato con respecto al suelo es: 
+-6  A... más elevada con viento de cara.
+ 6  B... más elevada con viento de cola.
+-6  C... no cambia jamás.
+ 
+034 Cuando usted vuela con viento de cola cerca del suelo, la impresión
+    visual tiende a modificar la percepción de la velocidad/aire, puede
+    suceder que usted sin darse cuenta:
+ 3  A... vuele demasiado lento.
+-6  B... vuele demasiado rápido.
+ 3  C... entre en pérdida.
+ 
+035 Si vuela de cara a un viento meteo, para conservar la fineza/suelo
+    máxima, con respecto a la velocidad correspondiente a la fineza/aire
+    máxima, usted debe:
+ 6  A... volar más rápido.
+-6  B... volar menos rápido.
+-6  C... buscar la menor tasa de caída.
+ 
+036 Para conservar una fineza/suelo máxima, se debe volar más rápido que a
+    la velocidad de fineza/aire máxima:
+-6  A... en una ascendencia.
+ 3  B... en una descendente.
+ 3  C... con viento de cara.
+-6  D... con viento de cola.
+ 
+037 Usted se cruza de frente con otro ala, su velocidad de cruce es igual a: 
+-6  A... su velocidad/arie.
+ 6  B... la suma de las dos velocidades/aire.
+-6  C... la mitad de su velocidad/aire.
+ 
+038 Usted se cruza con otro ala, debe calcular y reaccionar: 
+ 6  A... más rápido que de costumbre.
+-6  B... como de costumbre.
+-6  C... con viento de cara tiene más tiempo que de costumbre.
+ 
+039 Su trayectoria/suelo es perpendicular al sentido del viento: 
+-6  A... la cuerda central del ala es perpendicular al sentido del viento.
+-6  B... Ud. está necesariamente en derrapaje.
+ 6  C... Ud. está derivando.
+ 
+040 En vuelo con viento de costado: 
+-6  A... la cuerda central del ala se pone en la dirección del viento, es el
+         efecto veleta.
+ 4  B... se debe adoptar un ángulo de contra-deriva si se dirige hacia un
+         punto que no está en el eje del viento.
+ 2  C... la cuerda central del ala forma un ángulo con la trauyectoria/suelo.
+-6  D... la cuerda central del ala queda paralela a la trayectoria/suelo.
+ 
+041 Marque los dos elementos que definen el ángulo de deriva: 
+ 3  A... la cuerda central.
+-6  B... la dirección del viento meteo.
+-6  C... la dirección del viento relativo.
+ 3  D... la trayectoria/suelo.
+ 
+042 Se pueden encontrar fuertes turbulencias peligrosas: 
+ 3  A... a sotavento de un relieve con viento fuerte.
+ 3  B... en las zonas de cizalladuras.
+-6  C... en las zonas de ascendencias dinámicas.
+ 
+043 En condiciones turbulentas es mejor: 
+ 3  A... no efectuar maniobras que requieran mucha precisión.
+-6  B... volar con tasa de caída mínima.
+ 3  C... no acercarse a los límites de las variables del pilotaje.
+ 
+044 En régimen turbulento es mejor: 
+ 2  A... no efectuar maniobras que requieran mucha precisión.
+ 2  B... no jugar con las velocidades demasiado bajas.
+ 2  C... no jugar con las velocidades demasiado altas.
+ 
+045 En turbulencia: 
+ 6  A... los esfuerzos sobre la estructura aumentan con la velocidad del
+         vuelo.
+-6  B... se debe volar lo más lento posible para no fatigar la estructura.
+-6  C... se debe volar lo más rápido posible para salir de la zona.
+ 
+046 Usted recorre una parte del circuito donde el viento está bien de costado
+    con respecto a su ruta. Elige preferentemente los cúmulos:
+ 6  A... a barlovento de la ruta a seguir.
+-6  B... a sotavento de la ruta a seguir.
+-6  C... sobre la ruta a seguir.
+ 
+047 Antes de efectuar un giro, se debe: 
+ 3  A... evaluar la pérdida de altura debida al viraje y la nueva trayectoria.
+ 3  B... verificar que la zona en la que estaremos luego del viraje esté
+         libre.
+-6  C... ir más lento.
+ 
+048 En vuelo de ladera usted: 
+ 3  A... gira de espaldas a la ladera.
+-6  B... gira de cara a la ladera.
+ 1  C... presta atención al gradiente de viento cerca del relieve.
+ 2  D... conseva un márgen de velocidad suficiente para conseguir alejarse
+         de la ladera en caso de urgencia.
+ 
+049 En vuelo de ladera, para aprovechar mejor la ascendencia, se vuela con la
+    incidencia:
+ 6  A... de tasa de caída mínima.
+-6  B... de fineza máxima.
+-6  C... de velocidad máxima.
+-6  D... de velocidad mínima.
+ 
+050 En vuelo de ladera, usted gira: 
+-6  A... hacia el lado en que el ala se levanta.
+-6  B... hacia el lado del relieve.
+ 6  C... hacia el lado opuesto al relieve.
+ 
+051 En vuelo de ladera, el giro de cara a la pendiente es: 
+-6  A... es recomendable.
+ 2  B... mejor evitarlo.
+ 2  C... es difícil de controlar y peligroso por el hecho del desfile rápido
+         del suelo con viento de atrás.
+ 2  D... es el que impone la inclinación más fuerte para el mismo radio de
+         giro con respecto al suelo.
+ 
+052 El vuelo de ladera necesita: 
+ 2  A... un control perfecto de la trayectoria.
+ 2  B... una observación constante de la evolución del viento.
+ 2  C... estar habituado a los efectos de la deriva impuestos por el viento.
+ 
+053 Durante un vuelo de ladera con atmósfera turbulenta: 
+ 2  A... se evita descender por abajo de los filos.
+ 4  B... se vuela un poco más lejos del relieve y se aumenta la velocidad.
+-6  C... se vuela lo más rápido posible.
+ 
+057 Cuando un piloto, aprovecha una burbuja térmica para ganar altura: 
+-6  A... se eleva a la misma velocidad que la burbuja.
+-6  B... aborda la burbuja por su parte inferior y sale en la cima.
+ 6  C... desciende contínuamente en el interior de la burbuja.
+ 
+058 Usted llega a colocarse debajo de un gran cúmulo, observa algunas nubes
+    deshilachadas y una marca de variómetro fuertemente positiva, usted:
+-6  A... aprovecha para ganar altura.
+-6  B... aumenta la velocidad para llevar el variómetro a cero.
+ 6  C... acelera para ir hacia el lado más claro escapando de la influencia
+         de la nube.
+-6  D... busca la descendente del lado de barlovento de la nube.
+ 
+059 Durante una espiral su aparato derivó 3 km en 10 mn. La fuerza del viento
+    es:
+-6  A... imposible de saber.
+-6  B... 10 km/h
+ 6  C... 18 km/h
+ 
+060 Durante una espiral su aparato derivó 3 km en 10 mn. La fuerza del viento
+    es:
+-6  A... imposible de saber.
+-6  B... 10 km/h
+ 6  C... 18 km/h
+ 
+061 Usted se acerca a la base de un cúmulo: 
+-6  A... no hay riesgo de aspiración.
+ 3  B... puede ser aspirado por la ascendencia que tiende a hacerse más
+         fuerte.
+-6  C... el riesgo es menor mientras la nube no sea del tipo congestus o
+         nimbus.
+ 3  D... el riesgo se agrava si la base está por debajo de los filos más
+         altos.
+ 
+063 En un bello día de ascendencias en el que se han anunciado tormentas,
+    hay que preocuparse si:
+ 2  A... el cielo se cubre rápidamente.
+ 2  B... se sube por todos lados.
+ 2  C... las sombras de las nubes en el suelo se agrandan rápidamente.
+ 
+064 Un gran cúmulo aislado siempre es inofensivo: 
+ 4  A... falso, puede tener una ascendencia superior a sus posibilidades de
+         fuga y convertirse en cumulonimbo.
+ 2  B... falso, puede esconder otras aeronaves.
+-6  C... verdadero.
+ 
+065 El paso de un cumulonimbo en su sector de vuelo: 
+-6  A... lo invita a aprovechar las ascendencias antes de las lluvias.
+ 3  B... lo obliga a aterrizar inmediatamente.
+ 3  C... puede volver problemático el aterrizaje.
+ 
+067 Luego de un vuelo de duración, conviene relajar y preparar los brazos y
+    piernas para la carrera del aterrizaje:
+ 6  A... antes de la aproximación.
+-6  B... durante la aproximación.
+-6  C... en final.
+-6  D... haciendo algunas locuras aéreas durante la aproximación.
+ 
+068 Usted tiene viento de cara de 10 km/h para volver al terreno de
+    aterrizaje:
+-6  A... trata de mantenerse en tasa de caída mínima para tener tiempo de
+         efectuar el trayecto.
+-6  B... vuela lo más rápido posible para tener una velocidad de penetración
+         máxima.
+ 6  C... tomando puntos de referencia y manejando la velocidad, trata de
+         encontrar el mejor ángulo de planeo.
+ 
+069 Un terreno de aterrizaje desconocido debe reconocerse: 
+-6  A... en vuelo, poniéndose en la vertical para observarlo.
+ 6  B... antes del vuelo.
+-6  C... en el momento de aterrizar.
+ 
+070 Usted se dirige hacia el terreno de aterrizaje con viento de cola a la
+    velocidad de crucero, ve los límites más cercanos del terreno subir en relación a usted:
+-6  A... va a llegar justo al terreno y aterrizar con viento de cola.
+-6  B... va a llegar encima del terreno, dar media vuelta y aterrizar con
+         viento de cara.
+ 6  C... elige un aterrizaje auxiliar mejor ubicado.
+-6  D... baja la velocidad para utilizar la mejor fineza/suelo debida al
+         viento de cola.
+ 
+071 Usted está en su aproximación, hay un ala debajo suyo: 
+ 6  A... Ud. la observa esperándola ya que le debe dar prioridad.
+-6  B... Ud. tiene prioridad sobre el otro ala.
+-6  C... Ud. hace algunos espirales cerrados para aterrizar antes.
+-6  D... Ud. realiza su vuelo, ya que en la aproximación no hay prioridades.
+ 
+072 Una buena aproximación: 
+ 2  A... se prepara con anticipación.
+ 2  B... tiene en cuenta el viento meteo y sus variaciones posibles.
+ 2  C... debe poder modificarse en caso de necesidad.
+ 
+073 Una buena aproximación implica una final: 
+-6  A... de cara al viento en el fin del terreno.
+ 6  B... cara al viento en la entrada del terreno.
+-6  C... todo depende de las condiciones.
+ 
+074 Los giros de 360 grados al aterrizar: 
+-6  A... permiten ser precisos en el aterrizaje.
+ 2  B... están desaconsejados.
+ 2  C... le hacen perder de vista los puntos de referencia.
+ 2  D... lo expone a riesgo de choque con las otras alas que se aproximan.
+ 
+075 Un buen aterrizaje comprende: 
+ 2  A... un reconocimiento a buena altura (viento en suelo, problemas,
+         circuito previsto...).
+ 2  B... giros en S para apreciar las condiciones y ser preciso.
+ 2  C... un último giro no demasiado cerca del suelo y un segmento en final
+         estabilizado.
+ 
+076 Usted está realizando una aproximación en S, su trayectoria se hunde con
+    respecto al plan de descenso previsto, usted debe:
+ 2  A... disminuir la amplitud de las S.
+ 2  B... aumentar el radio de los giros.
+ 2  C... si hace falta volar en línea recta hacia el terreno.
+-6  D... acelerar para no perder tiempo.
+ 
+077 Para ser preciso en el aterrizaje, la visualización correcta de la
+    inclinación de la trayectoria en final es indispensable. Esta inclinación:
+ 3  A... varía en función de la incidencia.
+ 3  B... varía en función de la dirección y de la velocidad del viento.
+-6  C... no depende de las características aerodinámicas del ala.
+ 
+078 Usted está en final, de cara al terreno de aterrizaje, se da cuenta que
+    está un poco largo y alto y puede pasarse. Elige:
+-6  A... perder altura colocando el ala en leve parachutaje.
+ 0  B... perder altura acelerando.
+ 4  C... aumentar el trayecto a recorrer desviando el rumbo.
+ 2  D... aumentar la resistencia parásita incorporándose.
+ 
+079 En final, si el objetivo fijado desciende en el campo de visión, usted: 
+-6  A... se está quedando corto.
+ 6  B... se está pasando de largo.
+-6  C... debe desacelerar al máximo.
+ 
+080 Una toma de velocidad antes del aterrizaje: 
+-6  A... es inútil.
+ 6  B... es necesaria para conservar una reserva de velocidad/aire en caso de
+         gradiente.
+-6  C... es peligrosa ya que el aparato hará una trepada al frenar.
+ 0  D... es necesaria para mejorar la maniobrabilidad cerca del suelo.
+ 
+081 El gradiente del viento de cara al aterrizaje: 
+-6  A... no tiene efecto sobre la velocidad/aire.
+ 2  B... es peligroso, puede conducir a una situación de pérdida.
+ 2  C... aumenta la tasa de caída.
+ 2  D... implica por seguridad la necesidad de una toma de velocidad.
+ 
+082 El frenado final en un aterrizaje con viento fuerte: 
+ 3  A... no es siempre necesario.
+-6  B... no es peligroso.
+ 3  C... demanda una dosificación precisa.
+ 
+083 El parapente: 
+-6  A... no requiere demasiado aprendizaje.
+ 6  B... responde a las mismas leyes del aire y a las mismas exigencias que
+         los otros deportes aéreos.
+-6  C... perdona la mayor parte de los errores de pilotaje ya que se practica
+         en un paracaídas.
+-6  D... necesita un aprendizaje serio cuando uno lo utiliza como planeador
+         (vuelo de perfomance) y un aprendizaje ligero en paralpinismo (para descender de montañas).
+ 
+084 El primer vuelo importante en parapente: 
+-6  A... se hace el primer o segundo día del curso luego de haber inflado el
+         parapente un par de veces.
+-6  B... se hace directamente, debido a los riesgos de accidente en ladera
+         escuela.
+ 3  C... necesita de un aprendizaje técnico serio.
+ 3  D... necesita de una adaptación progresiva al vacío.
+ 
+085 Pasar la licencia de piloto de parapente requiere una progresión: 
+ 3  A... que dura varias semanas.
+-6  B... que dura alrededor de una semana.
+ 3  C... que incluya un mínimo de 40 vuelos importantes.
+-6  D... que termina con la compra de su primera ala.
+ 
+086 Al recibir un ala nueva, usted debe: 
+ 3  A... en primer lugar, probarla con uno o dos inflados en el llano para
+         verificar los comandos.
+ 3  B... luego verificar las perfomances del ala en un sitio conocido de
+         vuelo.
+-6  C... agregar un mosquetón sobre las bandas para facilitar el agarre.
+ 
+087 El mejor perfil de un terreno de despegue es aquel en el que el piloto
+    puede:
+ 2  A... alejarse rápidamente del relieve.
+ 2  B... correr fácilmente en la pendiente para obtener la velocidad de vuelo.
+-6  C... correr poco para lanzarse en vuelo rápidamente.
+ 2  D... detenerse en caso de problemas con el inflado.
+ 
+088 El despegue en alta montaña: 
+-6  A... está facilitado por la menor densidad del aire.
+-6  B... es paralpinismo y no vuelo libre.
+ 6  C... necesita de un nivel de experiencia alto.
+-6  D... no requiere ningún conocimiento particular del alpinismo.
+ 
+089 El despegue sin viento: 
+-6  A... es peligroso.
+ 6  B... obliga a correr, al menos a la velocidad de tasa de caída mínima del
+         ala.
+-6  C... necesita de un control importante con los comandos.
+ 
+090 En el despegue hay 30 km/h de viento, mi ala vuela a una velocidad máxima
+    de 35 km/h:
+-6  A... debo correr a 5 km/h para despegar.
+ 6  B... no despego porque estimo que el márgen de seguridad no es suficiente.
+-6  C... tiro de las bandas delanteras apenas haya despegado.
+ 
+091 En el despegue, con 20 km/h de cara, puede inflarse el ala: 
+-6  A... cara a la pendiente como de costumbre.
+ 3  B... cara a la pendiente haciendo que otra persona nos asegure para no
+         recular en el momento en que el ala se eleva.
+ 3  C... de espaldas a la pendiente dándose vuelta el piloto para despegar.
+ 
+092 Inflar de cara al ala permite despegar: 
+-6  A... sin riesgo con un viento superior a 30 km/h.
+ 3  B... con viento moderado.
+ 3  C... permite controlar el ala fácilmente mientras ésta se eleva.
+-6  D... sin ninguna ayuda en todos los casos.
+ 
+093 En el despegue el viento es de costado (30 grados, 3 m/s): 
+ 6  A... Ud. infla de cara al viento, toma velocidad y orienta
+         progresivamente la carrera de cara a la pendiente.
+-6  B... corre en el eje de máxima pendiente tirando de las bandas delanteras.
+ 
+094 30 km/h de viento de cara en el despegue, usted está solo: 
+ 6  A... es demasiado, se abstiene de volar.
+-6  B... un piloto experimentado puede despegar sin problemas de espaldas al
+         viento.
+-6  C... hace unas pruebas de inflado ya que, o no podrá hacerlo o el ala
+         saldrá sola sin necesidad de correr.
+ 
+095 La instalación del parapente en el suelo depende: 
+ 2  A... de la fuerza y la dirección del viento.
+ 2  B... de la ladera.
+ 2  C... de las características del parapente.
+ 
+096 El despegue en parapente se compone de: 
+ 2  A... inflado del ala (aceleración y vista hacia adelante).
+ 2  B... estabilización y control del ala (temporización y vista hacia el
+         ala).
+ 2  C... despegue (aceleración y vista hacia adelante).
+ 
+097 La estabilización y control del ala: 
+ 2  A... es necesaria para controlar toda el ala y detectar eventuales nudos
+         en las suspensiones.
+ 2  B... requiere una detención momentánea de la aceleración.
+ 2  C... es necesaria para verificar que la aeronave que se acaba de construir
+         es apta para el vuelo.
+ 
+098 La fase de aceleración luego de la estabilización requiere: 
+ 4  A... inclinarse hacia adelante para una toma de velocidad eficáz.
+ 2  B... inclinarse hacia adelante para evitar la pérdida de equilibrio.
+-6  C... inclinarse hacia atrás para controlar mejor el ala.
+ 
+099 Durante un inflado con viento fuerte, el ala comienza a tirarlo hacia
+    atrás muy fuertemente, usted corre el riesgo de ser arrastrado:
+-6  A... suelta los comando y se sujeta a lo que puede para sostenerse.
+-6  B... tira de los dos comandos a fondo para detenerse.
+ 3  C... sujeta el ala tirando de una banda trasera y yendo hacia la misma.
+ 3  D... pone el ala en bandera con la ayuda de las bandas traseras.
+ 
+100 Durante un inflado el ala se coloca en medialuna, usted debe: 
+-6  A... acelerar a fondo en la pendiente.
+ 0  B... tirar los comandos, luego sujetar las bandas delanteras.
+ 6  C... parar y empezar de nuevo.
+-6  D... tirar de las bandas delanteras.
+ 
+101 Luego del inflado, su ala presenta un defecto de inflado a la derecha y
+    se desvía hacia la derecha:
+-6  A... corre más lento y tira fuerte del comando derecho.
+-6  B... frena vigorosamente a la derecha, luego gira a la izquierda.
+ 6  C... sigue el ala hasta corregir la trayectoria usando los comandos, luego
+         tira de los comandos para terminar de inflar.
+ 
+102 Durante la estabilización, su ala queda a la izquierda: 
+-6  A... Ud. corrige desplazándose a la derecha para recuperar el ala.
+ 6  B... sigue al ala desplazándose hacia la izquierda frenando suavemente a
+         la derecha para traerla de nuevo a la línea de máxima pendiente.
+-6  C... conserva la velocidad tirando de las bandas delanteras.
+-6  D... acelera y frena a la izquierda.
+ 
+103 Durante la estabilización tiene varios cajones laterales izquierdos
+    cerrados:
+-6  A... tira del comando derecho y desacelera.
+-6  B... tira de la banda delantera izquierda para dar más velocidad a ese
+         lado.
+ 6  C... mantiene la velocidad y trata de re-inflar con un movimiento suave
+         de los comandos.
+-6  D... no se preocupa, siempre terminan por abrirse solos.
+ 
+104 En el suelo su ala se desvía de la trayectoria prevista: 
+-6  A... Ud. corrige trayendo el ala con el cuerpo y frenando del lado hacia
+         el que la quiere traer.
+ 6  B... sigue al ala para quedarse en el centro y traerla frenando del lado
+         adonde quiere ir.
+-6  C... Ud. corrige con los delanteros.
+ 
+105 Su ala está inflada, estabilizada. Para despegar: 
+-6  A... sigue acelerando teniendo firme las bandas delanteras.
+-6  B... acelera con las manos arriba hasta el despegue.
+-6  C... acelera con las manos arriba y frena en el momento del despegue.
+ 6  D... acelera ubicando los comandos al nivel de régimen de vuelo de
+         crucero.
+ 
+106 Justo después del despegue, usted: 
+-6  A... suelta los comandos para sentarse mejor.
+-6  B... no puede pilotear si está mal sentado.
+-6  C... verifica visualmente que el parapente está bien inflado.
+ 6  D... se ocupa de su trayectoria y de los otros pilotos que están volando.
+ 
+107 La utilización de las bandas delanteras en vuelo: 
+ 1  A... no es muy aprovechable aerodinámicamente porque el ala se hunde más
+         de lo que se gana en penetración.
+ 2  B... puede originar plegadas intempestivas.
+ 3  C... origina más problemas que soluciones.
+ 
+108 Tirar de la bandas delanteras en vuelo: 
+-6  A... no presenta ningún peligro.
+-6  B... es imposible.
+ 6  C... puede causar una plegada del ala.
+ 
+109 Volando, con los brazos arriba, los comandos están tensos y el borde de
+    fuga está un poco bajo:
+-6  A... esto mejora la fineza sin acción sobre los comandos.
+-6  B... tiene poca influencia sobre el ala.
+-6  C... es mejor para el inflado.
+ 6  D... se deben alargar y regular los comandos para el próximo vuelo.
+ 
+110 Volando, si suelta los comandos: 
+-6  A... el ala desacelera progresivamente.
+ 6  B... el ala vuela a velocidad máxima.
+-6  C... jamás hay que soltarlos.
+ 
+111 Usted hace las orejas: 
+ 2  A... teniendo los comandos en las manos.
+-6  B... tirando las bandas delanteras.
+ 4  C... tirando simétricamente una o varias suspensiones delanteras
+         exteriores (leer las indicaciones técnicas de su ala).
+ 
+112 Cuando hace las orejas usted: 
+ 3  A... aumenta la tasa de caída.
+ 3  B... disminuye la fineza/aire.
+-6  C... aumenta la maniobrabilidad del ala.
+ 
+113 Cuando hace las orejas usted: 
+ 2  A... su velocidad/aire aumenta.
+ 2  B... con viento de cara su fineza/suelo aumenta.
+ 2  C... desciende más rápidamente en seguridad.
+-6  D... no estropea el ala.
+ 
+114 En turbulencia, usted hace las orejas: 
+ 6  A... su ala será más estable.
+-6  B... su ala será más sensible.
+-6  C... está desaconsejado.
+ 
+115 Tirar bandas "B": 
+ 2  A... es una forma de descenso rápido.
+-6  B... es una práctica sin peligro.
+ 2  C... estropea los puntos de anclaje de esta línea de suspensiones.
+ 2  D... puede ocasionar una situación de parachutaje estabilizado.
+ 
+116 A velocidad de tasa de caída mínima, para comenzar un giro a la derecha
+    sin perder demasiada velocidad con el consiguiente riesgo de meterse en
+    barrena plana, usted debe:
+-6  A... tirar del comando derecho.
+-6  B... tirar del delantero izquierdo.
+ 6  C... levantar el comando izquierdo.
+ 
+117 Una entrada en giro de 360 grados: 
+ 2  A... no debe hacerse al aterrizar.
+-6  B... puede ser vigorosa porque el riesgo de pérdida es nulo.
+ 2  C... se facilita con una acción sobre la silla.
+ 2  D... debe hacerse más inclinada cuanto más estrecha es la ascendente.
+ 
+118 Un giro de 360 grados: 
+-6  A... disminuye la tasa de caída.
+ 4  B... aumenta la tasa de caída.
+ 2  C... permite evaluar la deriva.
+ 
+119 Luego de un error de pilotaje, usted nota la detención casi total del
+    viento relativo. El ala se hunde. Para volver lo más rápido posible al
+    régimen de vuelo normal usted debe:
+-6  A... tirar de los comandos.
+-6  B... tirar progresivamente de los delanteros para disminuír la incidencia.
+ 6  C... soltar suavemente los comandos para amortiguar la abatida.
+ 
+120 La entrada en pérdida puede ser peligrosa: 
+ 2  A... cerca del suelo.
+ 2  B... en un ala mal regulada.
+ 2  C... en condiciones turbulentas.
+ 
+121 Para salir de una entrada en pérdida simétrica: 
+-6  A... espere a que el ala se abra sola.
+-6  B... dé golpes secos a las bandas delanteras.
+-6  C... dé golpes secos a los comandos.
+ 6  D... suelte suavemente los comandos y amortigüe la abatida.
+ 
+122 Usted vuela con tasa de caída mínima, va a entrar en una ascendente: 
+-6  A... se prepara a frenar.
+ 0  B... conserva su régimen de vuelo.
+ 0  C... se prepara a soltar los comandos.
+ 6  D... aumenta su velocidad.
+ 
+123 Para permanecer en una ascendente dinámica cerca del relieve, usted: 
+-6  A... hace giros de 360 grados adelante de la ladera.
+-6  B... baja mucho los comandos para volar lentamente.
+ 6  C... hace "8" largos girando de cara al viento.
+-6  D... hace "8" largos girando de cara a la pendiente.
+ 
+124 Volando, si siente turbulencias: 
+-6  A... tira de los delanteros.
+-6  B... deja los brazos arriba.
+ 6  C... vuela un poco más lento que en régimen de crucero.
+ 
+125 En vuelo turbulento para minimizar los riesgos de auto-rotación y de giro
+    hacia la ladera, hay que volar:
+-6  A... con incidencias débiles.
+-6  B... con incidencias fuertes.
+ 6  C... entre tasa de caída mínima y fineza máxima.
+ 
+126 En vuelo de ladera una turbulencia violenta pliega 50% del ala: 
+-6  A... levanta los brazos y toma velocidad para evitar la entrada en
+         pérdida.
+ 0  B... observa la naturaleza del terreno bajo sus pies y se prepara a un
+         aterrizaje forzado.
+ 6  C... controla su trayectoria para evitar un giro hacia la ladera
+         manteniendo una velocidad suficiente para evitar la entrada en
+         pérdida o la auto-rotación.
+-6  D... tira del comando correspondiente al lado cerrado para lograr abrirlo.
+ 
+127 Durante un vuelo de ladera a 50 mts. del suelo, usted se hunde
+    bruscamente hacia el relieve, el silbido del viento relativo disminuye.
+    Para evitar el golpe:
+-6  A... frena inmediatamente para controlar mejor el ala.
+ 6  B... desfrena tranquilamente y gira cuando la velocidad es suficiente
+         para alejarse de la ladera.
+-6  C... la situación es irrecuperable, se prepara a aterrizar en la ladera.
+ 
+128 Su ala se desinfla bruscamente del lado del relieve: 
+-6  A... la vuelve a inflar enérgicamente evitando un giro hacia el relieve.
+ 6  B... trata en primer lugar de retirarse del relieve conservando velocidad
+         suficiente antes de ejecutar la maniobra adecuada para inflar el ala.
+-6  C... no hace nada, el ala se infla automáticamente.
+ 
+129 Usted está de espaldas al relieve y se pliegan varios cajones a la
+    izquierda del ala, lo que le hace girar a la izquierda:
+-6  A... si el parapente tiene homologación ACPUL, lo deja que se recupere
+         solo.
+-6  B... frena violentamente a la izquierda para volver a inflar el lado
+         cerrado.
+-6  C... frena simétricamente de los dos lados.
+ 6  D... Ud. corrige a la derecha para alejarse del relieve, conservando la
+         velocidad suficiente.
+ 
+130 En vuelo turbulento, su ala se pliega adelante en la mayor parte del
+    borde de ataque, usted:
+-6  A... tira violentamente de los dos comandos.
+ 6  B... hace un frenaje moderado.
+-6  C... levanta las manos para conseguir velocidad máxima.
+ 
+131 Varios cajones laterales izquierdos se cierran: 
+-6  A... suelta los comandos para acelerar y volver a inflar.
+ 2  B... frena del lado opuesto para estabilizar la trayectoria conservando
+         la velocidad sufuciente.
+ 2  C... carga el peso del lado derecho de la silla.
+ 2  D... realiza movimientos suaves y amplios con el comando izquierdo, con
+         la trayectoria estabilizada.
+ 
+132 Su ala se encuentra en parachutaje, las maniobras habituales para salir
+    son:
+ 1  A... entrar en giro.
+ 1  B... tirar de los dos comandos para ponerla en pérdida transitoriamente.
+ 1  C... tirar de las dos bandas delanteras.
+ 3  D... si está cerca del suelo, se prepara a un aterrizaje forzoso sin hacer
+         nada ya que cualquiera de la maniobras anteriores lo tirará hacia
+         adelante tomando velocidad.
+ 
+133 El riesgo de entrada en barrena plana: 
+ 4  A... aumenta bajando fuerte un comando en un vuelo lento.
+-6  B... aumenta bajando fuerte un comando en un vuelo rápido.
+ 2  C... varía según el tipo de ala.
+ 
+134 Para salir de una barrena plana, se debe: 
+ 6  A... levantar suavemente los comandos contrarrestando del lado exterior.
+-6  B... frenar del costado exterior en el giro y tirar de la banda delantera
+         del costado interior.
+ 
+135 Volando se le rompe el comando derecho, puede pilotar con: 
+ 0  A... el comando izquierdo y la banda trasera derecha.
+-6  B... el comando izquierdo y la banda delantera derecha.
+ 6  C... las dos bandas traseras (simetría de senseciones).
+-6  D... las bandas delanteras para aterrizar rápidamente.
+ 
+136 La rotura de un comando: 
+-6  A... hace el pilotaje imposible.
+-6  B... desinfla el ala.
+ 6  C... puede ser compensado piloteando con las bandas traseras.
+ 
+137 Está obligado a aterrizar en un terreno en pendiente: 
+-6  A... aterriza siempre en contra de la pendiente.
+-6  B... si la pendiente es fuerte, aterriza de cara al viento.
+ 3  C... si la pendiente es débil, aterriza de cara al viento.
+ 3  D... si la pendiente es fuerte, aterriza de costado a la pendiente.
+ 
+138 Está en la final de cara al terreno de aterrizaje, se da cuenta que está
+    un poco alto y largo, pudiendo pasarse del terreno:
+-6  A... frena progresivamente el ala hasta el punto de parachutaje.
+-6  B... pierde altura haciendo un giro de 360 grados.
+ 6  C... aumenta el trayecto haciendo una pequeña "S".
+-6  D... tira y suelta los comandos varias veces para sacudir el ala y
+         disminuir la fineza.
+ 
+139 La toma de velocidad antes del aterrizaje: 
+-6  A... no es necesaria en parapente.
+ 3  B... hace falta para conservar un buena velocidad/aire ya que el viento
+         disminuye al acercarse al suelo.
+-6  C... es peligrosa porque el aparato hará una trepada durante el frenado
+         final.
+ 3  D... hace la acción de frenado más eficaz.
+ 
+140 Para aterrizar suavemente cuando no hay viento: 
+-6  A... Ud. vuela toda la fase final con los comandos a nivel de la cadera.
+-6  B... Ud. hace giros en "S" hasta el aterrizaje.
+-6  C... Ud. tira a fondo de los comandos en la entrada al terreno.
+ 6  D... toma velocidad al principio de la fase final.
+ 
+141 A 5 mts. del suelo se da cuenta que va a aterrizar con viento de costado: 
+ 6  A... Ud. realiza el frenado final normalmente sin intentar girar.
+-6  B... intenta girar para quedar de cara al viento.
+-6  C... tira a fondo de los comando para corregir.
+ 
+142 En final, a 30 mts. del suelo se da cuenta que va a aterrizar con viento
+    de cola:
+ 6  A... se prepara a frenar enérgicamente y a correr.
+-6  B... hace un giro de 180 grados para corregir.
+-6  C... tira de los comandos para entrar en parachutaje.
+ 
+143 Hay 20 km/h de viento en el aterrizaje, usted se prepara: 
+-6  A... a tirar a fondo de los comandos la posarse.
+ 3  B... a frenar suavemente y acompañar caminando hacia atrás a la vela en
+         su descenso..
+-6  C... a tirar de la bandas delanteras para frenar suavemente.
+ 3  D... a darse vuelta después del aterrizaje y sujetar una o las dos bandas
+         traseras para no dejarse arrastrar.
+ 
+144 En el aterrizaje: 
+-6  A... hay que mirar el ala para asegurarse de que no se cierre.
+-6  B... hay que disminuir mucho la velocidad.
+ 3  C... se desaconseja aterrizar en giro ya que se aumenta la tasa de caída
+         y el balanceo lateral del piloto.
+ 3  D... hay que aumentar la velocidad en final antes del frenado.
+ 
+145 El circuito de aproximación en el aterrizaje sirve: 
+-6  A... solamente como entrenamiento para la posterior aprobación de los
+         exámenes organizados por la F.A.V.L.
+-6  B... exclusivamente a los principiantes como maniobra de ayuda en los
+         primero aterrizajes.
+ 3  C... al igual que en el caso de otra aeronaves, como procedimiento que
+         ofrece al piloto el máximo de posibilidades de un aterrizaje preciso.
+ 3  D... de acuerdo a la zona elegida para la destrucción de altura y en
+         función del sentido de giro, para indicar a los pilotos que se
+         acercan cuál es el tipo de circuito elegido para aterrizar.
+ 
+146 La parte del circuito de aproximación indicada con el número 1 en el
+    diagrama se llama:
+-6  A... básica.
+ 6  B... destrucción.
+-6  C... inicial.
+-6  D... final.
+ 
+147 La parte del circuito de aproximación indicada con el número 2 en el
+    diagrama se llama:
+-6  A... básica.
+-6  B... destrucción.
+ 6  C... inicial.
+-6  D... final.
+ 
+148 La parte del circuito de aproximación indicada con el número 3 en el
+    diagrama se llama:
+ 6  A... básica.
+-6  B... destrucción.
+-6  C... inicial.
+-6  D... final.
+ 
+149 La parte del circuito de aproximación indicada con el número 4 en el
+    diagrama se llama:
+-6  A... básica.
+-6  B... destrucción.
+-6  C... inicial.
+ 6  D... final.
+ 
+150 Al llegar con demasiada altura a la zona de aterrizaje, y antes de
+    comenzar la fase inicial usted siempre pierde esa altura:
+-6  A... con giros a su izquierda.
+-6  B... con giros a su derecha.
+ 6  C... con giros en el mismo sentido del circuito de aproximación elegido.
+-6  D... realizando giros en "S".
+ 
+151 Usted ha decidido realizar un circuito de aproximación hacia la izquierda.
+    La destrucción del excedente de altura antes de la fase inicial debe
+    hacerse en el cuadrante:
+-6  A... superior izquierdo.
+ 6  B... superior derecho.
+-6  C... inferior derecho.
+-6  D... inferio izquierdo.
+ 
+152 Usted ha decidido realizar un circuito de aproximación hacia la derecha.
+    La destrucción del excedente de altura antes de la fase inicial debe
+    hacerse en el cuadrante:
+-6  A... superior izquierdo.
+-6  B... superior derecho.
+ 6  C... inferior derecho.
+-6  D... inferior izquierdo.
+ 
+153 Los siguientes cuatro esquemas muestran el tipo de aproximación estandar
+    con viento cero (línea punteada), y un circuito corregido y adecuado a la
+    situación planteada a último momento en la realidad de un aterrizaje
+    (línea llena). En la pista efectivamente el viento es nulo, y en el
+    momento de pasar de la fase inicial a básica Ud. se da cuenta que en
+    realidad está un poco por debajo de la altura ideal. La modificación que
+    realiza es la indicada en la figura:
+-6  A... a.
+ 6  B... b.
+-6  C... c.
+-6  D... d.
+ 
+154 Los siguientes cuatro esquemas muestran el tipo de aproximación estandar
+    con viento cero (línea punteada), y un circuito corregido y adecuado a la
+    situación planteada a último momento en la realidad de un aterrizaje
+    (línea llena). En la pista efectivamente el viento es nulo, y en el
+    momento de pasar de la fase inicial a básica Ud. se da cuenta que en
+    realidad está un poco por encima de la altura ideal. La modificación que
+    realiza es la indicada en la figura:
+-6  A... a.
+-6  B... b.
+-6  C... c.
+ 6  D... d.
+ 
+155 Los siguientes 4 esquemas muestran el tipo de aproximación estandar con
+    viento cero (línea punteada), y un circuito corregido y adecuado a la
+    situación planteada a último momento en la realidad de un aterrizaje
+    (línea llena). En la pista el viento es de 10 a 15 km/h. La modificación
+    que realiza es la indicada en la figura:
+ 6  A... a.
+-6  B... b.
+-6  C... c.
+-6  D... d.
+ 
+156 Los siguientes 4 esquemas muestran el tipo de aproximación estandar con
+    viento cero (línea punteada), y un circuito corregido y adecuado a la
+    situación planteada a último momento en la realidad de un aterrizaje
+    (línea llena). En la pista el viento es de 25 a 30 km/h. La modificación
+    que realiza es la indicada en la figura:
+-6  A... a.
+-6  B... b.
+ 6  C... c.
+-6  D... d.
+ 
+157 Ud. llega primero a la zona de aterrizaje seguido a 50 mts. en distancia
+    horizontal por otros dos pilotos. El viento es nulo, no existen obstáculos
+    en ninguno de los límites de la pista, y no hay normas específicas de
+    aterrizaje para el lugar. Dado que usted es el primer piloto:
+-6  A... puede elegir un circuito hacia derecha o izquierda y con la fase
+         final en cualquier dirección, dado que el viento es nulo.
+ 6  B... puede elegir libremente la dirección de la fase final, pero debe
+         realizar un circuito de aproximación a la izquierda.
+-6  C... puede elegir libremente una aproximación a izquierda o derecha, pero
+         la fase final debe ser transversal al eje del valle.
+-6  D... debe realizar un circuito de aproximación hacia la izquierda, pero la
+         fase final debe ser transeversal al eje del valle.
+ 
+158 Ud. llega primero a la zona de aterrizaje seguido a 50 mts. en distancia
+    horizontal por otros dos pilotos. El viento es nulo, y Ud. comienza un
+    circuito de aproximación hacia la izquierda con fase final hacia el oeste.
+    Al entrar en básica Ud. descubre que en realidad hay un viento de 2 a
+    5 km/h del este, y por lo tanto:
+ 6  A... continúa con el circuito elegido, pero prevee que su trayectoria en
+         la fase final tendrá menor pendiente.
+-6  B... interrumpe inmediatamente el circuito elegido dirigiéndose hacia la
+         zona a sotavento del punto, y aterriza contra el viento.
+-6  C... continúa con el circuito elegido, pero prevee que su trayectoria en
+         la fase final tendrá mayor pendiente.
+-6  D... asume la fase final como básica, y finalmente aterriza con el viento
+         de costado.
+ 
+159 Ud. llega segundo a la zona de aterrizaje, con distancias de 50 mts. en la
+    horizontal respecto del primero y el tercero. Existe un suave viento del
+    oeste (2 a 5 km/h) y no existen obstáculos en las inmediaciones. El primer
+    piloto inicia un circuito de aproximación hacia la derecha, y planea
+    aterrizar con viento de cola. Usted:
+ 6  A... sigue al piloto que le precede realizando el mismo circuito de
+         aproximación para evitar el riesgo de colisión.
+-6  B... efectúa un circuito de aproximación hacia la derecha, pero previendo
+         un aterrizaje contra el viento.
+-6  C... efectúa un circuito aproximación hacia la izquierda y aterriza
+         también con viento de cola.
+-6  D... efectúa un circuito de aproximación hacia la izquierda y aterriza
+         con viento de frente.
+ 
+160 Ud. está realizando su circuito de aproximación en un aterrizaje en el que
+    la manga indica una suave brisa del oeste. En final descubre que el viento
+    ha girado y ahora viene del este con 5 a 10 km/h de intensidad. Ud.:
+-6  A... realiza inmediatamente un giro de 180 grados y aterriza contra el
+         viento.
+-6  B... continúa el recorrido de acuerdo a lo previsto volando más frenado
+         para compensar el viento de cola y disminuir la velocidad con
+         respecto al suelo.
+ 6  C... continúa el recorrido de acuerdo a lo previsto, se incorpora, vuela
+         sin frenar, y tira de los comandos para el aterrizaje algo más
+         temprano.
+-6  D... continúa el recorrido de acuerdo a lo previsto y por medio de
+         sucesivos y regulares tirones de ambos comandos intenta que el ala
+         pierda altura en forma vertical.
+ 
+161 Cuando se aterriza con viento de cola: 
+-6  A... la trayectoria tiene una pendiente menor y la velocidad de aterrizaje
+         es más baja.
+-6  B... la trayectoria tiene una pendiente mayor y la velocidad de aterrizaje
+         es más alta.
+ 6  C... la trayectoria tiene una pendiente menor y la velocidad de aterrizaje
+         es más alta.
+-6  D... la trayectoria tiene una pendiente mayor y la velocidad de aterrizaje
+         es más baja.
+ 
+162 Cuando se aterriza con viento de frente: 
+-6  A... la trayectoria tiene una pendiente menor y la velocidad de aterrizaje
+         es más baja.
+-6  B... la trayectoria tiene una pendiente mayor y la velocidad de aterrizaje
+         es más alta.
+-6  C... la trayectoria tiene una pendiente menor y la velocidad de aterrizaje
+         es más alta.
+ 6  D... la trayectoria tiene una pendiente mayor y la velocidad de aterrizaje
+         es más baja.
+ 
+163 Usted aterriza con un viento de frente de 30 km/h. Apenas sus pies tocan
+    el suelo:
+-6  A... tira de los comandos hacia abajo todo lo que pueda para que el ala
+         deje inmediatamente de volar.
+-6  B... gira 180 grados y tira los coamndos hacia abajo todo lo que puede
+         para que el ala deje inmediatamente de volar.
+-6  C... tira todo lo que pueda de un comando para que el ala caiga sobre el
+         borde de ataque y de esa manera deje de sustentar.
+ 6  D... gira 180 grados y tira de las bandas B o C para que le ala deje
+         inmediatamente de volar.
