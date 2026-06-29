@@ -1,7 +1,36 @@
 import raw from '@/data/questions.json';
+import enTranslations from '@/data/questions.en.json';
 import type { Question, Section } from './types';
+import type { Locale } from '@/i18n/messages';
 
 export const QUESTIONS = raw as Question[];
+
+type QuestionTranslation = { question: string; options: Record<string, string> };
+const EN = enTranslations as Record<string, QuestionTranslation>;
+
+/** Hay traducción al inglés disponible para esta pregunta. */
+export function hasTranslation(uid: string): boolean {
+  return uid in EN;
+}
+
+/**
+ * Devuelve la pregunta en el idioma pedido. Para 'en', reemplaza enunciado y
+ * textos de opciones por su traducción (conservando puntajes/correctas). Si no
+ * hay traducción, cae a español.
+ */
+export function localizeQuestion(q: Question, locale: Locale): Question {
+  if (locale === 'es') return q;
+  const tr = EN[q.uid];
+  if (!tr) return q;
+  return {
+    ...q,
+    question: tr.question ?? q.question,
+    options: q.options.map((o) => ({
+      ...o,
+      text: tr.options?.[o.letter] ?? o.text,
+    })),
+  };
+}
 
 export const QUESTIONS_BY_ID: Record<string, Question> = Object.fromEntries(
   QUESTIONS.map((q) => [q.uid, q])

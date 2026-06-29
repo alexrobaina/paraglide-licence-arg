@@ -206,7 +206,7 @@ function StatCard({
   sub: string;
 }) {
   return (
-    <Card variant="minimal" size="md" spacing="none">
+    <Card variant="minimal" size="md">
       <div className="flex flex-col gap-1">
         <div className="flex items-center gap-2">
           {icon}

@@ -20,6 +20,7 @@ import {
   getQuestionsBySection,
   sampleQuestions,
   countBySection,
+  localizeQuestion,
 } from '@/lib/questions';
 import { useProgress } from '@/lib/storage';
 import { SECTIONS } from '@/lib/constants';
@@ -29,7 +30,7 @@ import type { Question, Section } from '@/lib/types';
 const DECK_SIZE = 20;
 
 export default function FlashcardsPage() {
-  const { t, ts } = useI18n();
+  const { t, ts, locale } = useI18n();
   const { markFlashcard } = useProgress();
   const counts = countBySection();
   const [selected, setSelected] = useState<Section[]>([]);
@@ -148,7 +149,7 @@ export default function FlashcardsPage() {
     );
   }
 
-  const q = deck[index];
+  const q = localizeQuestion(deck[index], locale);
   const correct = q.options.filter((o) => o.correct);
 
   return (

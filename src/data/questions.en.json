@@ -1,0 +1,3122 @@
+{
+ "q001": {
+  "question": "Clouds can be made up of:",
+  "options": {
+   "A": "water vapor in suspension.",
+   "B": "ice crystals.",
+   "C": "water droplets."
+  }
+ },
+ "q002": {
+  "question": "The cause of cloud formation is:",
+  "options": {
+   "A": "the cooling of the air down to its condensation point.",
+   "B": "a strong downdraft.",
+   "C": "heating of the rising air."
+  }
+ },
+ "q003": {
+  "question": "An orographic cloud:",
+  "options": {
+   "A": "is fixed with respect to the ground.",
+   "B": "indicates absence of wind.",
+   "C": "is caused by thermal lift.",
+   "D": "is caused by ridge lift."
+  }
+ },
+ "q004": {
+  "question": "Stratus-type clouds:",
+  "options": {
+   "A": "develop horizontally.",
+   "B": "characterize rather unstable layers.",
+   "C": "develop vertically.",
+   "D": "characterize rather stable layers."
+  }
+ },
+ "q005": {
+  "question": "Cumulus-type clouds:",
+  "options": {
+   "A": "characterize rather stable layers.",
+   "B": "characterize rather unstable layers.",
+   "C": "develop vertically.",
+   "D": "develop horizontally."
+  }
+ },
+ "q006": {
+  "question": "Cumulonimbus and nimbostratus are clouds of strong vertical extension, present at all stages. Below, both have a dark base blurred by precipitation, but they can be recognized by:",
+  "options": {
+   "A": "the Ns are accompanied by thunderstorm and the Cb by a halo.",
+   "B": "the Ns give continuous rain and the Cb violent rain, lightning and strong turbulent winds.",
+   "C": "the Ns give violent precipitation, the Cb continuous rain."
+  }
+ },
+ "q007": {
+  "question": "Cloud streets generally form:",
+  "options": {
+   "A": "when convection sets in and the wind increases with altitude.",
+   "B": "when the wind is nil.",
+   "C": "when the air mass is stable."
+  }
+ },
+ "q008": {
+  "question": "Dangerous turbulence can be found under clouds of the type:",
+  "options": {
+   "A": "lee wave rotors.",
+   "B": "cumulus.",
+   "C": "stratus."
+  }
+ },
+ "q009": {
+  "question": "Among the following clouds, the most dangerous for free flight are:",
+  "options": {
+   "A": "stratocumulus.",
+   "B": "cumulonimbus.",
+   "C": "rotor clouds."
+  }
+ },
+ "q010": {
+  "question": "A cumulonimbus is dangerous:",
+  "options": {
+   "A": "below.",
+   "B": "inside.",
+   "C": "several kilometers around it."
+  }
+ },
+ "q011": {
+  "question": "Cumulonimbus are dangerous because:",
+  "options": {
+   "A": "they generate violent turbulence.",
+   "B": "they create breezes on the ground making the approach and landing problematic.",
+   "C": "they are the base of powerful updrafts that can suck the wing into the cloud."
+  }
+ },
+ "q012": {
+  "question": "The clouds favorable for performance flights are:",
+  "options": {
+   "A": "nimbostratus, altostratus and cumulonimbus.",
+   "B": "stratus.",
+   "C": "cumulus.",
+   "D": "cirrocumulus, nimbostratus and stratocumulus."
+  }
+ },
+ "q013": {
+  "question": "The atmosphere is made up of layers. The layer in which we live is called:",
+  "options": {
+   "A": "ionosphere.",
+   "B": "troposphere.",
+   "C": "stratosphere."
+  }
+ },
+ "q014": {
+  "question": "In meteorology, an air mass is characterized by:",
+  "options": {
+   "A": "its temperature and its pressure.",
+   "B": "its humidity.",
+   "C": "the vertical distribution of temperature."
+  }
+ },
+ "q015": {
+  "question": "The hectoPascal is a unit of:",
+  "options": {
+   "A": "pressure.",
+   "B": "temperature.",
+   "C": "humidity."
+  }
+ },
+ "q016": {
+  "question": "Atmospheric pressure is due to:",
+  "options": {
+   "A": "the rotation of the earth on itself.",
+   "B": "the weight of the column of air located above.",
+   "C": "solar heating."
+  }
+ },
+ "q017": {
+  "question": "Warm air:",
+  "options": {
+   "A": "is lighter than cold air.",
+   "B": "tends to descend relative to cold air.",
+   "C": "mixes with cold air."
+  }
+ },
+ "q018": {
+  "question": "Compared to warm air, at equal pressure and volume, cold air is:",
+  "options": {
+   "A": "heavier.",
+   "B": "lighter.",
+   "C": "identical."
+  }
+ },
+ "q019": {
+  "question": "When an unsaturated atmospheric parcel rises without exchanging heat with the surrounding air, its temperature:",
+  "options": {
+   "A": "decreases 1 degree every 100 m.",
+   "B": "increases 1 degree every 100 m.",
+   "C": "remains constant."
+  }
+ },
+ "q020": {
+  "question": "Within a cloudless air mass, the temperature is 15 degrees at ground level and 12 degrees at 500 m. This band of air is:",
+  "options": {
+   "A": "rather stable.",
+   "B": "rather unstable.",
+   "C": "probably the establishment of an inversion."
+  }
+ },
+ "q021": {
+  "question": "Solar heat propagates within the atmosphere according to the following processes:",
+  "options": {
+   "A": "conduction, radiation and convection.",
+   "B": "vibration and lapse rate.",
+   "C": "evaporation/condensation and turbulence."
+  }
+ },
+ "q022": {
+  "question": "The sun heats the atmosphere mainly:",
+  "options": {
+   "A": "directly by radiation.",
+   "B": "directly by convection.",
+   "C": "indirectly by means of the ground."
+  }
+ },
+ "q023": {
+  "question": "Heat propagates by:",
+  "options": {
+   "A": "convection.",
+   "B": "conduction.",
+   "C": "radiation."
+  }
+ },
+ "q024": {
+  "question": "We call a downslope (katabatic) breeze:",
+  "options": {
+   "A": "a cold wind that descends through the valleys.",
+   "B": "a meteorological wind that descends along a slope.",
+   "C": "a wind that, as a consequence of convection, descends along a slope."
+  }
+ },
+ "q025": {
+  "question": "Turbulence:",
+  "options": {
+   "A": "is a disordered movement of air particles.",
+   "B": "causes variations in angle of attack and in flight speed.",
+   "C": "is always visible."
+  }
+ },
+ "q026": {
+  "question": "Turbulence can be produced by:",
+  "options": {
+   "A": "the terrain.",
+   "B": "the meeting of two different winds.",
+   "C": "thermal lift."
+  }
+ },
+ "q027": {
+  "question": "A wind of 20 kt (knots) blows at:",
+  "options": {
+   "A": "18 km/h.",
+   "B": "36 km/h.",
+   "C": "20 km/h."
+  }
+ },
+ "q028": {
+  "question": "The wind direction given by meteorological services is always:",
+  "options": {
+   "A": "the direction the wind comes from.",
+   "B": "the direction the wind goes to."
+  }
+ },
+ "q029": {
+  "question": "A wind \"of 225 degrees\" is a wind:",
+  "options": {
+   "A": "that blows toward the heading 225 degrees.",
+   "B": "that comes from the heading 225 degrees.",
+   "C": "that blows toward the north-east.",
+   "D": "that blows toward the south-west."
+  }
+ },
+ "q030": {
+  "question": "The following situation is called temperature inversion:",
+  "options": {
+   "A": "a layer of cold air is above a layer of warm air.",
+   "B": "a layer of warm air is above a layer of cold air.",
+   "C": "a layer of air blocks the development of updrafts."
+  }
+ },
+ "q031": {
+  "question": "Within an atmosphere with an unstable tendency:",
+  "options": {
+   "A": "there are few updrafts.",
+   "B": "the temperature decreases rapidly as one gains altitude.",
+   "C": "cumulus tend to develop.",
+   "D": "stratus tend to develop."
+  }
+ },
+ "q032": {
+  "question": "When two air masses of different temperatures meet:",
+  "options": {
+   "A": "they mix easily.",
+   "B": "the warmer air rises above the colder air.",
+   "C": "the warmer air infiltrates beneath the colder air."
+  }
+ },
+ "q033": {
+  "question": "When a front passes, the warm air:",
+  "options": {
+   "A": "rises.",
+   "B": "lifts the cold air.",
+   "C": "can be sent downward or lifted depending on the situation."
+  }
+ },
+ "q034": {
+  "question": "The general tendencies of a cold front are:",
+  "options": {
+   "A": "rapid worsening with rain, thunderstorms, strong wind, turbulence.",
+   "B": "slow worsening with moderate rain.",
+   "C": "hazy, overcast weather with drizzle."
+  }
+ },
+ "q035": {
+  "question": "A cold front:",
+  "options": {
+   "A": "is reliable (cold air = stable air).",
+   "B": "can give rise to strong precipitation and turbulence.",
+   "C": "can cause wind gusts.",
+   "D": "produces little wind."
+  }
+ },
+ "q036": {
+  "question": "When a warm front passes:",
+  "options": {
+   "A": "the rains are intermittent and violent.",
+   "B": "the rains are continuous.",
+   "C": "the air is very humid and the cloud system is significant."
+  }
+ },
+ "q037": {
+  "question": "Pure ridge lift is the result of:",
+  "options": {
+   "A": "the acceleration of the wind at the summit of a mountain.",
+   "B": "the upward deflection of the wind due to an obstacle.",
+   "C": "the expansion of the air as it rises up a slope."
+  }
+ },
+ "q038": {
+  "question": "The zone of ridge lift varies with:",
+  "options": {
+   "A": "the strength of the wind.",
+   "B": "the shape of the slope.",
+   "C": "the orientation of the slope with respect to the wind."
+  }
+ },
+ "q039": {
+  "question": "The wind can be dangerous:",
+  "options": {
+   "A": "at the bottom of the valley where it accelerates (venturi).",
+   "B": "when its speed approaches or exceeds that of the wing.",
+   "C": "near certain ridges (risk of being carried to the lee side)."
+  }
+ },
+ "q040": {
+  "question": "A row of trees facing the wind causes turbulence:",
+  "options": {
+   "A": "windward of them.",
+   "B": "leeward of them.",
+   "C": "directly above them."
+  }
+ },
+ "q041": {
+  "question": "Wind gradient exists:",
+  "options": {
+   "A": "with strong wind.",
+   "B": "over flat, open terrain.",
+   "C": "over rough terrain where it mixes with turbulence."
+  }
+ },
+ "q042": {
+  "question": "The wind gradient on landing:",
+  "options": {
+   "A": "depends on the state of the ground.",
+   "B": "depends on the wind speed.",
+   "C": "forces you to fly slower.",
+   "D": "increases the rate of descent."
+  }
+ },
+ "q043": {
+  "question": "We can encounter a shear zone:",
+  "options": {
+   "A": "crossing an inversion layer.",
+   "B": "entering and exiting a thermal.",
+   "C": "in a confluence."
+  }
+ },
+ "q044": {
+  "question": "A confluence is usually found:",
+  "options": {
+   "A": "at the top of a ridge between two valleys each fed by a breeze.",
+   "B": "along a sea breeze front.",
+   "C": "between a breeze and a meteorological wind."
+  }
+ },
+ "q045": {
+  "question": "In good weather, in the early afternoon, mountain breezes:",
+  "options": {
+   "A": "strengthen.",
+   "B": "diminish.",
+   "C": "go up the slopes.",
+   "D": "go down the slopes."
+  }
+ },
+ "q046": {
+  "question": "In good weather, the sea breeze blows when:",
+  "options": {
+   "A": "the land is warmer than the sea.",
+   "B": "the land is colder than the sea.",
+   "C": "the tide is going out.",
+   "D": "the tide is coming in."
+  }
+ },
+ "q047": {
+  "question": "In good weather, the land breeze blows when:",
+  "options": {
+   "A": "the land is warmer than the sea.",
+   "B": "the land is colder than the sea.",
+   "C": "the tide is going out.",
+   "D": "the tide is coming in."
+  }
+ },
+ "q048": {
+  "question": "The weather is good in the valley (oriented north-south), in the morning, with no wind:",
+  "options": {
+   "A": "a mountain breeze will develop over the east-facing slopes.",
+   "B": "a mountain breeze will develop over the west-facing slopes.",
+   "C": "lift will develop in the center of the valley."
+  }
+ },
+ "q049": {
+  "question": "Slope breezes in the mountains:",
+  "options": {
+   "A": "appear before the valley breezes.",
+   "B": "originate over the sunlit faces.",
+   "C": "are turbulent when thermals pass through.",
+   "D": "can be strengthened or deflected by the meteorological winds."
+  }
+ },
+ "q050": {
+  "question": "Slope breezes are descending:",
+  "options": {
+   "A": "during the day.",
+   "B": "during the night.",
+   "C": "at all times, since they are always descending in the lower layers."
+  }
+ },
+ "q051": {
+  "question": "A valley breeze:",
+  "options": {
+   "A": "strengthens where the valley becomes narrower.",
+   "B": "can develop high speeds.",
+   "C": "is never turbulent."
+  }
+ },
+ "q052": {
+  "question": "A valley breeze:",
+  "options": {
+   "A": "increases as you descend into the lower layers.",
+   "B": "sometimes manifests over several thousand meters of thickness.",
+   "C": "accelerates when the valley narrows.",
+   "D": "can reach 30 km/h in summer."
+  }
+ },
+ "q053": {
+  "question": "The Foehn wind is characterized by:",
+  "options": {
+   "A": "a cap cloud over the relief on the windward face.",
+   "B": "a descent of warm, dry, and very turbulent air, below the relief in the area located on the leeward side.",
+   "C": "a cooling of the air mass located on the leeward side of the relief."
+  }
+ },
+ "q054": {
+  "question": "Factors that favor instability:",
+  "options": {
+   "A": "the heating of the ground.",
+   "B": "the cooling of the ground.",
+   "C": "the arrival of warm air in the lower levels.",
+   "D": "the arrival of warm air aloft."
+  }
+ },
+ "q055": {
+  "question": "On a nice summer day, the maximum temperature is reached (solar time):",
+  "options": {
+   "A": "12:00 hrs.",
+   "B": "14:00 hrs.",
+   "C": "16:00 hrs."
+  }
+ },
+ "q056": {
+  "question": "An air particle rises if its temperature with respect to the surrounding air is:",
+  "options": {
+   "A": "lower.",
+   "B": "higher.",
+   "C": "equal."
+  }
+ },
+ "q057": {
+  "question": "The release of thermals:",
+  "options": {
+   "A": "strengthens the slope and valley breezes.",
+   "B": "allows the slope breeze to be used far from the relief.",
+   "C": "makes the slope breeze irregular."
+  }
+ },
+ "q058": {
+  "question": "Thermal lift:",
+  "options": {
+   "A": "can appear in the form of bubbles or columns.",
+   "B": "always rises vertically.",
+   "C": "originates over contrasting grounds.",
+   "D": "is surrounded by sink."
+  }
+ },
+ "q059": {
+  "question": "The restitution phenomenon is generally found:",
+  "options": {
+   "A": "in the late afternoon.",
+   "B": "in the morning in the center of the valley.",
+   "C": "in the center of the valleys throughout the day."
+  }
+ },
+ "q060": {
+  "question": "With respect to the lower surface, the distance that an air molecule must travel over the upper surface:",
+  "options": {
+   "A": "is equal.",
+   "B": "is greater.",
+   "C": "is smaller."
+  }
+ },
+ "q061": {
+  "question": "The center of pressure is the point of application:",
+  "options": {
+   "A": "of the resultant of gravitational forces.",
+   "B": "of the resultant of aerodynamic forces."
+  }
+ },
+ "q062": {
+  "question": "The center of pressure of a wing in flight is located approximately:",
+  "options": {
+   "A": "at the geometric center of the wing.",
+   "B": "at the rear part of the wing.",
+   "C": "at the front part of the wing."
+  }
+ },
+ "q063": {
+  "question": "In stabilized straight flight:",
+  "options": {
+   "A": "drag opposes the movement of the wing along its trajectory.",
+   "B": "lift is perpendicular to the trajectory.",
+   "C": "the R.F.A. is slightly less than the weight of wing + pilot."
+  }
+ },
+ "q064": {
+  "question": "When a wing glides in a straight line at constant speed, the total weight is:",
+  "options": {
+   "A": "exactly balanced by the R.F.A.",
+   "B": "less than the R.F.A.",
+   "C": "greater than the R.F.A."
+  }
+ },
+ "q065": {
+  "question": "The lift and drag of a wing increase, among other things, as a function of the increase in:",
+  "options": {
+   "A": "the speed of the meteorological wind.",
+   "B": "the wing's airspeed.",
+   "C": "the wing's ground speed."
+  }
+ },
+ "q066": {
+  "question": "The lift of a wing is produced by:",
+  "options": {
+   "A": "the deflection of air streams by the wing's profile.",
+   "B": "a low pressure that appears below the profile and an overpressure above.",
+   "C": "a low pressure that appears above the profile and an overpressure below."
+  }
+ },
+ "q067": {
+  "question": "Lift in stabilized gliding flight is always:",
+  "options": {
+   "A": "weaker than the total wing/pilot weight.",
+   "B": "perpendicular to the trajectory.",
+   "C": "constant regardless of the wing's speed."
+  }
+ },
+ "q068": {
+  "question": "When the angle of incidence increases from 0 degrees, the lift:",
+  "options": {
+   "A": "barely varies.",
+   "B": "increases, passes through a maximum, decreases, and then drops abruptly when the wing stalls.",
+   "C": "increases progressively up to the stall."
+  }
+ },
+ "q069": {
+  "question": "On a wing in stabilized straight flight, when the pilot causes an increase in incidence:",
+  "options": {
+   "A": "the trajectory curves upward.",
+   "B": "the speed increases.",
+   "C": "the trajectory curves downward.",
+   "D": "the speed decreases."
+  }
+ },
+ "q070": {
+  "question": "On a wing in stabilized straight flight, when the pilot causes a decrease in incidence:",
+  "options": {
+   "A": "the trajectory curves upward.",
+   "B": "the speed increases.",
+   "C": "the trajectory curves downward.",
+   "D": "the speed decreases."
+  }
+ },
+ "q071": {
+  "question": "On a wing in flight, there are several sources of drag of quite distinct natures:",
+  "options": {
+   "A": "friction.",
+   "B": "turbulence behind the trailing edge.",
+   "C": "vortices at the wingtips."
+  }
+ },
+ "q072": {
+  "question": "The drag on the wing/pilot assembly:",
+  "options": {
+   "A": "is independent of the flight speed.",
+   "B": "is independent of the wing's shape.",
+   "C": "is divided into form drag + induced drag + friction drag."
+  }
+ },
+ "q073": {
+  "question": "The total drag of an aircraft is divided into:",
+  "options": {
+   "A": "induced drag.",
+   "B": "form drag.",
+   "C": "friction drag."
+  }
+ },
+ "q074": {
+  "question": "Induced drag is due to:",
+  "options": {
+   "A": "the pilot and the lines.",
+   "B": "the turbulence at the wing's trailing edge.",
+   "C": "the irregularities of the wing's surface.",
+   "D": "the wingtip vortices."
+  }
+ },
+ "q075": {
+  "question": "Form drag is due to:",
+  "options": {
+   "A": "the pilot and the lines.",
+   "B": "the turbulence at the wing's trailing edge.",
+   "C": "the irregularities of the wing's surface.",
+   "D": "the wingtip vortices."
+  }
+ },
+ "q076": {
+  "question": "Friction drag is due to:",
+  "options": {
+   "A": "the pilot and the lines.",
+   "B": "the turbulence at the wing's trailing edge.",
+   "C": "the irregularities of the wing's surface.",
+   "D": "the wingtip vortices."
+  }
+ },
+ "q077": {
+  "question": "The marginal vortices responsible for induced drag:",
+  "options": {
+   "A": "exist only behind large wings.",
+   "B": "exist mainly in strong wind.",
+   "C": "exist behind all wings."
+  }
+ },
+ "q078": {
+  "question": "Parasitic drag is due to:",
+  "options": {
+   "A": "everything that does not provide lift.",
+   "B": "the irregularities of the wing's surface.",
+   "C": "the marginal vortices."
+  }
+ },
+ "q079": {
+  "question": "If we increase its drag, the wing tends to:",
+  "options": {
+   "A": "go more slowly.",
+   "B": "accelerate.",
+   "C": "sink."
+  }
+ },
+ "q080": {
+  "question": "On final, when the pilot sits up, he:",
+  "options": {
+   "A": "improves his penetration.",
+   "B": "worsens his penetration.",
+   "C": "increases his sink rate."
+  }
+ },
+ "q081": {
+  "question": "Among the following points, some improve penetration:",
+  "options": {
+   "A": "a clean profile with no folds or tears.",
+   "B": "thin lines.",
+   "C": "vertical position of the pilot."
+  }
+ },
+ "q082": {
+  "question": "A wing can pivot around the axes of:",
+  "options": {
+   "A": "yaw (vertical, turning).",
+   "B": "roll (longitudinal, banking)",
+   "C": "chord (vertical, pitching).",
+   "D": "pitch (transverse, pitching)."
+  }
+ },
+ "q083": {
+  "question": "The speed polar is a curve:",
+  "options": {
+   "A": "that shows the shape of the wing's profile.",
+   "B": "that shows the different speeds a wing can reach in stabilized straight flight, for a given load.",
+   "C": "drawn for a given weight/pilot."
+  }
+ },
+ "q084": {
+  "question": "All flight regimes with an angle of incidence greater than that of minimum sink rate:",
+  "options": {
+   "A": "correspond to low performance for the wing.",
+   "B": "are the farthest from the stall.",
+   "C": "correspond to the best handling of the wing.",
+   "D": "are recommended for flying close to the ground."
+  }
+ },
+ "q085": {
+  "question": "Relative wind is the wind:",
+  "options": {
+   "A": "created by the ground speed of the craft.",
+   "B": "created by the movement of the craft through the air.",
+   "C": "felt by the pilot on his face."
+  }
+ },
+ "q086": {
+  "question": "The speed of the relative wind is:",
+  "options": {
+   "A": "equal to the speed of the craft along its trajectory.",
+   "B": "influenced by the meteorological wind.",
+   "C": "always the same."
+  }
+ },
+ "q087": {
+  "question": "Airspeed is defined with respect to:",
+  "options": {
+   "A": "the air being passed through.",
+   "B": "the ground."
+  }
+ },
+ "q088": {
+  "question": "The relative wind:",
+  "options": {
+   "A": "never varies.",
+   "B": "has as its axis the wing's air trajectory.",
+   "C": "has as its axis the wing's ground trajectory."
+  }
+ },
+ "q089": {
+  "question": "The sink rate:",
+  "options": {
+   "A": "is the vertical speed of the paraglider with respect to the air.",
+   "B": "is the vertical speed of the paraglider with respect to the ground.",
+   "C": "has a minimum value for each wing that depends on the pilot's weight."
+  }
+ },
+ "q090": {
+  "question": "A wind that is steady in force and direction has no influence:",
+  "options": {
+   "A": "on ground speed.",
+   "B": "on airspeed.",
+   "C": "on glide ratio over the ground."
+  }
+ },
+ "q091": {
+  "question": "You are flying with a strong tailwind, this causes:",
+  "options": {
+   "A": "a decrease in the R.F.A.",
+   "B": "an increase in incidence.",
+   "C": "an increase in ground speed.",
+   "D": "an increase in glide ratio over the ground."
+  }
+ },
+ "q092": {
+  "question": "You are flying at 35 km/h with a 10 km/h tailwind, your ground speed:",
+  "options": {
+   "A": "stays the same.",
+   "B": "is around 25 km/h.",
+   "C": "is around 45 km/h."
+  }
+ },
+ "q093": {
+  "question": "When passing through a turbulent air mass, the wing + pilot assembly is subjected to variations:",
+  "options": {
+   "A": "of incidence.",
+   "B": "of airspeed.",
+   "C": "of mass.",
+   "D": "of R.F.A."
+  }
+ },
+ "q094": {
+  "question": "When you enter a lift, the incidence:",
+  "options": {
+   "A": "decreases.",
+   "B": "increases.",
+   "C": "does not change."
+  }
+ },
+ "q095": {
+  "question": "When you enter sink, the angle of attack:",
+  "options": {
+   "A": "decreases.",
+   "B": "increases.",
+   "C": "does not change."
+  }
+ },
+ "q096": {
+  "question": "When the wing enters lift:",
+  "options": {
+   "A": "the speed decreases.",
+   "B": "the angle of attack decreases.",
+   "C": "the R.A.F. increases and the wing accelerates upward.",
+   "D": "the angle of attack increases."
+  }
+ },
+ "q097": {
+  "question": "When the wing enters sink:",
+  "options": {
+   "A": "the angle of attack increases.",
+   "B": "the speed increases.",
+   "C": "the angle of attack decreases.",
+   "D": "the R.A.F. decreases, the wing accelerates downward."
+  }
+ },
+ "q098": {
+  "question": "In lift, a gliding wing:",
+  "options": {
+   "A": "rises relative to the rising air.",
+   "B": "descends relative to the rising air.",
+   "C": "rises at the same speed as the rising air."
+  }
+ },
+ "q099": {
+  "question": "With the same brake position as in still air, in steady lift:",
+  "options": {
+   "A": "my speed is higher.",
+   "B": "my airspeed is the same.",
+   "C": "my angle of attack is the same.",
+   "D": "my angle of attack is higher."
+  }
+ },
+ "q100": {
+  "question": "You are in sink, your glide ratio over the ground:",
+  "options": {
+   "A": "improves.",
+   "B": "decreases.",
+   "C": "is the same."
+  }
+ },
+ "q101": {
+  "question": "The angle of attack is defined by the wing chord and:",
+  "options": {
+   "A": "the direction of the relative wind.",
+   "B": "the horizontal.",
+   "C": "the resultant of aerodynamic forces."
+  }
+ },
+ "q102": {
+  "question": "The angle between the wing's glide and the relative wind is called:",
+  "options": {
+   "A": "glide angle.",
+   "B": "angle of attack.",
+   "C": "angle of opening."
+  }
+ },
+ "q103": {
+  "question": "The glide angle is the angle between:",
+  "options": {
+   "A": "the wing chord and the trajectory.",
+   "B": "the trajectory and the horizontal.",
+   "C": "the horizontal and the wing chord."
+  }
+ },
+ "q104": {
+  "question": "In a turn the wing banks thanks to a movement of:",
+  "options": {
+   "A": "yaw.",
+   "B": "roll.",
+   "C": "pitch."
+  }
+ },
+ "q105": {
+  "question": "During a stabilized turn to the right, the roll movement:",
+  "options": {
+   "A": "is zero.",
+   "B": "is to the right.",
+   "C": "is to the left."
+  }
+ },
+ "q106": {
+  "question": "During a stabilized turn to the right, the yaw movement is:",
+  "options": {
+   "A": "zero.",
+   "B": "to the right.",
+   "C": "to the left."
+  }
+ },
+ "q107": {
+  "question": "The apparent weight on a craft in a turn is:",
+  "options": {
+   "A": "equal to the total wing/pilot weight.",
+   "B": "greater than the total wing/pilot weight.",
+   "C": "less than the total wing/pilot weight."
+  }
+ },
+ "q108": {
+  "question": "The glide ratio is the relationship:",
+  "options": {
+   "A": "vertical speed over horizontal speed.",
+   "B": "horizontal speed over vertical speed.",
+   "C": "flight speed over sink rate."
+  }
+ },
+ "q109": {
+  "question": "The glide ratio is the relationship:",
+  "options": {
+   "A": "lift over drag.",
+   "B": "drag over lift.",
+   "C": "distance traveled horizontally over distance traveled vertically.",
+   "D": "horizontal speed over sink rate."
+  }
+ },
+ "q110": {
+  "question": "The glide ratio relative to the air:",
+  "options": {
+   "A": "varies with the angle of attack of the craft.",
+   "B": "reaches a maximum at a certain value of the angle of attack.",
+   "C": "is maximum when the sink rate is minimum.",
+   "D": "is maximum just before the stall."
+  }
+ },
+ "q111": {
+  "question": "For a given angle of attack, the glide ratio relative to the air is independent:",
+  "options": {
+   "A": "of the meteorological wind.",
+   "B": "of the pilot's weight.",
+   "C": "of the airspeed."
+  }
+ },
+ "q112": {
+  "question": "The glide ratio relative to the air is:",
+  "options": {
+   "A": "the angle between the trajectory relative to the air and the horizontal.",
+   "B": "the ratio between lift and drag.",
+   "C": "always the same as the glide ratio over the ground."
+  }
+ },
+ "q113": {
+  "question": "The maximum glide ratio relative to the air is:",
+  "options": {
+   "A": "a characteristic specific to the craft.",
+   "B": "proportional to the wing loading.",
+   "C": "obtained at a speed higher than the one corresponding to the minimum sink rate."
+  }
+ },
+ "q114": {
+  "question": "The glide ratio is higher when:",
+  "options": {
+   "A": "the glide angle is large.",
+   "B": "the angle of attack is small.",
+   "C": "the glide angle is small."
+  }
+ },
+ "q115": {
+  "question": "The glide ratio over the ground:",
+  "options": {
+   "A": "is identical to the glide ratio relative to the air in a still air mass.",
+   "B": "never varies.",
+   "C": "is always lower than the glide ratio relative to the air."
+  }
+ },
+ "q116": {
+  "question": "The glide ratio over the ground:",
+  "options": {
+   "A": "increases with a tailwind.",
+   "B": "decreases with a tailwind.",
+   "C": "increases with a headwind."
+  }
+ },
+ "q117": {
+  "question": "The glide ratio over the ground:",
+  "options": {
+   "A": "is independent of the glide ratio relative to the air.",
+   "B": "varies as a function of the airspeed.",
+   "C": "varies as a function of the meteorological wind."
+  }
+ },
+ "q118": {
+  "question": "To advance 4800 m in the horizontal plane, you lost 600 m of altitude; your glide ratio is close to:",
+  "options": {
+   "A": "6",
+   "B": "7",
+   "C": "8",
+   "D": "9"
+  }
+ },
+ "q119": {
+  "question": "We call wing loading the relationship:",
+  "options": {
+   "A": "wing surface over total weight (wing+pilot).",
+   "B": "total weight (wing+pilot) over wing surface.",
+   "C": "pilot's weight over wing surface.",
+   "D": "pilot's weight over wing weight."
+  }
+ },
+ "q120": {
+  "question": "You take the wing of a lighter pilot:",
+  "options": {
+   "A": "at the same angle of attack, you fly faster than him.",
+   "B": "at the same angle of attack, you fly slower than him.",
+   "C": "you must run faster on take-off.",
+   "D": "you will have more difficulty keeping the wing open in turbulence."
+  }
+ },
+ "q121": {
+  "question": "If two pilots have the same wing, the heavier one:",
+  "options": {
+   "A": "flies less fast.",
+   "B": "descends faster.",
+   "C": "has a less maneuverable wing.",
+   "D": "flies faster."
+  }
+ },
+ "q122": {
+  "question": "For the same wing, an increase in wing loading produces an increase:",
+  "options": {
+   "A": "in horizontal speed.",
+   "B": "in glide ratio.",
+   "C": "in wing deformations.",
+   "D": "in sink rate."
+  }
+ },
+ "q123": {
+  "question": "With the same wing surface, a heavier pilot will have:",
+  "options": {
+   "A": "a higher maximum speed.",
+   "B": "a lower penetration.",
+   "C": "a higher sink rate.",
+   "D": "an identical stall speed."
+  }
+ },
+ "q124": {
+  "question": "Two identical wings subjected to different wing loadings take off:",
+  "options": {
+   "A": "with the same angle of attack but with different speeds.",
+   "B": "with the same speed but with different angles of attack.",
+   "C": "with the same speed and angle of attack."
+  }
+ },
+ "q125": {
+  "question": "Two identical wings but with different wing loadings cross a long lift zone. Each pilot uses the wing at the minimum sink rate speed:",
+  "options": {
+   "A": "both wings will gain the same altitude.",
+   "B": "the more heavily loaded wing will gain more altitude.",
+   "C": "the less heavily loaded wing will gain more altitude."
+  }
+ },
+ "q126": {
+  "question": "The stall occurs:",
+  "options": {
+   "A": "at different angles of attack.",
+   "B": "always at the same angle of attack.",
+   "C": "always at the same speed."
+  }
+ },
+ "q127": {
+  "question": "The stall occurs when:",
+  "options": {
+   "A": "the speed is too high.",
+   "B": "the angle of attack is too small.",
+   "C": "the angle of attack is too large."
+  }
+ },
+ "q128": {
+  "question": "The drop that follows the stall is due to:",
+  "options": {
+   "A": "a transient forward shift of the center of pressure.",
+   "B": "a transient rearward shift of the center of pressure.",
+   "C": "the pilot falling into the wing."
+  }
+ },
+ "q129": {
+  "question": "The stall generally causes:",
+  "options": {
+   "A": "a pitch-up moment.",
+   "B": "a pitch-down moment.",
+   "C": "a change in trim with a tendency to pitch down.",
+   "D": "a change in trim with a tendency to pitch up."
+  }
+ },
+ "q130": {
+  "question": "In the stall:",
+  "options": {
+   "A": "lift decreases.",
+   "B": "lift increases.",
+   "C": "drag decreases.",
+   "D": "drag increases."
+  }
+ },
+ "q131": {
+  "question": "The stall generally occurs:",
+  "options": {
+   "A": "at the minimum sink rate speed.",
+   "B": "at a speed lower than the minimum sink rate speed.",
+   "C": "at a speed higher than the minimum sink rate speed."
+  }
+ },
+ "q132": {
+  "question": "The stall speed for a given wing:",
+  "options": {
+   "A": "is independent of the pilot's weight.",
+   "B": "is higher during towing.",
+   "C": "is higher in a turn."
+  }
+ },
+ "q133": {
+  "question": "The stall speed:",
+  "options": {
+   "A": "decreases when the pilot's weight increases.",
+   "B": "increases when the pilot's weight increases.",
+   "C": "decreases when the load factor increases.",
+   "D": "increases when the load factor increases."
+  }
+ },
+ "q134": {
+  "question": "We call dynamic stall the stall:",
+  "options": {
+   "A": "followed by a climb.",
+   "B": "preceded by a climb.",
+   "C": "caused by a sudden increase in the angle of attack.",
+   "D": "caused by a sudden drop in the angle of attack."
+  }
+ },
+ "q135": {
+  "question": "Compared to normal flight, during towing, the R.A.F. is:",
+  "options": {
+   "A": "weaker.",
+   "B": "stronger.",
+   "C": "tilted backward.",
+   "D": "vertical."
+  }
+ },
+ "q136": {
+  "question": "During towing, the R.A.F. is:",
+  "options": {
+   "A": "equal to the towing force.",
+   "B": "equal to the vector sum towing force + total weight.",
+   "C": "tilted backward."
+  }
+ },
+ "q137": {
+  "question": "The center of pressure of a paraglider:",
+  "options": {
+   "A": "varies little, the paraglider being rather stable.",
+   "B": "is located at the level of the risers.",
+   "C": "undergoes large variations, the paraglider being rather unstable."
+  }
+ },
+ "q138": {
+  "question": "The stagnation point of an airfoil:",
+  "options": {
+   "A": "separates the airflow of the lower surface and the upper surface.",
+   "B": "varies as a function of the angle of attack.",
+   "C": "is the point of the airfoil where the air pressure is maximum.",
+   "D": "defines the boundary between the zones of low pressure and high pressure on either side of the airfoil."
+  }
+ },
+ "q139": {
+  "question": "If for a given angle of attack the stagnation point of the airfoil is located above the cell mouth, my wing may:",
+  "options": {
+   "A": "stall.",
+   "B": "collapse."
+  }
+ },
+ "q140": {
+  "question": "The more the wing loading is reduced, the wing:",
+  "options": {
+   "A": "takes off at a higher speed.",
+   "B": "has a higher glide ratio.",
+   "C": "has a lower minimum sink rate.",
+   "D": "is less stable."
+  }
+ },
+ "q141": {
+  "question": "To avoid collapses, it is better to:",
+  "options": {
+   "A": "brake to the maximum to give more pressure.",
+   "B": "release the brakes to the maximum since pressure is proportional to the square of the airspeed.",
+   "C": "fly with angles of attack far from those coinciding with the limits at which the paraglider stops flying."
+  }
+ },
+ "q142": {
+  "question": "If you fly with a strong tailwind:",
+  "options": {
+   "A": "you have less lift in the paraglider.",
+   "B": "your ground speed increases.",
+   "C": "the cells may deflate.",
+   "D": "the effect of the wind on your face is considerably less strong."
+  }
+ },
+ "q143": {
+  "question": "In paragliding it is possible to fly:",
+  "options": {
+   "A": "at minimum sink rate.",
+   "B": "slower than at minimum sink rate.",
+   "C": "without risk of stall speed because it is a parachute."
+  }
+ },
+ "q144": {
+  "question": "Pulling yourself up onto the harness seat on final increases in the paraglider:",
+  "options": {
+   "A": "induced drag.",
+   "B": "friction drag.",
+   "C": "form drag."
+  }
+ },
+ "q145": {
+  "question": "When we enter a turn, the wing banks toward the desired side because:",
+  "options": {
+   "A": "the load increases on the side of the pulled brake.",
+   "B": "the load decreases on the side of the pulled brake.",
+   "C": "the drag increases on the side of the pulled brake.",
+   "D": "the load decreases on the side of the pulled brake."
+  }
+ },
+ "q146": {
+  "question": "When we enter a turn, the wing pivots about the yaw axis because:",
+  "options": {
+   "A": "the load decreases on the side of the pulled brake.",
+   "B": "the drag increases on the side of the pulled brake.",
+   "C": "the drag decreases on the side of the pulled brake."
+  }
+ },
+ "q147": {
+  "question": "If you use the wing of a lighter pilot:",
+  "options": {
+   "A": "it will collapse more easily in turbulence.",
+   "B": "it will fly slower.",
+   "C": "it will collapse less in turbulence.",
+   "D": "the loss of control in case of collapses will be more violent."
+  }
+ },
+ "q148": {
+  "question": "You use the wing of a heavier pilot:",
+  "options": {
+   "A": "the sink rate will be slightly more favorable.",
+   "B": "it will be more maneuverable.",
+   "C": "it will collapse more easily in turbulence.",
+   "D": "the brakes will be less effective."
+  }
+ },
+ "q149": {
+  "question": "Factors that favor entry into a spin or negative turn:",
+  "options": {
+   "A": "a high aspect ratio.",
+   "B": "a low aspect ratio.",
+   "C": "low angle of attack.",
+   "D": "high angle of attack."
+  }
+ },
+ "q150": {
+  "question": "Factors that favor entry into autorotation after a collapse:",
+  "options": {
+   "A": "a high aspect ratio.",
+   "B": "a low aspect ratio.",
+   "C": "high speed.",
+   "D": "low speed."
+  }
+ },
+ "q151": {
+  "question": "A wing that collapses frequently in turbulence is a wing:",
+  "options": {
+   "A": "that is dangerous.",
+   "B": "that is aerodynamically unstable in pitch.",
+   "C": "that is insufficiently rigid.",
+   "D": "that is poorly damped aerodynamically about the pitch axis."
+  }
+ },
+ "q152": {
+  "question": "A round reserve parachute is:",
+  "options": {
+   "A": "an ultralight glider.",
+   "B": "an aerodynamic brake.",
+   "C": "a 100% guarantee of survival in case of an accident."
+  }
+ },
+ "q153": {
+  "question": "For maximum safety, deploying and repacking the reserve parachute should be done:",
+  "options": {
+   "A": "twice a year.",
+   "B": "once a year.",
+   "C": "leave it just as it was sold to us."
+  }
+ },
+ "q154": {
+  "question": "When we transport or store a paraglider or a reserve parachute we protect it from contact with or proximity to:",
+  "options": {
+   "A": "solvents and greasy substances.",
+   "B": "moisture and heat.",
+   "C": "the rays of the sun."
+  }
+ },
+ "q155": {
+  "question": "Carrying a reserve parachute:",
+  "options": {
+   "A": "requires checking the velcro of the container closure.",
+   "B": "exposes the pilot to unexpected deployments.",
+   "C": "requires no special measure."
+  }
+ },
+ "q156": {
+  "question": "A free-flight helmet must:",
+  "options": {
+   "A": "allow good hearing and visibility.",
+   "B": "be solid and absorb impacts.",
+   "C": "be light so as not to harm the neck."
+  }
+ },
+ "q157": {
+  "question": "The anemometer is an instrument that indicates:",
+  "options": {
+   "A": "the direction of the wind.",
+   "B": "the speed of the wind.",
+   "C": "the speed of the relative wind in flight."
+  }
+ },
+ "q158": {
+  "question": "An altimeter measures:",
+  "options": {
+   "A": "the vertical gradient of atmospheric pressure.",
+   "B": "the variation of the humidity level.",
+   "C": "the altitude."
+  }
+ },
+ "q159": {
+  "question": "The altimeter:",
+  "options": {
+   "A": "measures the rate at which pressure varies.",
+   "B": "even in good condition, may show for a given altitude values that vary depending on the time and place.",
+   "C": "is not affected by temperature variations.",
+   "D": "uses an altitude scale calibrated for average meteorological values (standard atmosphere)."
+  }
+ },
+ "q160": {
+  "question": "An altimeter:",
+  "options": {
+   "A": "can be set to different values (sea level, take-off, landing...).",
+   "B": "gives a reading that varies according to atmospheric conditions.",
+   "C": "is calibrated definitively at the time of its manufacture.",
+   "D": "must always be compared and set against known values (take-off, reference points, landing...)."
+  }
+ },
+ "q161": {
+  "question": "A free-flight variometer measures:",
+  "options": {
+   "A": "the wind speed if used on the ground.",
+   "B": "the vertical component of the wing's ground speed.",
+   "C": "the vertical component of the wing's airspeed.",
+   "D": "the climb rate of the air mass in a thermal."
+  }
+ },
+ "q162": {
+  "question": "A free-flight variometer measures the vertical speed:",
+  "options": {
+   "A": "of the air mass relative to the ground.",
+   "B": "of the air mass relative to the wing.",
+   "C": "of the wing relative to the ground.",
+   "D": "of the wing relative to the air mass."
+  }
+ },
+ "q163": {
+  "question": "A free-flight variometer indicates:",
+  "options": {
+   "A": "the vertical speed of the wing relative to the ground.",
+   "B": "the altitude of the wing.",
+   "C": "the direction of the wing relative to north."
+  }
+ },
+ "q164": {
+  "question": "A free-flight variometer gives its readings based on the variation:",
+  "options": {
+   "A": "of temperature.",
+   "B": "of atmospheric pressure.",
+   "C": "of humidity."
+  }
+ },
+ "q165": {
+  "question": "The shape of a wing's profile:",
+  "options": {
+   "A": "is practically the same for all wings.",
+   "B": "is studied for each wing according to the desired performance.",
+   "C": "has very little influence on performance, since only the pilot's skill can improve it."
+  }
+ },
+ "q166": {
+  "question": "The holes in the ribs between the cells serve to:",
+  "options": {
+   "A": "distribute the pressure between the cells.",
+   "B": "speed up inflation.",
+   "C": "give flexibility to the profile.",
+   "D": "lighten the wing."
+  }
+ },
+ "q167": {
+  "question": "The upper surface of the wing is the:",
+  "options": {
+   "A": "front part of the wing.",
+   "B": "upper part of the wing.",
+   "C": "lower part of the wing."
+  }
+ },
+ "q168": {
+  "question": "The stabilos:",
+  "options": {
+   "A": "reduce the marginal vortices.",
+   "B": "create parasitic drag.",
+   "C": "can improve performance."
+  }
+ },
+ "q169": {
+  "question": "The surface area of a paraglider given by manufacturers generally refers to:",
+  "options": {
+   "A": "the projection of the inflated wing onto a plane.",
+   "B": "the flat surface area of the upper surface.",
+   "C": "the flat surface area of the lower surface."
+  }
+ },
+ "q170": {
+  "question": "The chord of the wing:",
+  "options": {
+   "A": "is related to the thickness of the profile.",
+   "B": "is the distance between the leading edge and the trailing edge.",
+   "C": "is the ratio between the length of the front and rear lines.",
+   "D": "generally varies along the entire span."
+  }
+ },
+ "q171": {
+  "question": "The span is:",
+  "options": {
+   "A": "the greatest distance between the tips of the wing.",
+   "B": "the number of cells.",
+   "C": "the distance between the leading edge and the trailing edge."
+  }
+ },
+ "q172": {
+  "question": "The aspect ratio of a wing is equal to:",
+  "options": {
+   "A": "the chord squared, divided by the surface area.",
+   "B": "the span squared, divided by the surface area.",
+   "C": "the surface area squared, times the span."
+  }
+ },
+ "q173": {
+  "question": "The trim setting of the wing:",
+  "options": {
+   "A": "depends on the adjustment of the brakes.",
+   "B": "is directly linked to the length of the front and rear lines.",
+   "C": "defines the trim angle of attack of the wing in flight.",
+   "D": "can be modified without risk by the user, since it is compensated by the pilot's weight in flight."
+  }
+ },
+ "q174": {
+  "question": "A change in the trim setting of a paraglider affects:",
+  "options": {
+   "A": "the speed polar.",
+   "B": "the stability and the stall.",
+   "C": "the maximum speed and the maximum glide ratio."
+  }
+ },
+ "q175": {
+  "question": "Giving a wing a high trim setting (nose-up):",
+  "options": {
+   "A": "increases the risk of collapse.",
+   "B": "increases the risk of entering a stabilized parachutal stall.",
+   "C": "makes the wing slower to inflate.",
+   "D": "makes the wing more nervous on take-off."
+  }
+ },
+ "q176": {
+  "question": "Giving a wing a nose-down trim setting:",
+  "options": {
+   "A": "increases the risk of collapse.",
+   "B": "increases the risk of entering a stabilized parachutal stall.",
+   "C": "makes the wing slower to inflate.",
+   "D": "makes the wing more nervous on take-off."
+  }
+ },
+ "q177": {
+  "question": "The parts of a wing that bear the greatest stress in flight are:",
+  "options": {
+   "A": "the front lines (A and B).",
+   "B": "the rear part of the wing.",
+   "C": "the front part of the wing.",
+   "D": "the rear lines."
+  }
+ },
+ "q178": {
+  "question": "The brakes:",
+  "options": {
+   "A": "reduce the risk of stall.",
+   "B": "prevent deformation of the wing.",
+   "C": "allow the wing to deform in order to perform movements about the three axes of rotation.",
+   "D": "produce migrations of the center of pressure of the profile."
+  }
+ },
+ "q179": {
+  "question": "Paragliding harnesses:",
+  "options": {
+   "A": "are all alike.",
+   "B": "come in different types.",
+   "C": "influence the handling characteristics.",
+   "D": "can be changed without risk."
+  }
+ },
+ "q180": {
+  "question": "The use of trims and/or speed bars:",
+  "options": {
+   "A": "presents only advantages.",
+   "B": "is not recommended.",
+   "C": "must be done with caution and on models provided for it by the manufacturer.",
+   "D": "has no effect."
+  }
+ },
+ "q181": {
+  "question": "The use of trims and/or speed bars can:",
+  "options": {
+   "A": "increase the risk of collapse.",
+   "B": "improve penetration.",
+   "C": "facilitate inflation.",
+   "D": "increase the risk of entering a stabilized parachutal stall."
+  }
+ },
+ "q182": {
+  "question": "In flight, the hands-up position corresponds to:",
+  "options": {
+   "A": "minimum speed.",
+   "B": "minimum sink rate.",
+   "C": "maximum glide ratio through the air.",
+   "D": "maximum speed."
+  }
+ },
+ "q183": {
+  "question": "Criteria for choosing a wing:",
+  "options": {
+   "A": "the wing loading, the glide ratio over the ground.",
+   "B": "the maximum glide ratio, the minimum sink rate, the penetration.",
+   "C": "the handling, the behavior in turbulence.",
+   "D": "the stability."
+  }
+ },
+ "q184": {
+  "question": "For your safety you have the wing checked by the manufacturer when you notice:",
+  "options": {
+   "A": "a decrease in maximum speed.",
+   "B": "an unusual slowness in inflation.",
+   "C": "damaged seams."
+  }
+ },
+ "q185": {
+  "question": "Your new wing systematically turns to one side, without braking and with the brake lines extended:",
+  "options": {
+   "A": "you lengthen the brake on the opposite side.",
+   "B": "you change the level of the risers on the harness.",
+   "C": "you loosen the leg strap on the opposite side.",
+   "D": "you contact the dealer for a factory check and/or an instructor or experienced pilot."
+  }
+ },
+ "q186": {
+  "question": "Lengthening the front risers:",
+  "options": {
+   "A": "decreases the penetration of the wing.",
+   "B": "favors entry into parachutal stall.",
+   "C": "makes the wing slow to inflate.",
+   "D": "makes the wing more nervous to take off."
+  }
+ },
+ "q187": {
+  "question": "Lengthening the rear risers:",
+  "options": {
+   "A": "increases the penetration of the wing.",
+   "B": "favors collapses in turbulence.",
+   "C": "makes the wing slower to inflate.",
+   "D": "makes the wing more nervous to take off."
+  }
+ },
+ "q188": {
+  "question": "In-flight trim adjustment systems (trims, speed bars):",
+  "options": {
+   "A": "must be prohibited.",
+   "B": "are not advised for beginners.",
+   "C": "must be used with caution in turbulence, especially during the adjustment process.",
+   "D": "must be able to be released easily in flight."
+  }
+ },
+ "q189": {
+  "question": "During storage and transport, the paraglider must be protected from proximity to or contact with:",
+  "options": {
+   "A": "electric fields.",
+   "B": "solvents and greasy substances.",
+   "C": "moisture.",
+   "D": "the sun."
+  }
+ },
+ "q190": {
+  "question": "List the factors that age a wing:",
+  "options": {
+   "A": "the sun.",
+   "B": "rapid descent techniques.",
+   "C": "turbulence."
+  }
+ },
+ "q191": {
+  "question": "Brakes adjusted too tight:",
+  "options": {
+   "A": "can prevent the wing from rising during inflation.",
+   "B": "reduce the ability to gain speed in flight if needed.",
+   "C": "increase the risk of stall.",
+   "D": "are favorable especially in the case of beginners."
+  }
+ },
+ "q192": {
+  "question": "Each line withstands a weight on the order of:",
+  "options": {
+   "A": "8 kg.",
+   "B": "80 kg.",
+   "C": "800 kg."
+  }
+ },
+ "q193": {
+  "question": "The lines are generally manufactured:",
+  "options": {
+   "A": "with kevlar fibers.",
+   "B": "with braided polyethylene threads.",
+   "C": "with polyester webbing."
+  }
+ },
+ "q194": {
+  "question": "Kevlar fiber:",
+  "options": {
+   "A": "has a low percentage of stretch.",
+   "B": "has good elasticity.",
+   "C": "has good tensile strength, but is weak under shear and bending.",
+   "D": "must be sheathed for effective protection against abrasion and ultraviolet rays."
+  }
+ },
+ "q195": {
+  "question": "Polyethylene:",
+  "options": {
+   "A": "is sensitive to moisture.",
+   "B": "has a low percentage of stretch.",
+   "C": "has a low melting temperature (significant risk of breakage from friction).",
+   "D": "has good tensile strength."
+  }
+ },
+ "q196": {
+  "question": "A knot in the line:",
+  "options": {
+   "A": "increases tensile strength.",
+   "B": "can reduce tensile strength by up to 50%.",
+   "C": "has no influence on tensile strength."
+  }
+ },
+ "q197": {
+  "question": "The purpose of A.F.N.O.R. is:",
+  "options": {
+   "A": "to promote the practice of free flight in competition.",
+   "B": "to promote the free-flight trade.",
+   "C": "to advance equipment technology.",
+   "D": "to provide a French certification for free-flight wings."
+  }
+ },
+ "q198": {
+  "question": "The certification sticker on a paraglider:",
+  "options": {
+   "A": "is not mandatory on every unit of a certified model.",
+   "B": "gives indications about the behavior of that model in certain flight configurations.",
+   "C": "allows you to get an idea of the piloting level required for that model (beginner, intermediate...)",
+   "D": "indicates which type of harness the tests were performed with."
+  }
+ },
+ "q199": {
+  "question": "Certification for a paraglider:",
+  "options": {
+   "A": "certifies that any certified paraglider can be used without risk by any pilot (even beginners).",
+   "B": "allows you to get an idea of the behavior of that model.",
+   "C": "requires the manufacturer to maintain the technical characteristics across all units produced.",
+   "D": "is valid regardless of the harness mounted on the wing."
+  }
+ },
+ "q200": {
+  "question": "A free-flight wing is:",
+  "options": {
+   "A": "an aerodynamic brake.",
+   "B": "an ultralight glider.",
+   "C": "an aircraft not subject to registration.",
+   "D": "a parachute."
+  }
+ },
+ "q201": {
+  "question": "Right-of-way among non-powered aircraft:",
+  "options": {
+   "A": "Ultralight free-flight aircraft (P.U.L.) have right-of-way over gliders.",
+   "B": "ultralight free-flight aircraft (P.U.L.) must give way to gliders.",
+   "C": "ultralight free-flight aircraft (P.U.L.) have right-of-way over towed combinations (airplane + glider, microlight + hang glider, microlight + advertising banner, etc...)."
+  }
+ },
+ "q202": {
+  "question": "Right-of-way among ultralight free-flight aircraft (P.U.L.):",
+  "options": {
+   "A": "the hang glider must give way to the paraglider.",
+   "B": "the paraglider must give way to the hang glider.",
+   "C": "hang glider and paraglider must observe the same right-of-way rules in the air."
+  }
+ },
+ "q203": {
+  "question": "A wing is coming head-on toward you; you perform:",
+  "options": {
+   "A": "a turn to the left (the other also turns to the left).",
+   "B": "a turn to the right (the other also turns to the right).",
+   "C": "a descent (the other stays at the same level)."
+  }
+ },
+ "q204": {
+  "question": "In flight, an ultralight free-flight aircraft (P.U.L.) is coming from your right on a converging course:",
+  "options": {
+   "A": "you have right-of-way.",
+   "B": "you must give way.",
+   "C": "right-of-way depends on the size of the aircraft."
+  }
+ },
+ "q205": {
+  "question": "Away from the terrain, you are following the same course and at the same level as a slower wing; you overtake it on:",
+  "options": {
+   "A": "the left.",
+   "B": "above.",
+   "C": "the right."
+  }
+ },
+ "q206": {
+  "question": "Flying at the same altitude, right-of-way belongs to:",
+  "options": {
+   "A": "the wing arriving from the right.",
+   "B": "the tandem over the solo.",
+   "C": "the wing that reaches the lift first.",
+   "D": "the wing piloted by a beginner."
+  }
+ },
+ "q207": {
+  "question": "In ridge soaring, right-of-way belongs to the wing that:",
+  "options": {
+   "A": "has the slope on its right.",
+   "B": "has the slope on its left.",
+   "C": "is located windward of the terrain.",
+   "D": "is located leeward of the terrain."
+  }
+ },
+ "q208": {
+  "question": "You are ridge soaring, with the terrain on your left. A wing comes head-on at the same altitude:",
+  "options": {
+   "A": "the other has right-of-way.",
+   "B": "you have right-of-way and maintain your heading.",
+   "C": "you try to pass it underneath."
+  }
+ },
+ "q209": {
+  "question": "Two wings are following each other near terrain located on their right; the second wing is faster:",
+  "options": {
+   "A": "it must overtake on the left.",
+   "B": "it must overtake on the right, between the terrain and the other wing.",
+   "C": "it turns back."
+  }
+ },
+ "q210": {
+  "question": "You are the first to enter a thermal:",
+  "options": {
+   "A": "wings arriving afterward must adopt your turn direction.",
+   "B": "a wing entering the thermal at the same level as you must turn 180 degrees and in the same direction.",
+   "C": "you have right-of-way over a wing located below that is overtaking you.",
+   "D": "no other wing has the right to use this thermal."
+  }
+ },
+ "q211": {
+  "question": "You want to enter a thermal while another wing is circling 50 m below:",
+  "options": {
+   "A": "you turn in the same direction as the other wing.",
+   "B": "you turn in the opposite direction so you can keep watch on it.",
+   "C": "you wait for it to pass above you before entering, since otherwise the peripheral sink may bring it to your same altitude."
+  }
+ },
+ "q212": {
+  "question": "Flying inside clouds is permitted:",
+  "options": {
+   "A": "more than 300 meters above any terrain.",
+   "B": "more than 900 meters above sea level.",
+   "C": "nowhere."
+  }
+ },
+ "q213": {
+  "question": "Overflying isolated obstacles must be done with a minimum vertical and horizontal clearance of:",
+  "options": {
+   "A": "50 meters.",
+   "B": "100 meters.",
+   "C": "150 meters.",
+   "D": "200 meters."
+  }
+ },
+ "q214": {
+  "question": "Overflying built-up areas or a gathering of people must be done with a minimum clearance of:",
+  "options": {
+   "A": "50 meters vertically and 100 meters horizontally.",
+   "B": "100 meters vertically and 200 meters horizontally.",
+   "C": "300 meters vertically and 600 meters horizontally."
+  }
+ },
+ "q215": {
+  "question": "The flight rules require each pilot:",
+  "options": {
+   "A": "to keep a sufficient distance to prevent collisions.",
+   "B": "to keep to the right in case of a crossing at the same altitude.",
+   "C": "to pass a slower wing on the left.",
+   "D": "to turn in the same direction as the first wing that enters the thermal lift."
+  }
+ },
+ "q216": {
+  "question": "The care of the flying sites concerns:",
+  "options": {
+   "A": "the Federation.",
+   "B": "the leagues and the clubs.",
+   "C": "the Ministry of the Interior.",
+   "D": "each pilot."
+  }
+ },
+ "q217": {
+  "question": "Applying the addition rule means:",
+  "options": {
+   "A": "avoiding the accumulation of stress factors that individually do not lead to accidents but, added together, make the risk unacceptable.",
+   "B": "measuring the risks and not adding them.",
+   "C": "identifying the new elements of a situation and accepting only one at a time."
+  }
+ },
+ "q218": {
+  "question": "Hypoxia:",
+  "options": {
+   "A": "is due to an oxygen deficit in the blood.",
+   "B": "is due to the cooling of the atmosphere.",
+   "C": "can manifest as a feeling of well-being.",
+   "D": "causes impaired judgment and a decrease in muscular coordination."
+  }
+ },
+ "q219": {
+  "question": "Hypoxia:",
+  "options": {
+   "A": "the first symptoms can appear at around 2000 m above sea level.",
+   "B": "does not concern free-flight pilots.",
+   "C": "can impair judgment.",
+   "D": "has different effects on each pilot."
+  }
+ },
+ "q220": {
+  "question": "Factors that aggravate the risk of hypoxia:",
+  "options": {
+   "A": "physical fatigue.",
+   "B": "alcohol and tobacco.",
+   "C": "a diet high in fat.",
+   "D": "a poorly dressed (insufficiently warm) pilot."
+  }
+ },
+ "q221": {
+  "question": "Anticipating the possibility of gaining a lot of altitude or a prolonged flight, it is advisable to equip yourself with:",
+  "options": {
+   "A": "light sports clothing.",
+   "B": "anti-nausea medication.",
+   "C": "good footwear, warm clothing, gloves, sunglasses, drinking water."
+  }
+ },
+ "q222": {
+  "question": "In strong wind, tethered flight over a fixed point (line tied to the ground):",
+  "options": {
+   "A": "is never dangerous.",
+   "B": "can be used in school.",
+   "C": "is not advisable.",
+   "D": "can cause situations in which the wing becomes uncontrollable."
+  }
+ },
+ "q223": {
+  "question": "When establishing a flight plan, the following is taken into account:",
+  "options": {
+   "A": "the location of the take-off and landing areas.",
+   "B": "the performance of the wing.",
+   "C": "the wind at altitude.",
+   "D": "the valley wind."
+  }
+ },
+ "q224": {
+  "question": "To take off safely, it is better to choose a slope:",
+  "options": {
+   "A": "concave, with a sharp drop-off.",
+   "B": "convex and progressive.",
+   "C": "without obstacles."
+  }
+ },
+ "q225": {
+  "question": "The inclination of a take-off area must be:",
+  "options": {
+   "A": "less than or equal to the inclination of the wing's maximum glide ratio.",
+   "B": "greater than the inclination of the wing's maximum glide ratio.",
+   "C": "it should not be compared with the inclination of the wing's glide ratio."
+  }
+ },
+ "q226": {
+  "question": "You are preparing to take off at 3 p.m. from a sunlit slope where a light mountain breeze is setting in. The meteorological wind is nil:",
+  "options": {
+   "A": "the wind will be nil or very weak in the valley.",
+   "B": "you must anticipate the possibility of strong wind in the valley, especially if it is narrow.",
+   "C": "in all cases it is prudent to anticipate the possibility of alternate landings, taking into account possible strong wind in the valley."
+  }
+ },
+ "q227": {
+  "question": "Your take-off faces west, and the weather is good. To find the best launch conditions, it is better to take off:",
+  "options": {
+   "A": "in the morning.",
+   "B": "the time of day does not matter.",
+   "C": "in the early afternoon."
+  }
+ },
+ "q228": {
+  "question": "Your take-off faces east, and the weather is good. To find the best conditions, it is better to take off:",
+  "options": {
+   "A": "in the morning.",
+   "B": "the time of day does not matter.",
+   "C": "during the afternoon."
+  }
+ },
+ "q229": {
+  "question": "You are in the mountains, there is no wind, and in theory, with the wing's glide ratio, you would reach the landing field exactly. You:",
+  "options": {
+   "A": "do not fly.",
+   "B": "fly.",
+   "C": "fly at midday to take advantage of the lift.",
+   "D": "the ground effect will help you on landing."
+  }
+ },
+ "q230": {
+  "question": "A stratus layer 40 meters thick is located below the take-off:",
+  "options": {
+   "A": "40 m is little, you take off.",
+   "B": "you wait for it to clear, otherwise you do not take off.",
+   "C": "if there is enough wind for ridge soaring, you take off and stay above the layer."
+  }
+ },
+ "q231": {
+  "question": "Compared with the wind measured at take-off 2 meters above the ground, there is a risk that 30 meters higher up it will be:",
+  "options": {
+   "A": "of the same strength.",
+   "B": "stronger.",
+   "C": "weaker."
+  }
+ },
+ "q232": {
+  "question": "Crosswind of 10 km/h at take-off:",
+  "options": {
+   "A": "you wait for better conditions.",
+   "B": "a good run and that's it.",
+   "C": "a crosswind, but not very strong, is not a problem.",
+   "D": "you look for a better-oriented take-off."
+  }
+ },
+ "q233": {
+  "question": "During the take-off run, if the slope of the ground increases and the trim does not change, the angle of attack:",
+  "options": {
+   "A": "does not change.",
+   "B": "decreases.",
+   "C": "increases."
+  }
+ },
+ "q234": {
+  "question": "During the take-off run, your angle of attack is the angle between the plane of the wing and:",
+  "options": {
+   "A": "the ground.",
+   "B": "the vertical.",
+   "C": "the horizontal."
+  }
+ },
+ "q235": {
+  "question": "During take-off the wind is from behind. The chances of not getting airborne are due to:",
+  "options": {
+   "A": "the absence of ground effect.",
+   "B": "the effects of the wind gradient.",
+   "C": "the high speed you would have to reach while running."
+  }
+ },
+ "q236": {
+  "question": "On take-off there is 20 km/h over the slope, your wing flies starting from 30 km/h; on your run to take off you must run at:",
+  "options": {
+   "A": "10 km/h.",
+   "B": "20 km/h.",
+   "C": "30 km/h.",
+   "D": "40 km/h."
+  }
+ },
+ "q237": {
+  "question": "In high mountains, air density decreases with altitude, and for my wing to be able to take off, I must run:",
+  "options": {
+   "A": "faster.",
+   "B": "slower.",
+   "C": "for longer.",
+   "D": "for less time."
+  }
+ },
+ "q238": {
+  "question": "After a take-off run with the harness brushing the ground, you barely manage to take off:",
+  "options": {
+   "A": "you are surely in fast flight regime, you can reduce speed to enter minimum sink rate.",
+   "B": "you are in slow flight regime and you must skim the terrain gaining speed to switch to normal flight regime.",
+   "C": "you are probably in danger; if you do not immediately gain speed/airflow, you may fall."
+  }
+ },
+ "q239": {
+  "question": "A friend has just taken off, you catch up with him to fly together:",
+  "options": {
+   "A": "it is dangerous because you will encounter the turbulence of his wing.",
+   "B": "it is the only way to take good photos.",
+   "C": "it is delicate but possible."
+  }
+ },
+ "q240": {
+  "question": "The turbulence caused by another wing is dangerous:",
+  "options": {
+   "A": "several minutes after its passage.",
+   "B": "over a few tens of meters behind in its path/airflow.",
+   "C": "because it can cause collapses on your own wing."
+  }
+ },
+ "q241": {
+  "question": "The turbulence of a wing is dangerous for another aircraft located:",
+  "options": {
+   "A": "in front.",
+   "B": "behind.",
+   "C": "below.",
+   "D": "in the path/airflow."
+  }
+ },
+ "q242": {
+  "question": "Flying while ensuring a landing place means:",
+  "options": {
+   "A": "having an endurance that allows you to reach it at all times regardless of the aerological conditions encountered.",
+   "B": "staying over the usual site without covering distance."
+  }
+ },
+ "q243": {
+  "question": "In case the meteo wind changes orientation or intensity during the flight, it is advisable to:",
+  "options": {
+   "A": "change the flight plan in time to have a better chance of a safe landing.",
+   "B": "immediately set course toward the terrain to return at all costs.",
+   "C": "decelerate to the maximum to delay the moment of landing, which will be delicate.",
+   "D": "immediately locate alternative terrains to prepare for the eventuality of an emergency landing."
+  }
+ },
+ "q244": {
+  "question": "A wing flies into the wind and advances relative to the ground; the wind is:",
+  "options": {
+   "A": "stronger than the wing's airspeed.",
+   "B": "weaker than the wing's airspeed.",
+   "C": "impossible to know."
+  }
+ },
+ "q245": {
+  "question": "You fly with a tailwind, your cruise airspeed is equal to the meteo wind speed; the ground:",
+  "options": {
+   "A": "passes by twice as fast as with no wind.",
+   "B": "passes by twice as slow as with no wind.",
+   "C": "appears fixed."
+  }
+ },
+ "q246": {
+  "question": "The speed of your aircraft relative to the ground is:",
+  "options": {
+   "A": "higher with a headwind.",
+   "B": "higher with a tailwind.",
+   "C": "it never changes."
+  }
+ },
+ "q247": {
+  "question": "When you fly with a tailwind close to the ground, the visual impression tends to alter the perception of airspeed, and it can happen that without realizing it you:",
+  "options": {
+   "A": "fly too slowly.",
+   "B": "fly too fast.",
+   "C": "enter a stall."
+  }
+ },
+ "q248": {
+  "question": "If you fly into a meteo wind, to maintain the maximum glide ratio over ground, relative to the speed corresponding to the maximum glide ratio in the air, you must:",
+  "options": {
+   "A": "fly faster.",
+   "B": "fly slower.",
+   "C": "look for the lowest sink rate."
+  }
+ },
+ "q249": {
+  "question": "To maintain a maximum glide ratio over ground, you must fly faster than at the maximum airspeed glide ratio speed:",
+  "options": {
+   "A": "in a rising air mass.",
+   "B": "in sink.",
+   "C": "with a headwind.",
+   "D": "with a tailwind."
+  }
+ },
+ "q250": {
+  "question": "You cross head-on with another wing; your closing speed is equal to:",
+  "options": {
+   "A": "your airspeed.",
+   "B": "the sum of the two airspeeds.",
+   "C": "half of your airspeed."
+  }
+ },
+ "q251": {
+  "question": "You cross with another wing; you must calculate and react:",
+  "options": {
+   "A": "faster than usual.",
+   "B": "as usual.",
+   "C": "with a headwind you have more time than usual."
+  }
+ },
+ "q252": {
+  "question": "Your path over ground is perpendicular to the wind direction:",
+  "options": {
+   "A": "the central chord of the wing is perpendicular to the wind direction.",
+   "B": "you are necessarily in a sideslip.",
+   "C": "you are drifting."
+  }
+ },
+ "q253": {
+  "question": "In flight with a crosswind:",
+  "options": {
+   "A": "the central chord of the wing aligns with the wind direction; this is the weathervane effect.",
+   "B": "you must adopt a counter-drift angle if you are heading toward a point that is not on the wind axis.",
+   "C": "the central chord of the wing forms an angle with the path over ground.",
+   "D": "the central chord of the wing remains parallel to the path over ground."
+  }
+ },
+ "q254": {
+  "question": "Mark the two elements that define the drift angle:",
+  "options": {
+   "A": "the central chord.",
+   "B": "the direction of the meteo wind.",
+   "C": "the direction of the relative wind.",
+   "D": "the path over ground."
+  }
+ },
+ "q255": {
+  "question": "Strong dangerous turbulence can be encountered:",
+  "options": {
+   "A": "on the lee side of a relief with strong wind.",
+   "B": "in shear zones.",
+   "C": "in zones of ridge lift."
+  }
+ },
+ "q256": {
+  "question": "In turbulent conditions it is better to:",
+  "options": {
+   "A": "not perform maneuvers that require a lot of precision.",
+   "B": "fly at minimum sink rate.",
+   "C": "not get close to the limits of the piloting variables."
+  }
+ },
+ "q257": {
+  "question": "In turbulent regime it is better to:",
+  "options": {
+   "A": "not perform maneuvers that require a lot of precision.",
+   "B": "not play with speeds that are too low.",
+   "C": "not play with speeds that are too high."
+  }
+ },
+ "q258": {
+  "question": "In turbulence:",
+  "options": {
+   "A": "the stresses on the structure increase with flight speed.",
+   "B": "you must fly as slowly as possible so as not to fatigue the structure.",
+   "C": "you must fly as fast as possible to leave the zone."
+  }
+ },
+ "q259": {
+  "question": "You are covering a part of the course where the wind is well across your route. You preferentially choose the cumulus clouds:",
+  "options": {
+   "A": "windward of the route to follow.",
+   "B": "leeward of the route to follow.",
+   "C": "on the route to follow."
+  }
+ },
+ "q260": {
+  "question": "Before performing a turn, you must:",
+  "options": {
+   "A": "evaluate the loss of height due to the turn and the new path.",
+   "B": "verify that the zone where you will be after the turn is clear.",
+   "C": "go slower."
+  }
+ },
+ "q261": {
+  "question": "In ridge flying you:",
+  "options": {
+   "A": "turn with your back to the slope.",
+   "B": "turn facing the slope.",
+   "C": "pay attention to the wind gradient near the relief.",
+   "D": "keep a sufficient speed margin to be able to move away from the slope in case of emergency."
+  }
+ },
+ "q262": {
+  "question": "In ridge flying, to make better use of the lift, you fly at the angle of attack:",
+  "options": {
+   "A": "of minimum sink rate.",
+   "B": "of maximum glide ratio.",
+   "C": "of maximum speed.",
+   "D": "of minimum speed."
+  }
+ },
+ "q263": {
+  "question": "In ridge flying, you turn:",
+  "options": {
+   "A": "toward the side where the wing lifts.",
+   "B": "toward the relief side.",
+   "C": "toward the side opposite the relief."
+  }
+ },
+ "q264": {
+  "question": "In ridge flying, turning toward the slope is:",
+  "options": {
+   "A": "it is recommended.",
+   "B": "better to avoid it.",
+   "C": "it is difficult to control and dangerous because of the fast passing of the ground with a tailwind.",
+   "D": "it is the one that imposes the strongest bank for the same turn radius relative to the ground."
+  }
+ },
+ "q265": {
+  "question": "Ridge flying requires:",
+  "options": {
+   "A": "perfect control of the path.",
+   "B": "constant observation of the evolution of the wind.",
+   "C": "being accustomed to the drift effects imposed by the wind."
+  }
+ },
+ "q266": {
+  "question": "During ridge flying in a turbulent atmosphere:",
+  "options": {
+   "A": "you avoid descending below the ridge edges.",
+   "B": "you fly a little farther from the relief and increase the speed.",
+   "C": "you fly as fast as possible."
+  }
+ },
+ "q267": {
+  "question": "When a pilot uses a thermal bubble to gain height:",
+  "options": {
+   "A": "he rises at the same speed as the bubble.",
+   "B": "he enters the bubble at its lower part and exits at the top.",
+   "C": "he continuously descends inside the bubble."
+  }
+ },
+ "q268": {
+  "question": "You manage to position yourself beneath a large cumulus, you observe some wispy clouds and a strongly positive variometer reading; you:",
+  "options": {
+   "A": "take advantage to gain height.",
+   "B": "increase speed to bring the variometer to zero.",
+   "C": "accelerate to head toward the clearer side, escaping the influence of the cloud.",
+   "D": "look for the sink on the windward side of the cloud."
+  }
+ },
+ "q269": {
+  "question": "During a spiral your aircraft drifted 3 km in 10 min. The wind strength is:",
+  "options": {
+   "A": "impossible to know.",
+   "B": "10 km/h",
+   "C": "18 km/h"
+  }
+ },
+ "q270": {
+  "question": "During a spiral your aircraft drifted 3 km in 10 min. The wind strength is:",
+  "options": {
+   "A": "impossible to know.",
+   "B": "10 km/h",
+   "C": "18 km/h"
+  }
+ },
+ "q271": {
+  "question": "You approach the base of a cumulus:",
+  "options": {
+   "A": "there is no risk of suction.",
+   "B": "you may be sucked up by the lift, which tends to become stronger.",
+   "C": "the risk is lower as long as the cloud is not of the congestus or nimbus type.",
+   "D": "the risk worsens if the base is below the highest ridge edges."
+  }
+ },
+ "q272": {
+  "question": "On a fine day of rising air on which storms have been forecast, you must be concerned if:",
+  "options": {
+   "A": "the sky covers over quickly.",
+   "B": "there is lift everywhere.",
+   "C": "the shadows of the clouds on the ground grow larger quickly."
+  }
+ },
+ "q273": {
+  "question": "A large isolated cumulus is always harmless:",
+  "options": {
+   "A": "false, it can have lift greater than your escape capabilities and turn into a cumulonimbus.",
+   "B": "false, it can hide other aircraft.",
+   "C": "true."
+  }
+ },
+ "q274": {
+  "question": "The passage of a cumulonimbus through your flight sector:",
+  "options": {
+   "A": "invites you to make use of the lift before the rains.",
+   "B": "forces you to land immediately.",
+   "C": "can make landing problematic."
+  }
+ },
+ "q275": {
+  "question": "After a long-duration flight, it is advisable to relax and prepare your arms and legs for the landing run:",
+  "options": {
+   "A": "before the approach.",
+   "B": "during the approach.",
+   "C": "on final.",
+   "D": "by doing some aerial stunts during the approach."
+  }
+ },
+ "q276": {
+  "question": "You have a 10 km/h headwind to return to the landing field:",
+  "options": {
+   "A": "you try to stay at minimum sink rate to have time to complete the route.",
+   "B": "you fly as fast as possible to have maximum penetration speed.",
+   "C": "taking reference points and managing speed, you try to find the best glide angle."
+  }
+ },
+ "q277": {
+  "question": "An unknown landing field must be reconnoitered:",
+  "options": {
+   "A": "in flight, positioning yourself directly above to observe it.",
+   "B": "before the flight.",
+   "C": "at the moment of landing."
+  }
+ },
+ "q278": {
+  "question": "You are heading toward the landing field with a tailwind at cruise speed; you see the nearest edges of the field rising relative to you:",
+  "options": {
+   "A": "you are going to arrive just at the field and land with a tailwind.",
+   "B": "you are going to arrive over the field, make a U-turn and land into the wind.",
+   "C": "you choose a better-located alternate landing.",
+   "D": "you reduce speed to use the better glide ratio over ground due to the tailwind."
+  }
+ },
+ "q279": {
+  "question": "You are on your approach, there is a wing below you:",
+  "options": {
+   "A": "you watch it, waiting for it, since you must give it priority.",
+   "B": "you have priority over the other wing.",
+   "C": "you do a few tight spirals to land sooner.",
+   "D": "you carry out your flight, since on approach there are no priorities."
+  }
+ },
+ "q280": {
+  "question": "A good approach:",
+  "options": {
+   "A": "is prepared in advance.",
+   "B": "takes into account the meteo wind and its possible variations.",
+   "C": "must be able to be modified if necessary."
+  }
+ },
+ "q281": {
+  "question": "A good approach implies a final:",
+  "options": {
+   "A": "into the wind at the end of the field.",
+   "B": "into the wind at the entrance of the field.",
+   "C": "it all depends on the conditions."
+  }
+ },
+ "q282": {
+  "question": "360-degree turns when landing:",
+  "options": {
+   "A": "allow you to be precise on landing.",
+   "B": "are not advised.",
+   "C": "make you lose sight of the reference points.",
+   "D": "expose you to the risk of collision with the other wings that are approaching."
+  }
+ },
+ "q283": {
+  "question": "A good landing comprises:",
+  "options": {
+   "A": "a reconnaissance at a good altitude (wind on the ground, obstacles, planned pattern...).",
+   "B": "S-turns to assess the conditions and to be precise.",
+   "C": "a final turn not too close to the ground and a stabilized segment on final."
+  }
+ },
+ "q284": {
+  "question": "You are making an S-approach; your trajectory is sinking relative to the planned descent path, you must:",
+  "options": {
+   "A": "reduce the amplitude of the S-turns.",
+   "B": "increase the radius of the turns.",
+   "C": "if needed, fly in a straight line toward the landing field.",
+   "D": "speed up so as not to lose time."
+  }
+ },
+ "q285": {
+  "question": "To be precise in the landing, correctly visualizing the slope of the trajectory on final is essential. This slope:",
+  "options": {
+   "A": "varies as a function of the angle of attack.",
+   "B": "varies as a function of the direction and speed of the wind.",
+   "C": "does not depend on the aerodynamic characteristics of the wing."
+  }
+ },
+ "q286": {
+  "question": "You are on final, facing the landing field, and you realize you are a bit long and high and may overshoot. You choose to:",
+  "options": {
+   "A": "lose altitude by putting the wing into a slight parachutal stall.",
+   "B": "lose altitude by speeding up.",
+   "C": "increase the distance to be covered by changing course.",
+   "D": "increase the parasitic drag by sitting up."
+  }
+ },
+ "q287": {
+  "question": "On final, if the target you have set descends in your field of vision, you are:",
+  "options": {
+   "A": "falling short.",
+   "B": "overshooting.",
+   "C": "you must slow down as much as possible."
+  }
+ },
+ "q288": {
+  "question": "Building up speed before landing:",
+  "options": {
+   "A": "is useless.",
+   "B": "is necessary to keep a reserve of airspeed in case of a wind gradient.",
+   "C": "is dangerous since the craft will climb when braking.",
+   "D": "is necessary to improve maneuverability near the ground."
+  }
+ },
+ "q289": {
+  "question": "A headwind gradient on landing:",
+  "options": {
+   "A": "has no effect on airspeed.",
+   "B": "is dangerous; it can lead to a stall situation.",
+   "C": "increases the sink rate.",
+   "D": "makes building up speed necessary for safety."
+  }
+ },
+ "q290": {
+  "question": "The final braking in a landing with strong wind:",
+  "options": {
+   "A": "is not always necessary.",
+   "B": "is not dangerous.",
+   "C": "requires precise dosing."
+  }
+ },
+ "q291": {
+  "question": "Paragliding:",
+  "options": {
+   "A": "does not require much training.",
+   "B": "obeys the same laws of the air and the same demands as the other air sports.",
+   "C": "forgives most piloting errors since it is practiced on a parachute.",
+   "D": "requires serious training when used as a glider (performance flying) and light training in para-alpinism (to descend from mountains)."
+  }
+ },
+ "q292": {
+  "question": "The first significant paragliding flight:",
+  "options": {
+   "A": "is done on the first or second day of the course after inflating the paraglider a couple of times.",
+   "B": "is done directly, due to the risks of accident on the training slope.",
+   "C": "requires serious technical training.",
+   "D": "requires a gradual adaptation to the void."
+  }
+ },
+ "q293": {
+  "question": "Obtaining the paragliding pilot license requires a progression:",
+  "options": {
+   "A": "that lasts several weeks.",
+   "B": "that lasts about a week.",
+   "C": "that includes a minimum of 40 significant flights.",
+   "D": "that ends with the purchase of your first wing."
+  }
+ },
+ "q294": {
+  "question": "When you receive a new wing, you must:",
+  "options": {
+   "A": "first test it with one or two inflations on flat ground to check the brakes.",
+   "B": "then check the wing's performance at a known flying site.",
+   "C": "add a carabiner on the risers to make gripping easier."
+  }
+ },
+ "q295": {
+  "question": "The best profile for a take-off area is one where the pilot can:",
+  "options": {
+   "A": "move away from the terrain quickly.",
+   "B": "run easily down the slope to reach flying speed.",
+   "C": "run little so as to launch into flight quickly.",
+   "D": "stop in case of problems with the inflation."
+  }
+ },
+ "q296": {
+  "question": "Take-off in high mountains:",
+  "options": {
+   "A": "is made easier by the lower air density.",
+   "B": "is para-alpinism and not free flight.",
+   "C": "requires a high level of experience.",
+   "D": "does not require any particular knowledge of mountaineering."
+  }
+ },
+ "q297": {
+  "question": "Take-off without wind:",
+  "options": {
+   "A": "is dangerous.",
+   "B": "requires running, at least at the wing's minimum sink rate speed.",
+   "C": "requires significant control with the brakes."
+  }
+ },
+ "q298": {
+  "question": "At take-off there is 30 km/h of wind, my wing flies at a maximum speed of 35 km/h:",
+  "options": {
+   "A": "I must run at 5 km/h to take off.",
+   "B": "I do not take off because I consider the safety margin insufficient.",
+   "C": "I pull on the front risers as soon as I have taken off."
+  }
+ },
+ "q299": {
+  "question": "At take-off, with 20 km/h headwind, the wing can be inflated:",
+  "options": {
+   "A": "facing the slope as usual.",
+   "B": "facing the slope, having another person secure us so as not to be pulled back at the moment the wing rises.",
+   "C": "with the back to the slope, the pilot turning around to take off."
+  }
+ },
+ "q300": {
+  "question": "Inflating while facing the wing allows you to take off:",
+  "options": {
+   "A": "without risk in a wind above 30 km/h.",
+   "B": "with moderate wind.",
+   "C": "it allows controlling the wing easily while it rises.",
+   "D": "without any assistance in all cases."
+  }
+ },
+ "q301": {
+  "question": "At take-off the wind is crosswind (30 degrees, 3 m/s):",
+  "options": {
+   "A": "You inflate facing into the wind, build up speed and progressively orient the run to face the slope.",
+   "B": "you run along the line of maximum slope, pulling on the front risers."
+  }
+ },
+ "q302": {
+  "question": "30 km/h of headwind at take-off, you are alone:",
+  "options": {
+   "A": "it is too much, you refrain from flying.",
+   "B": "an experienced pilot can take off without problems with the back to the wind.",
+   "C": "you do some inflation tests since either you will not be able to do it or the wing will come up on its own without the need to run."
+  }
+ },
+ "q303": {
+  "question": "Laying out the paraglider on the ground depends:",
+  "options": {
+   "A": "on the strength and direction of the wind.",
+   "B": "on the slope.",
+   "C": "on the characteristics of the paraglider."
+  }
+ },
+ "q304": {
+  "question": "The paragliding take-off is made up of:",
+  "options": {
+   "A": "inflation of the wing (acceleration and looking forward).",
+   "B": "stabilization and control of the wing (timing and looking at the wing).",
+   "C": "take-off (acceleration and looking forward)."
+  }
+ },
+ "q305": {
+  "question": "The stabilization and control of the wing:",
+  "options": {
+   "A": "is necessary to check the whole wing and detect any knots in the lines.",
+   "B": "requires a momentary halt of the acceleration.",
+   "C": "is necessary to verify that the aircraft you have just built is fit to fly."
+  }
+ },
+ "q306": {
+  "question": "The acceleration phase after stabilization requires:",
+  "options": {
+   "A": "leaning forward for an effective build-up of speed.",
+   "B": "leaning forward to avoid loss of balance.",
+   "C": "leaning backward to control the wing better."
+  }
+ },
+ "q307": {
+  "question": "During an inflation with strong wind, the wing begins to pull you backward very strongly; you risk being dragged:",
+  "options": {
+   "A": "you release the brakes and hold on to whatever you can to support yourself.",
+   "B": "you pull both brakes all the way to stop yourself.",
+   "C": "you control the wing by pulling on one rear riser and moving toward it.",
+   "D": "you feather the wing with the help of the rear risers."
+  }
+ },
+ "q308": {
+  "question": "During an inflation the wing positions itself in a crescent shape, you must:",
+  "options": {
+   "A": "accelerate fully down the slope.",
+   "B": "pull the brakes, then hold the front risers.",
+   "C": "stop and start again.",
+   "D": "pull on the front risers."
+  }
+ },
+ "q309": {
+  "question": "After inflation, your wing has an inflation defect on the right and veers to the right:",
+  "options": {
+   "A": "you run more slowly and pull hard on the right brake.",
+   "B": "you brake vigorously on the right, then turn left.",
+   "C": "you follow the wing until correcting the trajectory using the brakes, then pull on the brakes to finish inflating it."
+  }
+ },
+ "q310": {
+  "question": "During stabilization, your wing stays to the left:",
+  "options": {
+   "A": "You correct by moving to the right to recover the wing.",
+   "B": "you follow the wing by moving to the left, braking gently on the right to bring it back to the line of maximum slope.",
+   "C": "you maintain speed by pulling on the front risers.",
+   "D": "you accelerate and brake on the left."
+  }
+ },
+ "q311": {
+  "question": "During stabilization you have several left lateral cells closed:",
+  "options": {
+   "A": "you pull the right brake and slow down.",
+   "B": "you pull the left front riser to give more speed to that side.",
+   "C": "you maintain speed and try to re-inflate with a gentle movement of the brakes.",
+   "D": "you do not worry, they always end up opening on their own."
+  }
+ },
+ "q312": {
+  "question": "On the ground your wing veers off the planned trajectory:",
+  "options": {
+   "A": "You correct by bringing the wing back with your body and braking on the side toward which you want to bring it.",
+   "B": "you follow the wing to stay in the center and bring it back by braking on the side where you want to go.",
+   "C": "You correct with the front risers."
+  }
+ },
+ "q313": {
+  "question": "Your wing is inflated, stabilized. To take off:",
+  "options": {
+   "A": "you keep accelerating while holding the front risers firmly.",
+   "B": "you accelerate with your hands up until take-off.",
+   "C": "you accelerate with your hands up and brake at the moment of take-off.",
+   "D": "you accelerate, placing the brakes at the level of the cruise flight setting."
+  }
+ },
+ "q314": {
+  "question": "Just after take-off, you:",
+  "options": {
+   "A": "release the brakes to sit down better.",
+   "B": "cannot pilot if you are poorly seated.",
+   "C": "visually check that the paraglider is well inflated.",
+   "D": "attend to your trajectory and to the other pilots who are flying."
+  }
+ },
+ "q315": {
+  "question": "Using the front risers in flight:",
+  "options": {
+   "A": "is not very useful aerodynamically because the wing sinks more than what is gained in penetration.",
+   "B": "can cause untimely collapses.",
+   "C": "causes more problems than solutions."
+  }
+ },
+ "q316": {
+  "question": "Pulling on the front risers in flight:",
+  "options": {
+   "A": "presents no danger.",
+   "B": "is impossible.",
+   "C": "can cause a collapse of the wing."
+  }
+ },
+ "q317": {
+  "question": "Flying with your arms up, the brakes are taut and the trailing edge is a bit low:",
+  "options": {
+   "A": "this improves the glide ratio with no action on the brakes.",
+   "B": "it has little influence on the wing.",
+   "C": "it is better for inflation.",
+   "D": "the brakes should be lengthened and adjusted for the next flight."
+  }
+ },
+ "q318": {
+  "question": "While flying, if you release the brakes:",
+  "options": {
+   "A": "the wing slows down progressively.",
+   "B": "the wing flies at maximum speed.",
+   "C": "they must never be released."
+  }
+ },
+ "q319": {
+  "question": "You make big ears:",
+  "options": {
+   "A": "while keeping the brakes in your hands.",
+   "B": "by pulling the front risers.",
+   "C": "by symmetrically pulling one or several outer front lines (read the technical instructions for your wing)."
+  }
+ },
+ "q320": {
+  "question": "When you make big ears you:",
+  "options": {
+   "A": "increase the sink rate.",
+   "B": "decrease the airspeed glide ratio.",
+   "C": "increase the maneuverability of the wing."
+  }
+ },
+ "q321": {
+  "question": "When you make big ears you:",
+  "options": {
+   "A": "your airspeed increases.",
+   "B": "with a headwind your ground glide ratio increases.",
+   "C": "descend more quickly in safety.",
+   "D": "do not damage the wing."
+  }
+ },
+ "q322": {
+  "question": "In turbulence, you make big ears:",
+  "options": {
+   "A": "your wing will be more stable.",
+   "B": "your wing will be more sensitive.",
+   "C": "it is not advised."
+  }
+ },
+ "q323": {
+  "question": "Pulling the \"B\" risers:",
+  "options": {
+   "A": "is a form of rapid descent.",
+   "B": "is a harmless practice.",
+   "C": "damages the anchor points of this line of suspensions.",
+   "D": "can cause a stabilized parachutal stall situation."
+  }
+ },
+ "q324": {
+  "question": "At minimum sink rate speed, to begin a right turn without losing too much speed and the consequent risk of entering a flat spin, you must:",
+  "options": {
+   "A": "pull the right brake.",
+   "B": "pull the left front riser.",
+   "C": "raise the left brake."
+  }
+ },
+ "q325": {
+  "question": "An entry into a 360-degree turn:",
+  "options": {
+   "A": "must not be done when landing.",
+   "B": "can be vigorous because the risk of a stall is nil.",
+   "C": "is made easier with an action on the harness seat.",
+   "D": "must be done more banked the narrower the thermal is."
+  }
+ },
+ "q326": {
+  "question": "A 360-degree turn:",
+  "options": {
+   "A": "decreases the sink rate.",
+   "B": "increases the sink rate.",
+   "C": "allows assessing the drift."
+  }
+ },
+ "q327": {
+  "question": "After a piloting error, you notice the almost total cessation of the relative wind. The wing sinks. To return to the normal flight regime as quickly as possible you must:",
+  "options": {
+   "A": "pull the brakes.",
+   "B": "progressively pull the front risers to decrease the angle of attack.",
+   "C": "gently release the brakes to dampen the surge."
+  }
+ },
+ "q328": {
+  "question": "Entering a stall can be dangerous:",
+  "options": {
+   "A": "near the ground.",
+   "B": "on a poorly adjusted wing.",
+   "C": "in turbulent conditions."
+  }
+ },
+ "q329": {
+  "question": "To recover from a symmetric stall:",
+  "options": {
+   "A": "wait for the wing to open on its own.",
+   "B": "give sharp jerks to the front risers.",
+   "C": "give sharp jerks to the brakes.",
+   "D": "gently release the brakes and dampen the surge."
+  }
+ },
+ "q330": {
+  "question": "You are flying at minimum sink rate; you are about to enter a thermal:",
+  "options": {
+   "A": "you get ready to brake.",
+   "B": "you maintain your flight regime.",
+   "C": "you get ready to release the brakes.",
+   "D": "you increase your speed."
+  }
+ },
+ "q331": {
+  "question": "To stay in ridge lift close to the terrain, you:",
+  "options": {
+   "A": "make 360-degree turns in front of the slope.",
+   "B": "pull the brakes down a lot to fly slowly.",
+   "C": "make long \"figure 8s\" turning into the wind.",
+   "D": "make long \"figure 8s\" turning toward the slope."
+  }
+ },
+ "q332": {
+  "question": "While flying, if you feel turbulence:",
+  "options": {
+   "A": "you pull on the front risers.",
+   "B": "you keep your arms up.",
+   "C": "you fly a little slower than at cruise regime."
+  }
+ },
+ "q333": {
+  "question": "In turbulent flight, to minimize the risks of auto-rotation and of turning toward the slope, you must fly:",
+  "options": {
+   "A": "at low angles of attack.",
+   "B": "at high angles of attack.",
+   "C": "between minimum sink rate and maximum glide ratio."
+  }
+ },
+ "q334": {
+  "question": "During ridge flight, a violent turbulence collapses 50% of the wing:",
+  "options": {
+   "A": "you raise your arms and gain speed to avoid entering a stall.",
+   "B": "you observe the nature of the terrain beneath your feet and get ready for a forced landing.",
+   "C": "you control your trajectory to avoid turning toward the slope, maintaining sufficient speed to avoid entering a stall or auto-rotation.",
+   "D": "you pull the brake corresponding to the closed side in order to reopen it."
+  }
+ },
+ "q335": {
+  "question": "During a ridge flight 50 m above the ground, you suddenly sink toward the terrain and the whistle of the relative wind decreases. To avoid the impact:",
+  "options": {
+   "A": "you brake immediately to better control the wing.",
+   "B": "you calmly release the brakes and turn when speed is sufficient to move away from the slope.",
+   "C": "the situation is unrecoverable, you get ready to land on the slope."
+  }
+ },
+ "q336": {
+  "question": "Your wing deflates abruptly on the side toward the terrain:",
+  "options": {
+   "A": "you reinflate it energetically, avoiding turning toward the terrain.",
+   "B": "you first try to move away from the terrain while keeping sufficient speed before executing the appropriate maneuver to reinflate the wing.",
+   "C": "you do nothing, the wing reinflates automatically."
+  }
+ },
+ "q337": {
+  "question": "You have your back to the terrain and several cells collapse on the left side of the wing, causing you to turn left:",
+  "options": {
+   "A": "if the paraglider has ACPUL certification, you let it recover on its own.",
+   "B": "you brake hard on the left to reinflate the closed side.",
+   "C": "you brake symmetrically on both sides.",
+   "D": "you correct to the right to move away from the terrain, keeping sufficient speed."
+  }
+ },
+ "q338": {
+  "question": "In turbulent flight, your wing collapses at the front over most of the leading edge; you:",
+  "options": {
+   "A": "pull hard on both brakes.",
+   "B": "apply moderate braking.",
+   "C": "raise your hands to achieve maximum speed."
+  }
+ },
+ "q339": {
+  "question": "Several left-side cells close:",
+  "options": {
+   "A": "you release the brakes to accelerate and reinflate.",
+   "B": "you brake on the opposite side to stabilize the trajectory, keeping sufficient speed.",
+   "C": "you shift your weight to the right side of the harness.",
+   "D": "you make smooth, wide movements with the left brake once the trajectory is stabilized."
+  }
+ },
+ "q340": {
+  "question": "Your wing is in a parachutal stall; the usual maneuvers to exit are:",
+  "options": {
+   "A": "entering a turn.",
+   "B": "pulling both brakes to put it transiently into a stall.",
+   "C": "pulling both front risers.",
+   "D": "if it is close to the ground, you get ready for a forced landing without doing anything, since any of the previous maneuvers will throw you forward, gaining speed."
+  }
+ },
+ "q341": {
+  "question": "The risk of entering a flat spin:",
+  "options": {
+   "A": "increases by pulling one brake down hard in slow flight.",
+   "B": "increases by pulling one brake down hard in fast flight.",
+   "C": "varies according to the type of wing."
+  }
+ },
+ "q342": {
+  "question": "To exit a flat spin, you must:",
+  "options": {
+   "A": "smoothly raise the brakes, counteracting on the outer side.",
+   "B": "brake on the outer side of the turn and pull the front riser on the inner side."
+  }
+ },
+ "q343": {
+  "question": "While flying, your right brake breaks; you can pilot with:",
+  "options": {
+   "A": "the left brake and the right rear riser.",
+   "B": "the left brake and the right front riser.",
+   "C": "both rear risers (symmetry of sensations).",
+   "D": "the front risers to land quickly."
+  }
+ },
+ "q344": {
+  "question": "The breakage of a brake:",
+  "options": {
+   "A": "makes piloting impossible.",
+   "B": "deflates the wing.",
+   "C": "can be compensated for by piloting with the rear risers."
+  }
+ },
+ "q345": {
+  "question": "You are forced to land on sloping terrain:",
+  "options": {
+   "A": "you always land against the slope.",
+   "B": "if the slope is steep, you land into the wind.",
+   "C": "if the slope is gentle, you land into the wind.",
+   "D": "if the slope is steep, you land sideways to the slope."
+  }
+ },
+ "q346": {
+  "question": "You are on final facing the landing field and realize you are a bit high and long, possibly overshooting the field:",
+  "options": {
+   "A": "you progressively brake the wing to the point of parachutal stall.",
+   "B": "you lose altitude by making a 360-degree turn.",
+   "C": "you lengthen the path by making a small \"S\".",
+   "D": "you pull and release the brakes several times to shake the wing and reduce the glide ratio."
+  }
+ },
+ "q347": {
+  "question": "Gaining speed before landing:",
+  "options": {
+   "A": "is not necessary in paragliding.",
+   "B": "is needed to keep a good airspeed since the wind decreases as you approach the ground.",
+   "C": "is dangerous because the craft will climb during the final braking.",
+   "D": "makes the braking action more effective."
+  }
+ },
+ "q348": {
+  "question": "To land smoothly when there is no wind:",
+  "options": {
+   "A": "you fly the entire final phase with the brakes at hip level.",
+   "B": "you make \"S\" turns until landing.",
+   "C": "you pull the brakes all the way down upon entering the field.",
+   "D": "you gain speed at the beginning of the final phase."
+  }
+ },
+ "q349": {
+  "question": "At 5 m above the ground you realize you are going to land with a crosswind:",
+  "options": {
+   "A": "you perform the final braking normally without trying to turn.",
+   "B": "you try to turn to face into the wind.",
+   "C": "you pull the brakes all the way down to correct."
+  }
+ },
+ "q350": {
+  "question": "On final, at 30 m above the ground, you realize you are going to land with a tailwind:",
+  "options": {
+   "A": "you get ready to brake energetically and to run.",
+   "B": "you make a 180-degree turn to correct.",
+   "C": "you pull the brakes to enter a parachutal stall."
+  }
+ },
+ "q351": {
+  "question": "There is 20 km/h of wind at the landing; you prepare:",
+  "options": {
+   "A": "to pull the brakes all the way down upon touching down.",
+   "B": "to brake gently and accompany the wing by walking backward during its descent.",
+   "C": "to pull the front risers to brake gently.",
+   "D": "to turn around after landing and hold one or both rear risers so as not to be dragged."
+  }
+ },
+ "q352": {
+  "question": "On landing:",
+  "options": {
+   "A": "you must watch the wing to make sure it does not close.",
+   "B": "you must greatly reduce the speed.",
+   "C": "landing in a turn is discouraged since it increases the sink rate and the pilot's lateral swing.",
+   "D": "you must increase the speed on final before braking."
+  }
+ },
+ "q353": {
+  "question": "The approach circuit at landing serves:",
+  "options": {
+   "A": "only as training for later passing the exams organized by the F.A.V.L.",
+   "B": "exclusively beginners as an aid maneuver during the first landings.",
+   "C": "as with other aircraft, as a procedure that offers the pilot the maximum chances of a precise landing.",
+   "D": "according to the zone chosen for the loss of altitude and depending on the direction of turn, to indicate to approaching pilots which type of circuit has been chosen for landing."
+  }
+ },
+ "q354": {
+  "question": "The part of the approach circuit indicated by the number 1 in the diagram is called:",
+  "options": {
+   "A": "base.",
+   "B": "altitude loss.",
+   "C": "initial.",
+   "D": "final."
+  }
+ },
+ "q355": {
+  "question": "The part of the approach circuit indicated by the number 2 in the diagram is called:",
+  "options": {
+   "A": "base.",
+   "B": "altitude loss.",
+   "C": "initial.",
+   "D": "final."
+  }
+ },
+ "q356": {
+  "question": "The part of the approach circuit indicated by the number 3 in the diagram is called:",
+  "options": {
+   "A": "base.",
+   "B": "altitude loss.",
+   "C": "initial.",
+   "D": "final."
+  }
+ },
+ "q357": {
+  "question": "The part of the approach circuit indicated by the number 4 in the diagram is called:",
+  "options": {
+   "A": "base.",
+   "B": "altitude loss.",
+   "C": "initial.",
+   "D": "final."
+  }
+ },
+ "q358": {
+  "question": "When arriving too high at the landing zone, and before beginning the initial phase, you always lose that altitude:",
+  "options": {
+   "A": "with turns to your left.",
+   "B": "with turns to your right.",
+   "C": "with turns in the same direction as the chosen approach circuit.",
+   "D": "by making \"S\" turns."
+  }
+ },
+ "q359": {
+  "question": "You have decided to make an approach circuit to the left. The loss of excess altitude before the initial phase must be done in the quadrant:",
+  "options": {
+   "A": "upper left.",
+   "B": "upper right.",
+   "C": "lower right.",
+   "D": "lower left."
+  }
+ },
+ "q360": {
+  "question": "You have decided to make an approach circuit to the right. The loss of excess altitude before the initial phase must be done in the quadrant:",
+  "options": {
+   "A": "upper left.",
+   "B": "upper right.",
+   "C": "lower right.",
+   "D": "lower left."
+  }
+ },
+ "q361": {
+  "question": "The following four diagrams show the type of standard approach with zero wind (dotted line), and a circuit corrected and adapted to the situation arising at the last moment in the reality of a landing (solid line). On the field, the wind is indeed nil, and at the moment of transitioning from the initial phase to base you realize that you are actually a bit below the ideal altitude. The modification you make is the one indicated in figure:",
+  "options": {
+   "A": "a.",
+   "B": "b.",
+   "C": "c.",
+   "D": "d."
+  }
+ },
+ "q362": {
+  "question": "The following four diagrams show the type of standard approach with zero wind (dotted line), and a circuit corrected and adapted to the situation arising at the last moment in the reality of a landing (solid line). On the field, the wind is indeed nil, and at the moment of transitioning from the initial phase to base you realize that you are actually a bit above the ideal altitude. The modification you make is the one indicated in figure:",
+  "options": {
+   "A": "a.",
+   "B": "b.",
+   "C": "c.",
+   "D": "d."
+  }
+ },
+ "q363": {
+  "question": "The following 4 diagrams show the type of standard approach with zero wind (dotted line), and a circuit corrected and adapted to the situation arising at the last moment in the reality of a landing (solid line). On the field, the wind is 10 to 15 km/h. The modification you make is the one indicated in figure:",
+  "options": {
+   "A": "a.",
+   "B": "b.",
+   "C": "c.",
+   "D": "d."
+  }
+ },
+ "q364": {
+  "question": "The following 4 diagrams show the type of standard approach with zero wind (dotted line), and a circuit corrected and adapted to the situation arising at the last moment in the reality of a landing (solid line). On the field, the wind is 25 to 30 km/h. The modification you make is the one indicated in figure:",
+  "options": {
+   "A": "a.",
+   "B": "b.",
+   "C": "c.",
+   "D": "d."
+  }
+ },
+ "q365": {
+  "question": "You arrive first at the landing zone, followed at 50 m horizontal distance by two other pilots. The wind is nil, there are no obstacles at any of the boundaries of the field, and there are no specific landing rules for the site. Given that you are the first pilot:",
+  "options": {
+   "A": "you may choose a circuit to the right or left and with the final phase in any direction, since the wind is nil.",
+   "B": "you may freely choose the direction of the final phase, but you must make an approach circuit to the left.",
+   "C": "you may freely choose an approach to the left or right, but the final phase must be transverse to the axis of the valley.",
+   "D": "you must make an approach circuit to the left, but the final phase must be transverse to the axis of the valley."
+  }
+ },
+ "q366": {
+  "question": "You arrive first at the landing zone, followed at 50 m horizontal distance by two other pilots. The wind is nil, and you begin an approach circuit to the left with the final phase toward the west. Upon entering base you discover that there is actually a wind of 2 to 5 km/h from the east, and therefore:",
+  "options": {
+   "A": "you continue with the chosen circuit, but you anticipate that your trajectory on the final phase will have a lower slope.",
+   "B": "you immediately interrupt the chosen circuit, heading toward the leeward zone of the spot, and you land into the wind.",
+   "C": "you continue with the chosen circuit, but you anticipate that your trajectory on the final phase will have a steeper slope.",
+   "D": "you take the final phase as base, and you ultimately land with a crosswind."
+  }
+ },
+ "q367": {
+  "question": "You arrive second at the landing zone, with distances of 50 m horizontally relative to the first and the third. There is a gentle wind from the west (2 to 5 km/h) and there are no obstacles in the vicinity. The first pilot begins an approach circuit to the right, and plans to land with a tailwind. You:",
+  "options": {
+   "A": "follow the pilot ahead of you, making the same approach circuit to avoid the risk of collision.",
+   "B": "make an approach circuit to the right, but anticipating a landing into the wind.",
+   "C": "make an approach circuit to the left and also land with a tailwind.",
+   "D": "make an approach circuit to the left and land into the wind."
+  }
+ },
+ "q368": {
+  "question": "You are making your approach circuit at a landing where the windsock indicates a gentle breeze from the west. On final you discover that the wind has shifted and now comes from the east at 5 to 10 km/h intensity. You:",
+  "options": {
+   "A": "immediately make a 180-degree turn and land into the wind.",
+   "B": "continue the path as planned, flying more braked to compensate for the tailwind and reduce ground speed.",
+   "C": "continue the path as planned, sit up, fly without braking, and pull the brakes for the landing a bit earlier.",
+   "D": "continue the path as planned and, by means of successive and regular pulls on both brakes, try to make the wing lose altitude vertically."
+  }
+ },
+ "q369": {
+  "question": "When landing with a tailwind:",
+  "options": {
+   "A": "the trajectory has a lower slope and the landing speed is lower.",
+   "B": "the trajectory has a steeper slope and the landing speed is higher.",
+   "C": "the trajectory has a lower slope and the landing speed is higher.",
+   "D": "the trajectory has a steeper slope and the landing speed is lower."
+  }
+ },
+ "q370": {
+  "question": "When landing into the wind:",
+  "options": {
+   "A": "the trajectory has a lower slope and the landing speed is lower.",
+   "B": "the trajectory has a steeper slope and the landing speed is higher.",
+   "C": "the trajectory has a lower slope and the landing speed is higher.",
+   "D": "the trajectory has a steeper slope and the landing speed is lower."
+  }
+ },
+ "q371": {
+  "question": "You land into a headwind of 30 km/h. As soon as your feet touch the ground:",
+  "options": {
+   "A": "you pull the brakes down as far as you can so that the wing immediately stops flying.",
+   "B": "you turn 180 degrees and pull the brakes down as far as you can so that the wing immediately stops flying.",
+   "C": "you pull one brake as far as you can so that the wing falls onto the leading edge and thereby stops providing lift.",
+   "D": "you turn 180 degrees and pull the B or C risers so that the wing immediately stops flying."
+  }
+ }
+}

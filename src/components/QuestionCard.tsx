@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { cn } from '@/lib/cn';
 import { useI18n } from '@/i18n/provider';
+import { localizeQuestion } from '@/lib/questions';
 import type { Question } from '@/lib/types';
 
 interface QuestionCardProps {
@@ -26,8 +27,9 @@ export default function QuestionCard({
   index,
   total,
 }: QuestionCardProps) {
-  const { t, ts } = useI18n();
-  const correctCount = question.options.filter((o) => o.correct).length;
+  const { t, ts, locale } = useI18n();
+  const lq = localizeQuestion(question, locale);
+  const correctCount = lq.options.filter((o) => o.correct).length;
   const isLocked = revealed || disabled;
 
   function toggle(letter: string) {
@@ -61,11 +63,11 @@ export default function QuestionCard({
       </div>
 
       <h2 className="mt-1 text-lg font-semibold leading-snug text-neutral-900 dark:text-neutral-100">
-        {question.question}
+        {lq.question}
       </h2>
 
       <ul className="mt-2 flex flex-col gap-2">
-        {question.options.map((opt) => {
+        {lq.options.map((opt) => {
           const isSelected = selected.includes(opt.letter);
           const showCorrect = revealed && opt.correct;
           const showWrong = revealed && isSelected && !opt.correct;
