@@ -15,6 +15,11 @@ export const DICT = {
   // Comunes
   'common.home': { es: 'Inicio', en: 'Home' },
   'common.next': { es: 'Siguiente', en: 'Next' },
+  'common.exit': { es: 'Salir', en: 'Exit' },
+  'ps.exitConfirm': {
+    es: '¿Salir de la práctica? Perderás el progreso de esta sesión.',
+    en: 'Exit practice? You will lose this session’s progress.',
+  },
 
   // Header
   'header.themeToggle': { es: 'Cambiar tema', en: 'Toggle theme' },

@@ -10,6 +10,7 @@ import {
   ThumbsDown,
   PartyPopper,
   RotateCcw,
+  X,
 } from 'lucide-react';
 import SiteHeader from '@/components/SiteHeader';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
@@ -157,7 +158,16 @@ export default function FlashcardsPage() {
       <SiteHeader />
       <main className="mx-auto max-w-3xl px-4 pb-24 pt-6">
         <div className="mb-4 flex items-center gap-3">
-          <span className="text-sm tabular-nums text-neutral-500">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setDeck(null)}
+            className="-ml-2 text-neutral-500"
+          >
+            <X className="h-4 w-4" />
+            {t('common.exit')}
+          </Button>
+          <span className="ml-auto text-sm tabular-nums text-neutral-500">
             {index + 1}/{deck.length}
           </span>
           <div className="flex-1">

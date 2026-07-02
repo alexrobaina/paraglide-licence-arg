@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
-import { Check, ChevronRight, RotateCcw, Home, PartyPopper } from 'lucide-react';
+import { Check, ChevronRight, RotateCcw, Home, PartyPopper, X } from 'lucide-react';
 import QuestionCard from '@/components/QuestionCard';
 import { Card, CardTitle } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
@@ -90,18 +90,30 @@ export default function PracticeSession({
     );
   }
 
+  function exit() {
+    if (stats.answered > 0 && !confirm(t('ps.exitConfirm'))) return;
+    onRestart();
+  }
+
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center gap-3">
-        <span className="text-sm tabular-nums text-neutral-500">
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={exit}
+          className="-ml-2 text-neutral-500"
+        >
+          <X className="h-4 w-4" />
+          {t('common.exit')}
+        </Button>
+        <span className="ml-auto text-sm tabular-nums text-neutral-500">
           {index + 1}/{questions.length}
         </span>
         <div className="flex-1">
           <Progress value={index} max={questions.length} size="sm" />
         </div>
-        <Badge variant="success">
-          {stats.correct} ✓
-        </Badge>
+        <Badge variant="success">{stats.correct} ✓</Badge>
       </div>
 
       <QuestionCard
