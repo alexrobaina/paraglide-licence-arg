@@ -1,9 +1,12 @@
+import { notFound } from 'next/navigation';
 import { createClient, createAdminClient } from '@/lib/supabase/server';
 
-// Diagnostic page — no guards, no redirects. Visit /whoami while logged in.
+// Diagnostic page — DEV ONLY. Hidden in production (leaks session/env info).
 export const dynamic = 'force-dynamic';
 
 export default async function WhoAmIPage() {
+  if (process.env.NODE_ENV === 'production') notFound();
+
   const supabase = await createClient();
   const {
     data: { user },

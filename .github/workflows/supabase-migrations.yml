@@ -1,0 +1,37 @@
+name: Deploy Supabase migrations
+
+# Applies any new files in supabase/migrations/ to the production database
+# whenever they change on main. Requires these GitHub repo secrets:
+#   SUPABASE_ACCESS_TOKEN  (Account → Access Tokens)
+#   SUPABASE_PROJECT_REF   (nbfnoivdsxtnznvxcxpx)
+#   SUPABASE_DB_PASSWORD   (the database password you set when creating the project)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'supabase/migrations/**'
+  workflow_dispatch: {}
+
+jobs:
+  db-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Link project
+        run: supabase link --project-ref "$SUPABASE_PROJECT_REF"
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+
+      - name: Apply migrations
+        run: supabase db push
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}

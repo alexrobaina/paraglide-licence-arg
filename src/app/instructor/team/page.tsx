@@ -1,47 +1,27 @@
 import { ShieldCheck, Clock } from 'lucide-react';
 import { getCurrentProfile } from '@/lib/auth';
-import { createAdminClient } from '@/lib/supabase/server';
-import type { Profile } from '@/lib/supabase/types';
+import { createClient } from '@/lib/supabase/server';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
-import Alert from '@/components/ui/Alert';
 import { AddInstructorForm, RemoveInstructorButton } from './ui';
+
+interface InstructorRow {
+  email: string;
+  signed_up: boolean;
+  full_name: string | null;
+}
 
 export default async function TeamPage() {
   const me = await getCurrentProfile();
+  const supabase = await createClient();
 
-  if (!process.env.SUPABASE_SECRET_KEY) {
-    return (
-      <>
-        <PageHeader />
-        <Alert variant="warning" title="Falta configuración" className="mt-4">
-          Para gestionar instructores necesitas poner <code>SUPABASE_SECRET_KEY</code>{' '}
-          en tu archivo <code>.env.local</code>.
-        </Alert>
-      </>
-    );
-  }
+  const { data } = await supabase.rpc('list_instructors');
+  const list = (data as InstructorRow[]) ?? [];
 
-  const admin = createAdminClient();
-
-  const [{ data: whitelist }, { data: profiles }] = await Promise.all([
-    admin.from('instructor_whitelist').select('email').order('email'),
-    admin.from('profiles').select('*').eq('role', 'instructor'),
-  ]);
-
-  const profileByEmail = new Map<string, Profile>(
-    ((profiles as Profile[]) ?? []).map((p) => [p.email.toLowerCase(), p])
-  );
-
-  const rows = ((whitelist as { email: string }[]) ?? []).map((w) => {
-    const profile = profileByEmail.get(w.email.toLowerCase());
-    return {
-      email: w.email,
-      signedUp: Boolean(profile),
-      name: profile?.full_name ?? null,
-      isMe: me?.email.toLowerCase() === w.email.toLowerCase(),
-    };
-  });
+  const rows = list.map((r) => ({
+    ...r,
+    isMe: me?.email.toLowerCase() === r.email.toLowerCase(),
+  }));
 
   return (
     <>
@@ -66,17 +46,17 @@ export default async function TeamPage() {
                 </span>
                 <div>
                   <div className="flex items-center gap-2 text-sm font-medium">
-                    {r.name ?? r.email}
+                    {r.full_name ?? r.email}
                     {r.isMe && <Badge variant="primary">Tú</Badge>}
                   </div>
-                  {r.name && (
+                  {r.full_name && (
                     <div className="text-xs text-neutral-500">{r.email}</div>
                   )}
                 </div>
               </div>
 
               <div className="flex items-center gap-2">
-                {r.signedUp ? (
+                {r.signed_up ? (
                   <Badge variant="success">Activo</Badge>
                 ) : (
                   <Badge variant="default">
