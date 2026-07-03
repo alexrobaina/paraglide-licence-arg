@@ -9,8 +9,9 @@ interface AttemptDetail {
   max_score: number;
   passed: boolean;
   finished_at: string;
+  student_name: string | null;
   template: { title: string } | null;
-  student: { email: string; full_name: string | null } | null;
+  invitation: { student_email: string } | null;
 }
 
 export default async function DiplomaPage({
@@ -24,9 +25,9 @@ export default async function DiplomaPage({
   const { data } = await supabase
     .from('attempts')
     .select(
-      `id, score, max_score, passed, finished_at,
+      `id, score, max_score, passed, finished_at, student_name,
        template:exam_templates(title),
-       student:profiles(email, full_name)`
+       invitation:invitations(student_email)`
     )
     .eq('id', id)
     .single();
@@ -60,8 +61,8 @@ export default async function DiplomaPage({
   return (
     <Diploma
       attemptId={attempt.id}
-      initialName={attempt.student?.full_name ?? ''}
-      fallbackEmail={attempt.student?.email ?? 'Piloto'}
+      initialName={attempt.student_name ?? ''}
+      fallbackEmail={attempt.invitation?.student_email ?? 'Piloto'}
       examTitle={attempt.template?.title ?? 'de piloto'}
       score={attempt.score}
       maxScore={attempt.max_score}

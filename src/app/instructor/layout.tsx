@@ -1,7 +1,10 @@
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
-import { Mountain, LogOut, LayoutDashboard, FileText, Send, Users, ShieldAlert, BarChart3 } from 'lucide-react';
+import { Mountain, LogOut, LayoutDashboard, FileText, Send, Users, ShieldAlert, BarChart3, UserCog, UserCircle } from 'lucide-react';
 import { getCurrentProfile, ensureProfile } from '@/lib/auth';
+import { createClient } from '@/lib/supabase/server';
+import LanguageToggle from '@/components/LanguageToggle';
+import ThemeToggle from '@/components/ThemeToggle';
 
 /**
  * Guards the whole /instructor area: only signed-in instructors may enter.
@@ -21,6 +24,9 @@ export default async function InstructorLayout({
     await ensureProfile(profile.id, profile.email);
     profile = (await getCurrentProfile()) ?? profile;
   }
+
+  const supabase = await createClient();
+  const { data: isAdmin } = await supabase.rpc('is_admin');
 
   // Still not an instructor: show a clear message instead of a silent redirect.
   if (profile.role !== 'instructor') {
@@ -77,7 +83,14 @@ export default async function InstructorLayout({
             <NavLink href="/instructor/invite" icon={Send} label="Invitar" />
             <NavLink href="/instructor/results" icon={BarChart3} label="Resultados" />
             <NavLink href="/instructor/team" icon={Users} label="Instructores" />
-            <form action="/auth/signout" method="post" className="ml-2">
+            {isAdmin && (
+              <NavLink href="/instructor/users" icon={UserCog} label="Usuarios" />
+            )}
+            <NavLink href="/instructor/account" icon={UserCircle} label="Mi cuenta" />
+            <span className="mx-1 h-5 w-px bg-neutral-200 dark:bg-neutral-800" />
+            <LanguageToggle />
+            <ThemeToggle />
+            <form action="/auth/signout" method="post" className="ml-1">
               <button
                 type="submit"
                 className="flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-neutral-600 transition-colors hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60"

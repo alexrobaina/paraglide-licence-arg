@@ -51,6 +51,7 @@ export default function ExamRunner({
   );
 
   const [phase, setPhase] = useState<Phase>('intro');
+  const [name, setName] = useState('');
   const [answers, setAnswers] = useState<Record<string, string[]>>({});
   const [current, setCurrent] = useState(0);
   const [confirming, setConfirming] = useState(false);
@@ -79,6 +80,7 @@ export default function ExamRunner({
 
     const { error: rpcError } = await createClient().rpc('submit_exam_attempt', {
       p_token: token,
+      p_student_name: name.trim(),
       p_score: score,
       p_max_score: maxScore,
       p_passed: passed,
@@ -138,10 +140,25 @@ export default function ExamRunner({
             Tienes <strong>un solo intento</strong>. Al terminar se guarda y no puedes
             repetir.
           </Alert>
+
+          <label className="mt-5 block text-left">
+            <span className="mb-1 block text-xs font-medium text-neutral-500">
+              Nombre y apellido
+            </span>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Ej: Juan Pérez"
+              autoFocus
+              className="w-full rounded-lg border border-neutral-300 bg-transparent px-3 py-2 text-sm outline-none focus:border-neutral-500 dark:border-neutral-700"
+            />
+          </label>
+
           <Button
             variant="primary"
             size="lg"
-            className="mt-5 w-full"
+            className="mt-3 w-full"
+            disabled={!name.trim()}
             onClick={() => setPhase('running')}
           >
             Comenzar examen

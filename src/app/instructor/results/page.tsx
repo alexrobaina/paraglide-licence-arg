@@ -11,8 +11,9 @@ interface AttemptRow {
   max_score: number;
   passed: boolean;
   finished_at: string;
+  student_name: string | null;
   template: { title: string } | null;
-  student: { email: string; full_name: string | null } | null;
+  invitation: { student_email: string } | null;
 }
 
 export default async function ResultsPage() {
@@ -21,9 +22,9 @@ export default async function ResultsPage() {
   const { data } = await supabase
     .from('attempts')
     .select(
-      `id, score, max_score, passed, finished_at,
+      `id, score, max_score, passed, finished_at, student_name,
        template:exam_templates(title),
-       student:profiles(email, full_name)`
+       invitation:invitations(student_email)`
     )
     .order('finished_at', { ascending: false });
 
@@ -68,7 +69,7 @@ export default async function ResultsPage() {
                   className="border-b border-neutral-100 last:border-0 dark:border-neutral-800/60"
                 >
                   <td className="py-3 pr-4 font-medium">
-                    {r.student?.full_name ?? r.student?.email ?? '—'}
+                    {r.student_name ?? r.invitation?.student_email ?? '—'}
                   </td>
                   <td className="py-3 pr-4 text-neutral-600 dark:text-neutral-400">
                     {r.template?.title ?? '—'}
