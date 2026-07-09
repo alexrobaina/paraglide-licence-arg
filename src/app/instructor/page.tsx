@@ -2,10 +2,12 @@ import Link from 'next/link';
 import { FileText, Send, Users, ArrowRight } from 'lucide-react';
 import { getCurrentProfile } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
+import { getT } from '@/i18n/server';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 
 export default async function InstructorDashboard() {
   const profile = await getCurrentProfile();
+  const { t } = await getT();
   const supabase = await createClient();
 
   // Lightweight counts for the shell (tables filled in later phases).
@@ -20,29 +22,29 @@ export default async function InstructorDashboard() {
     <>
       <section className="mb-8">
         <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-          Hola, {profile?.full_name ?? profile?.email}
+          {t('dash.hello', { name: profile?.full_name ?? profile?.email ?? '' })}
         </h1>
         <p className="mt-1 text-neutral-600 dark:text-neutral-400">
-          Panel del instructor. Crea exámenes, invita pilotos y revisa resultados.
+          {t('dash.subtitle')}
         </p>
       </section>
 
       <section className="mb-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
-        <StatCard icon={<FileText className="h-5 w-5 text-sky-500" />} label="Plantillas de examen" value={templateCount ?? 0} />
-        <StatCard icon={<Send className="h-5 w-5 text-violet-500" />} label="Invitaciones enviadas" value={inviteCount ?? 0} />
-        <StatCard icon={<Users className="h-5 w-5 text-emerald-500" />} label="Exámenes completados" value={attemptCount ?? 0} />
+        <StatCard icon={<FileText className="h-5 w-5 text-sky-500" />} label={t('dash.stat.templates')} value={templateCount ?? 0} />
+        <StatCard icon={<Send className="h-5 w-5 text-violet-500" />} label={t('dash.stat.invites')} value={inviteCount ?? 0} />
+        <StatCard icon={<Users className="h-5 w-5 text-emerald-500" />} label={t('dash.stat.attempts')} value={attemptCount ?? 0} />
       </section>
 
       <section className="grid gap-4 sm:grid-cols-2">
         <ActionCard
           href="/instructor/templates"
-          title="Crear un examen"
-          description="Elige preguntas del banco y arma una plantilla reutilizable."
+          title={t('dash.action.create.title')}
+          description={t('dash.action.create.desc')}
         />
         <ActionCard
           href="/instructor/invite"
-          title="Invitar a un piloto"
-          description="Envía una invitación por email o WhatsApp para rendir el examen."
+          title={t('dash.action.invite.title')}
+          description={t('dash.action.invite.desc')}
         />
       </section>
     </>

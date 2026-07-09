@@ -2,6 +2,8 @@ import { Check, X } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { cn } from '@/lib/cn';
+import { localizeQuestion } from '@/lib/questions';
+import { getT } from '@/i18n/server';
 import type { Question, QuestionResult } from '@/lib/types';
 
 export interface AttemptEntry {
@@ -13,13 +15,20 @@ export interface AttemptEntry {
 /**
  * Read-only render of a graded attempt: every question with each option marked
  * as correct / chosen-by-pilot / wrong, plus the per-question score. Server
- * component — no interactivity, Spanish fixed (matches the instructor panel).
+ * component — no interactivity; text follows the instructor's chosen language.
  */
-export default function AttemptQuestionList({ entries }: { entries: AttemptEntry[] }) {
+export default async function AttemptQuestionList({
+  entries,
+}: {
+  entries: AttemptEntry[];
+}) {
+  const { t, ts, locale } = await getT();
+
   return (
     <ol className="flex flex-col gap-4">
-      {entries.map(({ question: q, selected, result }, i) => {
+      {entries.map(({ question, selected, result }, i) => {
         const answered = selected.length > 0;
+        const q = localizeQuestion(question, locale);
         return (
           <li key={q.uid}>
           <Card variant="default" size="md">
@@ -27,9 +36,13 @@ export default function AttemptQuestionList({ entries }: { entries: AttemptEntry
               <Badge variant="default" className="tabular-nums">
                 {i + 1}
               </Badge>
-              <Badge variant="primary">{q.section}</Badge>
+              <Badge variant="primary">{ts(q.section)}</Badge>
               <Badge variant={result.perfect ? 'success' : answered ? 'error' : 'warning'}>
-                {result.perfect ? 'Correcta' : answered ? 'Incorrecta' : 'Sin responder'}
+                {result.perfect
+                  ? t('aq.correct')
+                  : answered
+                    ? t('aq.incorrect')
+                    : t('aq.blank')}
               </Badge>
               <span className="ml-auto text-sm font-semibold tabular-nums text-neutral-500">
                 {result.score}/{result.maxScore}
@@ -88,7 +101,7 @@ export default function AttemptQuestionList({ entries }: { entries: AttemptEntry
                         variant={isCorrect ? 'success' : 'error'}
                         className="shrink-0 self-center"
                       >
-                        Elegida
+                        {t('aq.chosen')}
                       </Badge>
                     )}
 

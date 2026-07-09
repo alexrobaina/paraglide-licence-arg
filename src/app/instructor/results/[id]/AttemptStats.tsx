@@ -1,9 +1,11 @@
 import { Progress } from '@/components/ui/Progress';
 import { Card } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
+import { getT } from '@/i18n/server';
+import type { Section } from '@/lib/types';
 import type { AttemptEntry } from './AttemptQuestionList';
 
-type SectionStat = { section: string; total: number; correct: number; blank: number };
+type SectionStat = { section: Section; total: number; correct: number; blank: number };
 
 function variantFor(pct: number): 'success' | 'warning' | 'error' {
   if (pct >= 0.8) return 'success';
@@ -16,7 +18,9 @@ function variantFor(pct: number): 'success' | 'warning' | 'error' {
  * plus a per-section breakdown ordered weakest-first, so the instructor sees at
  * a glance which topics the pilot needs to study. Server component.
  */
-export default function AttemptStats({ entries }: { entries: AttemptEntry[] }) {
+export default async function AttemptStats({ entries }: { entries: AttemptEntry[] }) {
+  const { t, ts } = await getT();
+
   const total = entries.length;
   const correct = entries.filter((e) => e.result.perfect).length;
   const answered = entries.filter((e) => e.selected.length > 0).length;
@@ -40,16 +44,16 @@ export default function AttemptStats({ entries }: { entries: AttemptEntry[] }) {
   return (
     <Card variant="modern" size="lg" className="mb-6">
       <div className="flex flex-wrap items-center gap-2">
-        <h2 className="text-lg font-semibold">Desempeño por tema</h2>
+        <h2 className="text-lg font-semibold">{t('as.title')}</h2>
         <div className="ml-auto flex flex-wrap gap-1.5">
-          <Badge variant="success">{correct} correctas</Badge>
-          <Badge variant="error">{wrong} incorrectas</Badge>
-          {blank > 0 && <Badge variant="warning">{blank} sin responder</Badge>}
+          <Badge variant="success">{t('as.correct', { n: correct })}</Badge>
+          <Badge variant="error">{t('as.wrong', { n: wrong })}</Badge>
+          {blank > 0 && (
+            <Badge variant="warning">{t('as.blank', { n: blank })}</Badge>
+          )}
         </div>
       </div>
-      <p className="mt-1 text-sm text-neutral-500">
-        Temas ordenados de más flojo a más fuerte — enfoca el repaso en los primeros.
-      </p>
+      <p className="mt-1 text-sm text-neutral-500">{t('as.hint')}</p>
 
       <div className="mt-4 flex flex-col gap-3">
         {sections.map((s) => {
@@ -58,11 +62,11 @@ export default function AttemptStats({ entries }: { entries: AttemptEntry[] }) {
             <div key={s.section}>
               <div className="mb-1 flex items-center justify-between gap-2 text-sm">
                 <span className="flex flex-wrap items-center gap-2">
-                  <span className="font-medium">{s.section}</span>
-                  {s.pct < 0.5 && <Badge variant="error">A reforzar</Badge>}
+                  <span className="font-medium">{ts(s.section)}</span>
+                  {s.pct < 0.5 && <Badge variant="error">{t('as.weak')}</Badge>}
                   {s.blank > 0 && (
                     <span className="text-xs text-neutral-400">
-                      {s.blank} sin responder
+                      {t('as.blank', { n: s.blank })}
                     </span>
                   )}
                 </span>

@@ -1,6 +1,7 @@
 import { ShieldCheck, Clock } from 'lucide-react';
 import { getCurrentProfile } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
+import { getT } from '@/i18n/server';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { AddInstructorForm, RemoveInstructorButton } from './ui';
@@ -13,6 +14,7 @@ interface InstructorRow {
 
 export default async function TeamPage() {
   const me = await getCurrentProfile();
+  const { t } = await getT();
   const supabase = await createClient();
 
   const { data } = await supabase.rpc('list_instructors');
@@ -28,11 +30,8 @@ export default async function TeamPage() {
       <PageHeader />
 
       <Card variant="modern" size="lg" className="mt-4">
-        <CardTitle size="sm">Agregar un instructor</CardTitle>
-        <CardDescription className="mb-3 mt-1">
-          Si ya tiene cuenta, se convierte en instructor al instante. Si no, lo será
-          la primera vez que inicie sesión.
-        </CardDescription>
+        <CardTitle size="sm">{t('team.add.title')}</CardTitle>
+        <CardDescription className="mb-3 mt-1">{t('team.add.desc')}</CardDescription>
         <AddInstructorForm />
       </Card>
 
@@ -47,7 +46,7 @@ export default async function TeamPage() {
                 <div>
                   <div className="flex items-center gap-2 text-sm font-medium">
                     {r.full_name ?? r.email}
-                    {r.isMe && <Badge variant="primary">Tú</Badge>}
+                    {r.isMe && <Badge variant="primary">{t('team.you')}</Badge>}
                   </div>
                   {r.full_name && (
                     <div className="text-xs text-neutral-500">{r.email}</div>
@@ -57,11 +56,11 @@ export default async function TeamPage() {
 
               <div className="flex items-center gap-2">
                 {r.signed_up ? (
-                  <Badge variant="success">Activo</Badge>
+                  <Badge variant="success">{t('team.active')}</Badge>
                 ) : (
                   <Badge variant="default">
                     <Clock className="mr-1 h-3 w-3" />
-                    Pendiente
+                    {t('team.pending')}
                   </Badge>
                 )}
                 <RemoveInstructorButton email={r.email} disabled={r.isMe} />
@@ -74,12 +73,13 @@ export default async function TeamPage() {
   );
 }
 
-function PageHeader() {
+async function PageHeader() {
+  const { t } = await getT();
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">Instructores</h1>
+      <h1 className="text-2xl font-bold tracking-tight">{t('team.title')}</h1>
       <p className="mt-1 text-neutral-600 dark:text-neutral-400">
-        Gestiona quién puede crear exámenes e invitar pilotos.
+        {t('team.subtitle')}
       </p>
     </div>
   );

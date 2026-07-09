@@ -2,12 +2,13 @@
 
 import { useMemo, useState, useTransition } from 'react';
 import { Search, Shuffle, Save, X } from 'lucide-react';
-import { QUESTIONS, shuffle } from '@/lib/questions';
+import { QUESTIONS, localizeQuestion, shuffle } from '@/lib/questions';
 import { SECTIONS } from '@/lib/constants';
 import { Card, CardTitle } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
 import Alert from '@/components/ui/Alert';
+import { useI18n } from '@/i18n/provider';
 import { createTemplate, updateTemplate } from './actions';
 
 const inputClass =
@@ -30,6 +31,7 @@ export default function TemplateForm({
   templateId?: string;
   initial?: TemplateFormInitial;
 }) {
+  const { t, ts, locale } = useI18n();
   const [title, setTitle] = useState(initial?.title ?? '');
   const [description, setDescription] = useState(initial?.description ?? '');
   const [passPct, setPassPct] = useState(initial?.passPct ?? 75);
@@ -41,11 +43,18 @@ export default function TemplateForm({
   const [error, setError] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
 
+  // Las preguntas se muestran en el idioma activo, así que el buscador debe
+  // filtrar sobre ese mismo texto (si no, buscar en inglés no encontraría nada).
+  const localized = useMemo(
+    () => QUESTIONS.map((question) => localizeQuestion(question, locale)),
+    [locale]
+  );
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return QUESTIONS;
-    return QUESTIONS.filter((question) => question.question.toLowerCase().includes(q));
-  }, [query]);
+    if (!q) return localized;
+    return localized.filter((question) => question.question.toLowerCase().includes(q));
+  }, [query, localized]);
 
   const bySection = useMemo(() => {
     return SECTIONS.map((section) => ({
@@ -100,7 +109,7 @@ export default function TemplateForm({
           await createTemplate(payload);
         }
       } catch (e) {
-        setError(e instanceof Error ? e.message : 'No se pudo guardar.');
+        setError(e instanceof Error ? e.message : t('tf.saveError'));
       }
     });
   }
@@ -109,10 +118,10 @@ export default function TemplateForm({
     <>
       <div className="mb-6">
         <h1 className="text-2xl font-bold tracking-tight">
-          {mode === 'edit' ? 'Editar examen' : 'Nuevo examen'}
+          {mode === 'edit' ? t('tf.title.edit') : t('tf.title.new')}
         </h1>
         <p className="mt-1 text-neutral-600 dark:text-neutral-400">
-          Ponle un nombre y elige las preguntas del banco.
+          {t('tf.subtitle')}
         </p>
       </div>
 
@@ -125,18 +134,18 @@ export default function TemplateForm({
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Buscar pregunta…"
+                placeholder={t('tf.search')}
                 className="w-full rounded-lg border border-neutral-300 bg-transparent py-2 pl-9 pr-3 text-sm outline-none focus:border-neutral-500 dark:border-neutral-700"
               />
             </label>
             <Button variant="outline" size="sm" onClick={() => pickRandom(60)}>
               <Shuffle className="h-4 w-4" />
-              60 al azar
+              {t('tf.random60')}
             </Button>
             {selected.size > 0 && (
               <Button variant="ghost" size="sm" onClick={() => setSelected(new Set())}>
                 <X className="h-4 w-4" />
-                Limpiar
+                {t('tf.clear')}
               </Button>
             )}
           </div>
@@ -147,12 +156,12 @@ export default function TemplateForm({
               return (
                 <Card key={section} variant="default" size="md">
                   <div className="mb-2 flex items-center justify-between">
-                    <CardTitle size="sm">{section}</CardTitle>
+                    <CardTitle size="sm">{ts(section)}</CardTitle>
                     <button
                       onClick={() => toggleSection(section, !allSelected)}
                       className="text-xs font-medium text-sky-600 hover:underline dark:text-sky-400"
                     >
-                      {allSelected ? 'Quitar todas' : 'Seleccionar todas'}
+                      {allSelected ? t('tf.unselectAll') : t('tf.selectAll')}
                     </button>
                   </div>
                   <div className="flex flex-col divide-y divide-neutral-100 dark:divide-neutral-800">
@@ -184,15 +193,15 @@ export default function TemplateForm({
         <div className="lg:sticky lg:top-20 lg:self-start">
           <Card variant="modern" size="lg">
             <div className="flex flex-col gap-3">
-              <Field label="Título">
+              <Field label={t('tf.field.title')}>
                 <input
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
-                  placeholder="Ej: Simulacro Nivel 3"
+                  placeholder={t('tf.field.titlePlaceholder')}
                   className={inputClass}
                 />
               </Field>
-              <Field label="Descripción (opcional)">
+              <Field label={t('tf.field.description')}>
                 <textarea
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
@@ -201,7 +210,7 @@ export default function TemplateForm({
                 />
               </Field>
               <div className="grid grid-cols-2 gap-3">
-                <Field label="Aprobado (%)">
+                <Field label={t('tf.field.passPct')}>
                   <input
                     type="number"
                     min={1}
@@ -211,13 +220,13 @@ export default function TemplateForm({
                     className={inputClass}
                   />
                 </Field>
-                <Field label="Tiempo (min)">
+                <Field label={t('tf.field.time')}>
                   <input
                     type="number"
                     min={0}
                     value={timeLimit}
                     onChange={(e) => setTimeLimit(e.target.value)}
-                    placeholder="Sin límite"
+                    placeholder={t('tf.field.timePlaceholder')}
                     className={inputClass}
                   />
                 </Field>
@@ -225,15 +234,15 @@ export default function TemplateForm({
 
               <div className="rounded-lg bg-neutral-100 p-3 text-sm dark:bg-neutral-800/50">
                 <div className="flex items-center justify-between">
-                  <span className="text-neutral-500">Preguntas</span>
+                  <span className="text-neutral-500">{t('tf.summary.questions')}</span>
                   <Badge variant="primary">{selected.size}</Badge>
                 </div>
                 <div className="mt-1 flex items-center justify-between">
-                  <span className="text-neutral-500">Puntaje máximo</span>
+                  <span className="text-neutral-500">{t('tf.summary.maxScore')}</span>
                   <span className="font-medium tabular-nums">{maxScore}</span>
                 </div>
                 <div className="mt-1 flex items-center justify-between">
-                  <span className="text-neutral-500">Aprobar con</span>
+                  <span className="text-neutral-500">{t('tf.summary.passWith')}</span>
                   <span className="font-medium tabular-nums">{passMark}</span>
                 </div>
               </div>
@@ -247,7 +256,11 @@ export default function TemplateForm({
                 className="w-full"
               >
                 <Save className="h-4 w-4" />
-                {pending ? 'Guardando…' : mode === 'edit' ? 'Guardar cambios' : 'Guardar examen'}
+                {pending
+                  ? t('common.saving')
+                  : mode === 'edit'
+                    ? t('tf.saveChanges')
+                    : t('tf.saveExam')}
               </Button>
             </div>
           </Card>

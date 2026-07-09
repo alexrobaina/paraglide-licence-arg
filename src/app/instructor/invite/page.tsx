@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getCurrentProfile } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
+import { getT } from '@/i18n/server';
 import type { ExamTemplate, Invitation } from '@/lib/supabase/types';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
@@ -13,6 +14,7 @@ export default async function InvitePage({
 }) {
   const { template } = await searchParams;
   const profile = await getCurrentProfile();
+  const { t } = await getT();
   const supabase = await createClient();
 
   const { data: templatesData } = await supabase
@@ -28,12 +30,12 @@ export default async function InvitePage({
       <>
         <PageHeader />
         <Card variant="modern" size="lg" className="mt-4 text-center">
-          <CardTitle size="md">Primero crea un examen</CardTitle>
+          <CardTitle size="md">{t('invite.needTemplate.title')}</CardTitle>
           <CardDescription className="mt-1">
-            Necesitas al menos una plantilla para poder invitar pilotos.
+            {t('invite.needTemplate.desc')}
           </CardDescription>
           <Link href="/instructor/templates/new" className="mt-4 inline-block">
-            <Button variant="primary">Crear examen</Button>
+            <Button variant="primary">{t('tpl.create')}</Button>
           </Link>
         </Card>
       </>
@@ -74,12 +76,13 @@ export default async function InvitePage({
   );
 }
 
-function PageHeader() {
+async function PageHeader() {
+  const { t } = await getT();
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">Invitar pilotos</h1>
+      <h1 className="text-2xl font-bold tracking-tight">{t('invite.title')}</h1>
       <p className="mt-1 text-neutral-600 dark:text-neutral-400">
-        Crea enlaces únicos y compártelos por WhatsApp o email.
+        {t('invite.subtitle')}
       </p>
     </div>
   );

@@ -6,6 +6,8 @@ import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
 import Alert from '@/components/ui/Alert';
+import { useI18n } from '@/i18n/provider';
+import type { MessageKey } from '@/i18n/messages';
 import { createInvitation, deleteInvitation } from './actions';
 
 interface TemplateLite {
@@ -22,11 +24,11 @@ interface InvitationLite {
 
 const STATUS: Record<
   InvitationLite['status'],
-  { label: string; variant: 'default' | 'success' | 'warning' }
+  { labelKey: MessageKey; variant: 'default' | 'success' | 'warning' }
 > = {
-  pending: { label: 'Pendiente', variant: 'warning' },
-  used: { label: 'Completado', variant: 'success' },
-  expired: { label: 'Expirado', variant: 'default' },
+  pending: { labelKey: 'invite.status.pending', variant: 'warning' },
+  used: { labelKey: 'invite.status.used', variant: 'success' },
+  expired: { labelKey: 'invite.status.expired', variant: 'default' },
 };
 
 export function InviteClient({
@@ -40,6 +42,7 @@ export function InviteClient({
   invitations: InvitationLite[];
   siteUrl: string;
 }) {
+  const { t } = useI18n();
   const [templateId, setTemplateId] = useState(currentTemplateId);
   const [email, setEmail] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -47,15 +50,21 @@ export function InviteClient({
   const [pending, startTransition] = useTransition();
 
   const templateTitle = useMemo(
-    () => templates.find((t) => t.id === templateId)?.title ?? 'el examen',
-    [templates, templateId]
+    () =>
+      templates.find((tpl) => tpl.id === templateId)?.title ??
+      t('invite.defaultTemplate'),
+    [templates, templateId, t]
   );
 
   function examUrl(token: string) {
     return `${siteUrl}/exam/${token}`;
   }
   function waHref(token: string, studentEmail: string) {
-    const msg = `¡Hola! Te invito a rendir "${templateTitle}". Entra con este enlace (es solo para ti, ${studentEmail}): ${examUrl(token)}`;
+    const msg = t('invite.waMessage', {
+      title: templateTitle,
+      email: studentEmail,
+      url: examUrl(token),
+    });
     return `https://wa.me/?text=${encodeURIComponent(msg)}`;
   }
 
@@ -69,7 +78,7 @@ export function InviteClient({
         setEmail('');
         setCreated(true);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'No se pudo invitar.');
+        setError(err instanceof Error ? err.message : t('invite.error'));
       }
     });
   }
@@ -77,10 +86,9 @@ export function InviteClient({
   return (
     <>
       <Card variant="modern" size="lg">
-        <CardTitle size="sm">Invitar a un piloto</CardTitle>
+        <CardTitle size="sm">{t('invite.card.title')}</CardTitle>
         <CardDescription className="mb-3 mt-1">
-          Se crea un enlace único. El piloto solo puede rendir <strong>una vez</strong>;
-          para repetir necesita una invitación nueva.
+          {t('invite.card.desc')}
         </CardDescription>
 
         <form onSubmit={handleCreate} className="flex flex-col gap-3">
@@ -90,9 +98,9 @@ export function InviteClient({
               onChange={(e) => setTemplateId(e.target.value)}
               className="rounded-lg border border-neutral-300 bg-transparent px-3 py-2 text-sm outline-none dark:border-neutral-700 dark:bg-neutral-900"
             >
-              {templates.map((t) => (
-                <option key={t.id} value={t.id}>
-                  {t.title}
+              {templates.map((tpl) => (
+                <option key={tpl.id} value={tpl.id}>
+                  {tpl.title}
                 </option>
               ))}
             </select>
@@ -104,29 +112,25 @@ export function InviteClient({
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="piloto@email.com"
+              placeholder={t('invite.emailPlaceholder')}
               className="flex-1 rounded-lg border border-neutral-300 bg-transparent px-3 py-2 text-sm outline-none focus:border-neutral-500 dark:border-neutral-700"
             />
             <Button type="submit" variant="primary" disabled={pending || !templateId}>
               <Send className="h-4 w-4" />
-              {pending ? 'Creando…' : 'Crear invitación'}
+              {pending ? t('invite.creating') : t('invite.create')}
             </Button>
           </div>
           {error && <Alert variant="error">{error}</Alert>}
-          {created && (
-            <Alert variant="success">
-              ✅ Invitación creada. Compártela por WhatsApp o Copiar el enlace abajo. 👇
-            </Alert>
-          )}
+          {created && <Alert variant="success">{t('invite.created')}</Alert>}
         </form>
       </Card>
 
       <h2 className="mb-2 mt-6 text-sm font-semibold text-neutral-500">
-        Invitaciones ({invitations.length})
+        {t('invite.listTitle', { n: invitations.length })}
       </h2>
 
       {invitations.length === 0 ? (
-        <p className="text-sm text-neutral-400">Aún no hay invitaciones.</p>
+        <p className="text-sm text-neutral-400">{t('invite.empty')}</p>
       ) : (
         <div className="flex flex-col gap-2">
           {invitations.map((inv) => (
@@ -152,6 +156,7 @@ function InvitationRow({
   url: string;
   waHref: string;
 }) {
+  const { t } = useI18n();
   const [copied, setCopied] = useState(false);
   const [pending, startTransition] = useTransition();
   const status = STATUS[inv.status];
@@ -163,7 +168,7 @@ function InvitationRow({
   }
 
   function remove() {
-    if (!confirm(`¿Quitar la invitación de ${inv.student_email}?`)) return;
+    if (!confirm(t('invite.removeConfirm', { email: inv.student_email }))) return;
     startTransition(() => deleteInvitation(inv.id));
   }
 
@@ -173,7 +178,7 @@ function InvitationRow({
         <div className="min-w-0">
           <div className="flex items-center gap-2 text-sm font-medium">
             <span className="truncate">{inv.student_email}</span>
-            <Badge variant={status.variant}>{status.label}</Badge>
+            <Badge variant={status.variant}>{t(status.labelKey)}</Badge>
           </div>
           <div className="mt-0.5 truncate text-xs text-neutral-400">{url}</div>
         </div>
@@ -181,7 +186,7 @@ function InvitationRow({
         <div className="flex items-center gap-1">
           <Button variant="outline" size="sm" onClick={copy}>
             {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
-            {copied ? 'Copiado' : 'Copiar'}
+            {copied ? t('invite.copied') : t('invite.copy')}
           </Button>
           <a href={waHref} target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="sm">
@@ -192,7 +197,7 @@ function InvitationRow({
           <button
             onClick={remove}
             disabled={pending}
-            title="Quitar invitación"
+            title={t('invite.remove')}
             className="rounded-lg p-2 text-neutral-400 transition-colors hover:bg-red-50 hover:text-red-600 disabled:opacity-30 dark:hover:bg-red-900/20"
           >
             <Trash2 className="h-4 w-4" />
