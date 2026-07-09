@@ -8,19 +8,24 @@ import { createClient } from '@/lib/supabase/client';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import Alert from '@/components/ui/Alert';
+import LanguageToggle from '@/components/LanguageToggle';
+import { useT } from '@/i18n/provider';
+import type { MessageKey } from '@/i18n/messages';
 
 const inputClass =
   'w-full rounded-lg border border-neutral-300 bg-transparent py-2.5 pl-9 pr-3 text-sm outline-none focus:border-neutral-500 dark:border-neutral-700';
 
-function translateError(msg: string): string {
+/** Mapea el error de Supabase a una clave traducible; null = mostrar tal cual. */
+function errorKey(msg: string): MessageKey | null {
   const m = msg.toLowerCase();
-  if (m.includes('invalid login credentials')) return 'Email o contraseña incorrectos.';
-  if (m.includes('already registered')) return 'Ese email ya tiene cuenta. Inicia sesión.';
-  if (m.includes('at least 6')) return 'La contraseña debe tener al menos 6 caracteres.';
-  return msg;
+  if (m.includes('invalid login credentials')) return 'login.err.credentials';
+  if (m.includes('already registered')) return 'login.err.registered';
+  if (m.includes('at least 6')) return 'login.err.short';
+  return null;
 }
 
 function LoginForm() {
+  const t = useT();
   const searchParams = useSearchParams();
   const next = searchParams.get('next');
 
@@ -66,21 +71,21 @@ function LoginForm() {
       const { data, error } = await supabase.auth.signUp(creds);
       if (error) {
         setLoading(false);
-        setError(translateError(error.message));
+        const key = errorKey(error.message);
+        setError(key ? t(key) : error.message);
         return;
       }
       if (!data.session) {
         setLoading(false);
-        setError(
-          'Cuenta creada, pero falta desactivar la confirmación por email en Supabase (Auth → Providers → Email → "Confirm email" OFF).'
-        );
+        setError(t('login.err.confirmEmail'));
         return;
       }
     } else {
       const { error } = await supabase.auth.signInWithPassword(creds);
       if (error) {
         setLoading(false);
-        setError(translateError(error.message));
+        const key = errorKey(error.message);
+        setError(key ? t(key) : error.message);
         return;
       }
     }
@@ -93,21 +98,21 @@ function LoginForm() {
       <Card variant="modern" size="lg" className="w-full max-w-md text-center">
         <CheckCircle2 className="mx-auto h-10 w-10 text-emerald-500" />
         <CardTitle size="lg" className="mt-3">
-          Ya iniciaste sesión
+          {t('login.signedIn.title')}
         </CardTitle>
         <CardDescription className="mt-1">
-          Estás conectado como <strong>{sessionEmail}</strong>.
+          {t('login.signedIn.as')} <strong>{sessionEmail}</strong>.
         </CardDescription>
         <div className="mt-6 flex flex-col gap-2">
           <Link href="/instructor">
             <Button variant="primary" className="w-full">
-              Ir al panel de instructor
+              {t('login.toPanel')}
               <ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
           <form action="/auth/signout" method="post">
             <Button type="submit" variant="ghost" className="w-full">
-              Cerrar sesión
+              {t('common.signOut')}
             </Button>
           </form>
         </div>
@@ -122,12 +127,10 @@ function LoginForm() {
           <Mountain className="h-6 w-6" />
         </span>
         <CardTitle size="lg">
-          {mode === 'signup' ? 'Crear cuenta' : 'Iniciar sesión'}
+          {mode === 'signup' ? t('login.createAccount') : t('common.signIn')}
         </CardTitle>
         <CardDescription className="mt-1">
-          {mode === 'signup'
-            ? 'Elige una contraseña para tu cuenta.'
-            : 'Ingresa con tu email y contraseña.'}
+          {mode === 'signup' ? t('login.signupDesc') : t('login.loginDesc')}
         </CardDescription>
       </div>
 
@@ -140,7 +143,7 @@ function LoginForm() {
             autoFocus
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="tu@email.com"
+            placeholder={t('login.emailPlaceholder')}
             className={inputClass}
           />
         </label>
@@ -152,23 +155,23 @@ function LoginForm() {
             minLength={6}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Contraseña (mín. 6)"
+            placeholder={t('login.passwordPlaceholder')}
             className={inputClass}
           />
         </label>
 
         {error && (
-          <Alert variant="error" title="No se pudo continuar">
+          <Alert variant="error" title={t('login.errorTitle')}>
             {error}
           </Alert>
         )}
 
         <Button type="submit" variant="primary" disabled={loading} className="w-full">
           {loading
-            ? 'Un momento…'
+            ? t('login.wait')
             : mode === 'signup'
-              ? 'Crear cuenta'
-              : 'Iniciar sesión'}
+              ? t('login.createAccount')
+              : t('common.signIn')}
           {!loading && <ArrowRight className="h-4 w-4" />}
         </Button>
       </form>
@@ -180,9 +183,7 @@ function LoginForm() {
         }}
         className="mt-4 w-full text-center text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300"
       >
-        {mode === 'login'
-          ? '¿No tienes cuenta? Crea una'
-          : '¿Ya tienes cuenta? Inicia sesión'}
+        {mode === 'login' ? t('login.toSignup') : t('login.toLogin')}
       </button>
 
       <Link
@@ -190,7 +191,7 @@ function LoginForm() {
         className="mt-4 flex items-center justify-center gap-1.5 text-sm text-neutral-500 transition-colors hover:text-neutral-700 dark:hover:text-neutral-300"
       >
         <ArrowLeft className="h-4 w-4" />
-        Volver al inicio
+        {t('common.backHome')}
       </Link>
     </Card>
   );
@@ -198,10 +199,15 @@ function LoginForm() {
 
 export default function LoginPage() {
   return (
-    <main className="flex min-h-screen items-center justify-center px-4">
-      <Suspense fallback={null}>
-        <LoginForm />
-      </Suspense>
+    <main className="flex min-h-screen flex-col px-4 py-6">
+      <div className="flex justify-end">
+        <LanguageToggle />
+      </div>
+      <div className="flex flex-1 items-center justify-center">
+        <Suspense fallback={null}>
+          <LoginForm />
+        </Suspense>
+      </div>
     </main>
   );
 }

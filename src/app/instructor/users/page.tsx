@@ -1,5 +1,6 @@
 import { ShieldAlert } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
+import { getT } from '@/i18n/server';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { ResetPasswordButton, DeleteUserButton } from './ui';
@@ -15,6 +16,7 @@ interface UserRow {
 }
 
 export default async function UsersPage() {
+  const { t } = await getT();
   const supabase = await createClient();
   const { data, error } = await supabase.rpc('admin_list_users');
 
@@ -24,10 +26,10 @@ export default async function UsersPage() {
       <Card variant="modern" size="lg" className="text-center">
         <ShieldAlert className="mx-auto h-10 w-10 text-amber-500" />
         <CardTitle size="md" className="mt-3">
-          Solo para el admin
+          {t('users.adminOnly.title')}
         </CardTitle>
         <CardDescription className="mt-1">
-          Esta sección es únicamente para el administrador de la cuenta.
+          {t('users.adminOnly.desc')}
         </CardDescription>
       </Card>
     );
@@ -38,9 +40,9 @@ export default async function UsersPage() {
   return (
     <>
       <div className="mb-6">
-        <h1 className="text-2xl font-bold tracking-tight">Usuarios</h1>
+        <h1 className="text-2xl font-bold tracking-tight">{t('users.title')}</h1>
         <p className="mt-1 text-neutral-600 dark:text-neutral-400">
-          Gestiona cuentas: cambia contraseñas o elimina usuarios.
+          {t('users.subtitle')}
         </p>
       </div>
 
@@ -48,10 +50,10 @@ export default async function UsersPage() {
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-neutral-200 text-left text-xs uppercase tracking-wide text-neutral-400 dark:border-neutral-800">
-              <th className="py-2 pr-4 font-medium">Email</th>
-              <th className="py-2 pr-4 font-medium">Rol</th>
-              <th className="py-2 pr-4 font-medium">Contraseña</th>
-              <th className="py-2 pr-4 font-medium">Acciones</th>
+              <th className="py-2 pr-4 font-medium">{t('users.col.email')}</th>
+              <th className="py-2 pr-4 font-medium">{t('users.col.role')}</th>
+              <th className="py-2 pr-4 font-medium">{t('users.col.password')}</th>
+              <th className="py-2 pr-4 font-medium">{t('users.col.actions')}</th>
             </tr>
           </thead>
           <tbody>
@@ -59,11 +61,19 @@ export default async function UsersPage() {
               <tr key={u.email} className="border-b border-neutral-100 last:border-0 dark:border-neutral-800/60">
                 <td className="py-3 pr-4 font-medium">
                   {u.email}
-                  {u.is_admin && <Badge variant="primary" className="ml-2">Admin</Badge>}
+                  {u.is_admin && (
+                    <Badge variant="primary" className="ml-2">
+                      {t('users.badge.admin')}
+                    </Badge>
+                  )}
                 </td>
                 <td className="py-3 pr-4">
                   <Badge variant={u.role === 'instructor' ? 'success' : 'default'}>
-                    {u.role}
+                    {t(
+                      u.role === 'instructor'
+                        ? 'users.role.instructor'
+                        : 'users.role.student'
+                    )}
                   </Badge>
                 </td>
                 <td className="py-3 pr-4">

@@ -6,8 +6,10 @@ import { createClient } from '@/lib/supabase/client';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import Alert from '@/components/ui/Alert';
+import { useT } from '@/i18n/provider';
 
 export default function AccountPage() {
+  const t = useT();
   const [email, setEmail] = useState<string | null>(null);
   const [password, setPassword] = useState('');
   const [confirm, setConfirm] = useState('');
@@ -25,8 +27,8 @@ export default function AccountPage() {
     e.preventDefault();
     setError(null);
     setDone(false);
-    if (password.length < 6) return setError('La contraseña debe tener al menos 6 caracteres.');
-    if (password !== confirm) return setError('Las contraseñas no coinciden.');
+    if (password.length < 6) return setError(t('account.tooShort'));
+    if (password !== confirm) return setError(t('account.mismatch'));
 
     setLoading(true);
     const { error } = await createClient().auth.updateUser({ password });
@@ -43,16 +45,20 @@ export default function AccountPage() {
   return (
     <div className="mx-auto max-w-md">
       <div className="mb-6">
-        <h1 className="text-2xl font-bold tracking-tight">Mi cuenta</h1>
+        <h1 className="text-2xl font-bold tracking-tight">{t('account.title')}</h1>
         <p className="mt-1 text-neutral-600 dark:text-neutral-400">
-          {email && <>Sesión: <strong>{email}</strong></>}
+          {email && (
+            <>
+              {t('account.session')}: <strong>{email}</strong>
+            </>
+          )}
         </p>
       </div>
 
       <Card variant="modern" size="lg">
-        <CardTitle size="sm">Cambiar contraseña</CardTitle>
+        <CardTitle size="sm">{t('account.changePassword')}</CardTitle>
         <CardDescription className="mb-4 mt-1">
-          Elige una contraseña nueva (mínimo 6 caracteres).
+          {t('account.changeDesc')}
         </CardDescription>
 
         <form onSubmit={save} className="flex flex-col gap-3">
@@ -62,7 +68,7 @@ export default function AccountPage() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Nueva contraseña"
+              placeholder={t('account.newPassword')}
               className={inputClass}
             />
           </label>
@@ -72,7 +78,7 @@ export default function AccountPage() {
               type="password"
               value={confirm}
               onChange={(e) => setConfirm(e.target.value)}
-              placeholder="Repetir contraseña"
+              placeholder={t('account.repeatPassword')}
               className={inputClass}
             />
           </label>
@@ -81,13 +87,13 @@ export default function AccountPage() {
           {done && (
             <Alert variant="success">
               <span className="flex items-center gap-1.5">
-                <Check className="h-4 w-4" /> Contraseña actualizada.
+                <Check className="h-4 w-4" /> {t('account.updated')}
               </span>
             </Alert>
           )}
 
           <Button type="submit" variant="primary" disabled={loading} className="w-full">
-            {loading ? 'Guardando…' : 'Guardar contraseña'}
+            {loading ? t('common.saving') : t('account.save')}
           </Button>
         </form>
       </Card>

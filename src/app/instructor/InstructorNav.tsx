@@ -18,18 +18,25 @@ import {
 } from 'lucide-react';
 import LanguageToggle from '@/components/LanguageToggle';
 import ThemeToggle from '@/components/ThemeToggle';
+import { useT } from '@/i18n/provider';
+import type { MessageKey } from '@/i18n/messages';
 
 const BASE_LINKS = [
-  { href: '/instructor', icon: LayoutDashboard, label: 'Panel' },
-  { href: '/instructor/templates', icon: FileText, label: 'Exámenes' },
-  { href: '/instructor/invite', icon: Send, label: 'Invitar' },
-  { href: '/instructor/results', icon: BarChart3, label: 'Resultados' },
-  { href: '/instructor/team', icon: Users, label: 'Instructores' },
-];
+  { href: '/instructor', icon: LayoutDashboard, labelKey: 'nav.dashboard' },
+  { href: '/instructor/templates', icon: FileText, labelKey: 'nav.exams' },
+  { href: '/instructor/invite', icon: Send, labelKey: 'nav.invite' },
+  { href: '/instructor/results', icon: BarChart3, labelKey: 'nav.results' },
+  { href: '/instructor/team', icon: Users, labelKey: 'nav.instructors' },
+] satisfies NavLink[];
 
-type NavLink = { href: string; icon: typeof LayoutDashboard; label: string };
+type NavLink = {
+  href: string;
+  icon: typeof LayoutDashboard;
+  labelKey: MessageKey;
+};
 
 function Brand() {
+  const t = useT();
   return (
     <Link href="/instructor" className="flex shrink-0 items-center gap-2 font-semibold">
       <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-900 text-neutral-50 dark:bg-neutral-50 dark:text-neutral-900">
@@ -37,7 +44,9 @@ function Brand() {
       </span>
       <span className="tracking-tight">
         Paraglide<span className="text-sky-500">Exam</span>
-        <span className="ml-1.5 text-xs font-normal text-neutral-400">Instructor</span>
+        <span className="ml-1.5 text-xs font-normal text-neutral-400">
+          {t('nav.brandRole')}
+        </span>
       </span>
     </Link>
   );
@@ -52,6 +61,7 @@ function NavLinks({
   pathname: string;
   onNavigate?: () => void;
 }) {
+  const t = useT();
   return (
     <nav className="flex flex-col gap-1">
       {links.map((l) => {
@@ -72,7 +82,7 @@ function NavLinks({
             }`}
           >
             <Icon className="h-4 w-4 shrink-0" />
-            {l.label}
+            {t(l.labelKey)}
           </Link>
         );
       })}
@@ -81,6 +91,7 @@ function NavLinks({
 }
 
 function SignOutButton() {
+  const t = useT();
   return (
     <form action="/auth/signout" method="post">
       <button
@@ -88,20 +99,23 @@ function SignOutButton() {
         className="flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-neutral-600 transition-colors hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60"
       >
         <LogOut className="h-4 w-4 shrink-0" />
-        Salir
+        {t('common.exit')}
       </button>
     </form>
   );
 }
 
 export default function InstructorNav({ isAdmin }: { isAdmin: boolean }) {
+  const t = useT();
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
   const links: NavLink[] = [
     ...BASE_LINKS,
-    ...(isAdmin ? [{ href: '/instructor/users', icon: UserCog, label: 'Usuarios' }] : []),
-    { href: '/instructor/account', icon: UserCircle, label: 'Mi cuenta' },
+    ...(isAdmin
+      ? [{ href: '/instructor/users', icon: UserCog, labelKey: 'nav.users' as const }]
+      : []),
+    { href: '/instructor/account', icon: UserCircle, labelKey: 'nav.account' },
   ];
 
   return (
@@ -131,7 +145,7 @@ export default function InstructorNav({ isAdmin }: { isAdmin: boolean }) {
           <ThemeToggle />
           <button
             onClick={() => setOpen(true)}
-            aria-label="Abrir menú"
+            aria-label={t('nav.openMenu')}
             className="rounded-lg p-2 text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60"
           >
             <Menu className="h-5 w-5" />
@@ -151,7 +165,7 @@ export default function InstructorNav({ isAdmin }: { isAdmin: boolean }) {
               <Brand />
               <button
                 onClick={() => setOpen(false)}
-                aria-label="Cerrar menú"
+                aria-label={t('nav.closeMenu')}
                 className="rounded-lg p-2 text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60"
               >
                 <X className="h-5 w-5" />

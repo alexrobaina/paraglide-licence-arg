@@ -2,6 +2,8 @@ import { AlertTriangle, CheckCircle2 } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
+import LanguageToggle from '@/components/LanguageToggle';
+import { getT } from '@/i18n/server';
 import ExamRunner from './ExamRunner';
 
 export const dynamic = 'force-dynamic';
@@ -19,10 +21,16 @@ interface InvitationInfo {
   attempt?: { score: number; max_score: number; passed: boolean } | null;
 }
 
+/** El invitado no tiene cabecera de sitio, así que el selector va aquí. */
 function Shell({ children }: { children: React.ReactNode }) {
   return (
-    <main className="flex min-h-screen items-center justify-center px-4 py-10">
-      <div className="w-full max-w-md">{children}</div>
+    <main className="flex min-h-screen flex-col px-4 py-6">
+      <div className="flex justify-end">
+        <LanguageToggle />
+      </div>
+      <div className="flex flex-1 items-center justify-center">
+        <div className="w-full max-w-md">{children}</div>
+      </div>
     </main>
   );
 }
@@ -33,6 +41,7 @@ export default async function ExamTokenPage({
   params: Promise<{ token: string }>;
 }) {
   const { token } = await params;
+  const { t } = await getT();
   const supabase = await createClient();
 
   const { data } = await supabase.rpc('get_exam_invitation', { p_token: token });
@@ -45,11 +54,10 @@ export default async function ExamTokenPage({
         <Card variant="modern" size="lg" className="text-center">
           <AlertTriangle className="mx-auto h-10 w-10 text-amber-500" />
           <CardTitle size="lg" className="mt-3">
-            Invitación no válida
+            {t('inv.invalid.title')}
           </CardTitle>
           <CardDescription className="mt-1">
-            Este enlace no existe o fue eliminado. Pide una invitación nueva a tu
-            instructor.
+            {t('inv.invalid.desc')}
           </CardDescription>
         </Card>
       </Shell>
@@ -63,15 +71,13 @@ export default async function ExamTokenPage({
         <Card variant="modern" size="lg" className="text-center">
           <CheckCircle2 className="mx-auto h-10 w-10 text-emerald-500" />
           <CardTitle size="lg" className="mt-3">
-            Este examen ya fue rendido
+            {t('inv.used.title')}
           </CardTitle>
-          <CardDescription className="mt-1">
-            Cada invitación se puede usar una sola vez. Para repetir, pide una nueva.
-          </CardDescription>
+          <CardDescription className="mt-1">{t('inv.used.desc')}</CardDescription>
           {inv.attempt && (
             <div className="mt-4 flex items-center justify-center gap-2">
               <Badge variant={inv.attempt.passed ? 'success' : 'error'}>
-                {inv.attempt.passed ? 'Aprobado' : 'No aprobado'}
+                {inv.attempt.passed ? t('inv.passed') : t('inv.failed')}
               </Badge>
               <span className="text-sm text-neutral-500">
                 {inv.attempt.score}/{inv.attempt.max_score}
@@ -90,10 +96,10 @@ export default async function ExamTokenPage({
         <Card variant="modern" size="lg" className="text-center">
           <AlertTriangle className="mx-auto h-10 w-10 text-amber-500" />
           <CardTitle size="lg" className="mt-3">
-            Invitación expirada
+            {t('inv.expired.title')}
           </CardTitle>
           <CardDescription className="mt-1">
-            Pide una invitación nueva a tu instructor.
+            {t('inv.expired.desc')}
           </CardDescription>
         </Card>
       </Shell>
@@ -104,7 +110,7 @@ export default async function ExamTokenPage({
   return (
     <ExamRunner
       token={token}
-      templateTitle={inv.template_title ?? 'Examen'}
+      templateTitle={inv.template_title ?? t('inv.defaultTitle')}
       questionUids={inv.question_uids ?? []}
       passMark={inv.pass_mark ?? 0}
       maxScore={inv.max_score ?? 0}

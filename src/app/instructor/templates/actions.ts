@@ -5,6 +5,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { getCurrentProfile } from '@/lib/auth';
 import { QUESTIONS_BY_ID } from '@/lib/questions';
+import { getT } from '@/i18n/server';
 
 export interface CreateTemplateInput {
   title: string;
@@ -15,17 +16,18 @@ export interface CreateTemplateInput {
 }
 
 export async function createTemplate(input: CreateTemplateInput) {
+  const { t } = await getT();
   const profile = await getCurrentProfile();
   if (!profile || profile.role !== 'instructor') {
-    throw new Error('No autorizado.');
+    throw new Error(t('act.unauthorized'));
   }
 
   const title = input.title.trim();
-  if (!title) throw new Error('El título es obligatorio.');
+  if (!title) throw new Error(t('act.titleRequired'));
 
   // Keep only uids that really exist in the bank (don't trust the client).
   const validUids = (input.question_uids ?? []).filter((uid) => uid in QUESTIONS_BY_ID);
-  if (validUids.length === 0) throw new Error('Elige al menos una pregunta.');
+  if (validUids.length === 0) throw new Error(t('act.pickQuestion'));
 
   // Authoritative max score = sum of the selected questions' maxScore.
   const maxScore = validUids.reduce(
@@ -53,16 +55,17 @@ export async function createTemplate(input: CreateTemplateInput) {
 }
 
 export async function updateTemplate(id: string, input: CreateTemplateInput) {
+  const { t } = await getT();
   const profile = await getCurrentProfile();
   if (!profile || profile.role !== 'instructor') {
-    throw new Error('No autorizado.');
+    throw new Error(t('act.unauthorized'));
   }
 
   const title = input.title.trim();
-  if (!title) throw new Error('El título es obligatorio.');
+  if (!title) throw new Error(t('act.titleRequired'));
 
   const validUids = (input.question_uids ?? []).filter((uid) => uid in QUESTIONS_BY_ID);
-  if (validUids.length === 0) throw new Error('Elige al menos una pregunta.');
+  if (validUids.length === 0) throw new Error(t('act.pickQuestion'));
 
   const maxScore = validUids.reduce(
     (sum, uid) => sum + QUESTIONS_BY_ID[uid].maxScore,
@@ -92,9 +95,10 @@ export async function updateTemplate(id: string, input: CreateTemplateInput) {
 }
 
 export async function deleteTemplate(id: string) {
+  const { t } = await getT();
   const profile = await getCurrentProfile();
   if (!profile || profile.role !== 'instructor') {
-    throw new Error('No autorizado.');
+    throw new Error(t('act.unauthorized'));
   }
 
   const supabase = await createClient();

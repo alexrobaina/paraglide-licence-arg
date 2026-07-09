@@ -7,8 +7,10 @@ import { createClient } from '@/lib/supabase/client';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import Alert from '@/components/ui/Alert';
+import { useT } from '@/i18n/provider';
 
 export default function SetupPage() {
+  const t = useT();
   const [email, setEmail] = useState<string | null>(null);
   const [checking, setChecking] = useState(true);
   const [loading, setLoading] = useState(false);
@@ -38,40 +40,36 @@ export default function SetupPage() {
       <Card variant="modern" size="lg" className="w-full max-w-md text-center">
         <ShieldCheck className="mx-auto h-10 w-10 text-emerald-500" />
         <CardTitle size="lg" className="mt-3">
-          Configuración inicial
+          {t('setup.title')}
         </CardTitle>
-        <CardDescription className="mt-1">
-          Reclama tu rol de instructor. Solo funciona si tu email está en la lista
-          autorizada.
-        </CardDescription>
+        <CardDescription className="mt-1">{t('setup.desc')}</CardDescription>
 
         {checking ? (
-          <p className="mt-6 text-sm text-neutral-500">Cargando…</p>
+          <p className="mt-6 text-sm text-neutral-500">{t('common.loading')}</p>
         ) : !email ? (
           <div className="mt-6">
-            <Alert variant="warning">Primero inicia sesión.</Alert>
+            <Alert variant="warning">{t('setup.signInFirst')}</Alert>
             <Link href="/login" className="mt-3 inline-block">
               <Button variant="primary">
                 <LogIn className="h-4 w-4" />
-                Iniciar sesión
+                {t('common.signIn')}
               </Button>
             </Link>
           </div>
         ) : result ? (
           <div className="mt-6">
             {result === 'instructor' ? (
-              <Alert variant="success" title="¡Listo!">
-                Ahora eres <strong>instructor</strong>.
+              <Alert variant="success" title={t('setup.done')}>
+                {t('setup.nowInstructor')}
               </Alert>
             ) : (
-              <Alert variant="info" title="Rol asignado">
-                Tu rol quedó como <strong>{result}</strong>. Tu email no está en la
-                lista de instructores.
+              <Alert variant="info" title={t('setup.roleAssigned')}>
+                {t('setup.roleDesc', { role: result })}
               </Alert>
             )}
             <Link href="/instructor" className="mt-3 inline-block">
               <Button variant="primary">
-                Ir al panel de instructor
+                {t('login.toPanel')}
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
@@ -79,11 +77,11 @@ export default function SetupPage() {
         ) : (
           <div className="mt-6 flex flex-col gap-3">
             <p className="text-sm text-neutral-500">
-              Sesión: <strong>{email}</strong>
+              {t('account.session')}: <strong>{email}</strong>
             </p>
             {error && <Alert variant="error">{error}</Alert>}
             <Button variant="primary" onClick={claim} disabled={loading} className="w-full">
-              {loading ? 'Reclamando…' : 'Reclamar rol de instructor'}
+              {loading ? t('setup.claiming') : t('setup.claim')}
             </Button>
           </div>
         )}

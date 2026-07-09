@@ -1,17 +1,17 @@
 import Link from 'next/link';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
+import { getT } from '@/i18n/server';
 
-export default function AuthCodeErrorPage() {
+export default async function AuthCodeErrorPage() {
+  const { t } = await getT();
   return (
     <main className="flex min-h-screen items-center justify-center px-4">
       <Card variant="modern" size="lg" className="w-full max-w-md text-center">
-        <CardTitle size="lg">El enlace no es válido</CardTitle>
-        <CardDescription className="mt-2">
-          El enlace mágico expiró o ya fue usado. Solicita uno nuevo para entrar.
-        </CardDescription>
+        <CardTitle size="lg">{t('authErr.title')}</CardTitle>
+        <CardDescription className="mt-2">{t('authErr.desc')}</CardDescription>
         <Link href="/login" className="mt-6 inline-block">
-          <Button variant="primary">Volver a iniciar sesión</Button>
+          <Button variant="primary">{t('authErr.back')}</Button>
         </Link>
       </Card>
     </main>

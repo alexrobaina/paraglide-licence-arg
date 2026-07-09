@@ -4,6 +4,8 @@ import { ArrowLeft, CheckCircle2, XCircle, Inbox } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { QUESTIONS_BY_ID } from '@/lib/questions';
 import { gradeQuestion } from '@/lib/scoring';
+import { getT } from '@/i18n/server';
+import { DATE_LOCALE } from '@/i18n/messages';
 import { Card } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import AttemptQuestionList, { type AttemptEntry } from './AttemptQuestionList';
@@ -28,6 +30,7 @@ export default async function AttemptDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
+  const { t, locale } = await getT();
   const supabase = await createClient();
 
   const { data } = await supabase
@@ -62,7 +65,7 @@ export default async function AttemptDetailPage({
         className="mb-4 inline-flex items-center gap-1.5 text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300"
       >
         <ArrowLeft className="h-4 w-4" />
-        Volver a Resultados
+        {t('rd.back')}
       </Link>
 
       <Card variant="modern" size="lg" className="mb-6">
@@ -71,7 +74,7 @@ export default async function AttemptDetailPage({
             <h1 className="text-2xl font-bold tracking-tight">{pilot}</h1>
             <p className="mt-1 text-neutral-600 dark:text-neutral-400">
               {attempt.template?.title ?? '—'} ·{' '}
-              {new Date(attempt.finished_at).toLocaleDateString('es-AR')}
+              {new Date(attempt.finished_at).toLocaleDateString(DATE_LOCALE[locale])}
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -81,7 +84,10 @@ export default async function AttemptDetailPage({
                 <span className="text-lg text-neutral-400">/{attempt.max_score}</span>
               </div>
               <div className="text-xs text-neutral-500">
-                {correctCount}/{entries.length} preguntas correctas
+                {t('rd.correctCount', {
+                  correct: correctCount,
+                  total: entries.length,
+                })}
               </div>
             </div>
             <Badge
@@ -93,7 +99,7 @@ export default async function AttemptDetailPage({
               ) : (
                 <XCircle className="h-4 w-4" />
               )}
-              {attempt.passed ? 'Aprobado' : 'No aprobado'}
+              {attempt.passed ? t('inv.passed') : t('inv.failed')}
             </Badge>
           </div>
         </div>
@@ -103,7 +109,7 @@ export default async function AttemptDetailPage({
         <Card variant="modern" size="lg" className="text-center">
           <Inbox className="mx-auto h-10 w-10 text-neutral-300 dark:text-neutral-700" />
           <p className="mt-3 text-neutral-600 dark:text-neutral-400">
-            Este intento no tiene preguntas para mostrar.
+            {t('rd.noQuestions')}
           </p>
         </Card>
       ) : (

@@ -6,8 +6,10 @@ import { Mountain, LogIn, LogOut, LayoutDashboard } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
 import { createClient } from '@/lib/supabase/client';
+import { useT } from '@/i18n/provider';
 
 export default function SiteHeader() {
+  const t = useT();
   const [email, setEmail] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
 
@@ -54,7 +56,7 @@ export default function SiteHeader() {
                   className="flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-sm font-medium text-neutral-600 transition-colors hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60"
                 >
                   <LogOut className="h-4 w-4" />
-                  <span className="hidden sm:inline">Salir</span>
+                  <span className="hidden sm:inline">{t('header.signOut')}</span>
                 </button>
               </form>
             </div>
@@ -64,7 +66,7 @@ export default function SiteHeader() {
               className="ml-1 flex items-center gap-1.5 rounded-lg bg-neutral-900 px-3 py-1.5 text-sm font-medium text-neutral-50 transition-colors hover:bg-neutral-800 dark:bg-neutral-50 dark:text-neutral-900 dark:hover:bg-neutral-200"
             >
               <LogIn className="h-4 w-4" />
-              <span className="hidden sm:inline">Acceso</span>
+              <span className="hidden sm:inline">{t('header.access')}</span>
             </Link>
           )}
         </div>

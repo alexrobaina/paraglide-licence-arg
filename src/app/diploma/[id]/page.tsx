@@ -1,4 +1,6 @@
 import { createClient } from '@/lib/supabase/server';
+import { getT } from '@/i18n/server';
+import { DATE_LOCALE } from '@/i18n/messages';
 import Diploma from './Diploma';
 
 export const dynamic = 'force-dynamic';
@@ -20,6 +22,7 @@ export default async function DiplomaPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
+  const { t, locale } = await getT();
   const supabase = await createClient();
 
   const { data } = await supabase
@@ -37,7 +40,7 @@ export default async function DiplomaPage({
   if (!attempt) {
     return (
       <main className="flex min-h-screen items-center justify-center px-4">
-        <p className="text-neutral-500">Diploma no encontrado o sin permiso.</p>
+        <p className="text-neutral-500">{t('dip.notFound')}</p>
       </main>
     );
   }
@@ -45,14 +48,12 @@ export default async function DiplomaPage({
   if (!attempt.passed) {
     return (
       <main className="flex min-h-screen items-center justify-center px-4">
-        <p className="text-neutral-500">
-          Este examen no fue aprobado, por lo que no hay diploma.
-        </p>
+        <p className="text-neutral-500">{t('dip.notPassed')}</p>
       </main>
     );
   }
 
-  const date = new Date(attempt.finished_at).toLocaleDateString('es-AR', {
+  const date = new Date(attempt.finished_at).toLocaleDateString(DATE_LOCALE[locale], {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
@@ -62,8 +63,8 @@ export default async function DiplomaPage({
     <Diploma
       attemptId={attempt.id}
       initialName={attempt.student_name ?? ''}
-      fallbackEmail={attempt.invitation?.student_email ?? 'Piloto'}
-      examTitle={attempt.template?.title ?? 'de piloto'}
+      fallbackEmail={attempt.invitation?.student_email ?? t('dip.fallbackPilot')}
+      examTitle={attempt.template?.title ?? t('dip.fallbackExam')}
       score={attempt.score}
       maxScore={attempt.max_score}
       date={date}

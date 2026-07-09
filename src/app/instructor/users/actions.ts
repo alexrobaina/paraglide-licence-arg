@@ -2,17 +2,23 @@
 
 import { revalidatePath } from 'next/cache';
 import { createClient } from '@/lib/supabase/server';
+import { getT } from '@/i18n/server';
+import type { MessageKey } from '@/i18n/messages';
 
-const ERRORS: Record<string, string> = {
-  not_authorized: 'Solo el admin puede hacer esto.',
-  password_too_short: 'La contraseña debe tener al menos 6 caracteres.',
-  user_not_found: 'Usuario no encontrado.',
-  cannot_delete_self: 'No puedes borrarte a ti mismo.',
+const ERROR_KEYS: Record<string, MessageKey> = {
+  not_authorized: 'act.adminOnly',
+  password_too_short: 'act.passwordTooShort',
+  user_not_found: 'act.userNotFound',
+  cannot_delete_self: 'act.cannotDeleteSelf',
 };
 
-function friendly(message: string) {
-  const key = message.replace(/^.*?:\s*/, '').trim();
-  return ERRORS[key] ?? message;
+/** Traduce el código que devuelve el RPC; si no lo conocemos, lo deja tal cual. */
+async function friendly(message: string) {
+  const code = message.replace(/^.*?:\s*/, '').trim();
+  const key = ERROR_KEYS[code];
+  if (!key) return message;
+  const { t } = await getT();
+  return t(key);
 }
 
 export async function setUserPassword(email: string, password: string) {
@@ -21,13 +27,13 @@ export async function setUserPassword(email: string, password: string) {
     p_email: email,
     p_password: password,
   });
-  if (error) throw new Error(friendly(error.message));
+  if (error) throw new Error(await friendly(error.message));
   revalidatePath('/instructor/users');
 }
 
 export async function deleteUser(email: string) {
   const supabase = await createClient();
   const { error } = await supabase.rpc('admin_delete_user', { p_email: email });
-  if (error) throw new Error(friendly(error.message));
+  if (error) throw new Error(await friendly(error.message));
   revalidatePath('/instructor/users');
 }

@@ -14,6 +14,7 @@ import {
   X,
 } from 'lucide-react';
 import QuestionCard from '@/components/QuestionCard';
+import LanguageToggle from '@/components/LanguageToggle';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
@@ -22,15 +23,18 @@ import Alert from '@/components/ui/Alert';
 import { QUESTIONS_BY_ID } from '@/lib/questions';
 import { gradeQuestion, formatTime } from '@/lib/scoring';
 import { createClient } from '@/lib/supabase/client';
+import { useI18n } from '@/i18n/provider';
+import type { MessageKey } from '@/i18n/messages';
 import type { Question } from '@/lib/types';
 
 type Phase = 'intro' | 'running' | 'submitting' | 'done';
 
-const ERRORS: Record<string, string> = {
-  invitation_already_used: 'Ya rendiste este examen. Pide una invitación nueva.',
-  wrong_email: 'Esta invitación es para otro email.',
-  not_authenticated: 'Tu sesión expiró. Vuelve a iniciar sesión.',
-  invitation_not_found: 'La invitación ya no existe.',
+/** Códigos que devuelve submit_exam_attempt → clave de mensaje traducible. */
+const ERROR_KEYS: Record<string, MessageKey> = {
+  invitation_already_used: 'xr.err.alreadyUsed',
+  wrong_email: 'xr.err.wrongEmail',
+  not_authenticated: 'xr.err.notAuth',
+  invitation_not_found: 'xr.err.notFound',
 };
 
 export default function ExamRunner({
@@ -48,6 +52,8 @@ export default function ExamRunner({
   maxScore: number;
   timeLimitMin: number | null;
 }) {
+  const { t } = useI18n();
+
   const questions = useMemo<Question[]>(
     () => questionUids.map((uid) => QUESTIONS_BY_ID[uid]).filter(Boolean),
     [questionUids]
@@ -58,7 +64,10 @@ export default function ExamRunner({
   const [answers, setAnswers] = useState<Record<string, string[]>>({});
   const [current, setCurrent] = useState(0);
   const [confirming, setConfirming] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  // Guardamos la clave, no el texto: así el error se retraduce si cambian el idioma.
+  const [error, setError] = useState<{ key: MessageKey } | { raw: string } | null>(
+    null
+  );
   const [result, setResult] = useState<{ score: number; passed: boolean } | null>(null);
   const [remaining, setRemaining] = useState<number | null>(
     timeLimitMin != null ? timeLimitMin * 60 : null
@@ -91,8 +100,9 @@ export default function ExamRunner({
     });
 
     if (rpcError) {
-      const key = rpcError.message.replace(/^.*?:\s*/, '').trim();
-      setError(ERRORS[key] ?? rpcError.message);
+      const code = rpcError.message.replace(/^.*?:\s*/, '').trim();
+      const key = ERROR_KEYS[code];
+      setError(key ? { key } : { raw: rpcError.message });
       setPhase('running');
       return;
     }
@@ -117,22 +127,15 @@ export default function ExamRunner({
   // Leaving before submitting is safe: no attempt is created yet, the invitation
   // stays pending, and the pilot can reopen the link to start over.
   function exitToHome() {
-    if (
-      answeredCount > 0 &&
-      !window.confirm(
-        '¿Salir del examen? Perderás las respuestas de esta sesión (todavía no se guarda nada).'
-      )
-    ) {
-      return;
-    }
+    if (answeredCount > 0 && !window.confirm(t('xr.exitConfirm'))) return;
     window.location.href = '/';
   }
 
   if (questions.length === 0) {
     return (
       <main className="flex min-h-screen items-center justify-center px-4">
-        <Alert variant="error" title="Examen vacío">
-          Este examen no tiene preguntas válidas. Avisa a tu instructor.
+        <Alert variant="error" title={t('xr.empty.title')}>
+          {t('xr.empty.desc')}
         </Alert>
       </main>
     );
@@ -141,7 +144,10 @@ export default function ExamRunner({
   // ---- Intro ----
   if (phase === 'intro') {
     return (
-      <main className="mx-auto max-w-md px-4 py-12">
+      <main className="mx-auto max-w-md px-4 py-6">
+        <div className="mb-4 flex justify-end">
+          <LanguageToggle />
+        </div>
         <Card variant="modern" size="lg" className="text-center">
           <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-cyan-500 text-white">
             <Flag className="h-7 w-7" />
@@ -150,22 +156,30 @@ export default function ExamRunner({
             {templateTitle}
           </CardTitle>
           <CardDescription className="mt-1">
-            {questions.length} preguntas · aprobás con {passMark}/{maxScore}
-            {timeLimitMin != null && ` · ${timeLimitMin} min`}
+            {t('xr.intro.meta', {
+              count: questions.length,
+              pass: passMark,
+              max: maxScore,
+            })}
+            {timeLimitMin != null &&
+              ` · ${t('xr.intro.minutes', { min: timeLimitMin })}`}
           </CardDescription>
-          <Alert variant="warning" className="mt-4 text-left">
-            Tienes <strong>un solo intento</strong>. Al terminar se guarda y no puedes
-            repetir.
+          <Alert
+            variant="warning"
+            title={t('xr.intro.attemptTitle')}
+            className="mt-4 text-left"
+          >
+            {t('xr.intro.attemptDesc')}
           </Alert>
 
           <label className="mt-5 block text-left">
             <span className="mb-1 block text-xs font-medium text-neutral-500">
-              Nombre y apellido
+              {t('xr.name.label')}
             </span>
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Ej: Juan Pérez"
+              placeholder={t('common.namePlaceholder')}
               autoFocus
               className="w-full rounded-lg border border-neutral-300 bg-transparent px-3 py-2 text-sm outline-none focus:border-neutral-500 dark:border-neutral-700"
             />
@@ -178,14 +192,14 @@ export default function ExamRunner({
             disabled={!name.trim()}
             onClick={() => setPhase('running')}
           >
-            Comenzar examen
+            {t('xr.start')}
           </Button>
           <Link
             href="/"
             className="mt-3 inline-flex items-center gap-1.5 text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300"
           >
             <Home className="h-4 w-4" />
-            Volver al inicio
+            {t('common.backHome')}
           </Link>
         </Card>
       </main>
@@ -203,19 +217,17 @@ export default function ExamRunner({
             <XCircle className="mx-auto h-12 w-12 text-red-500" />
           )}
           <CardTitle size="lg" className="mt-3">
-            {result.passed ? '¡Aprobado!' : 'No aprobado'}
+            {result.passed ? t('xr.done.passed') : t('xr.done.failed')}
           </CardTitle>
           <div className="mt-2 text-4xl font-bold tabular-nums">
             {result.score}
             <span className="text-lg text-neutral-400">/{maxScore}</span>
           </div>
-          <CardDescription className="mt-2">
-            Tu resultado fue enviado a tu instructor.
-          </CardDescription>
+          <CardDescription className="mt-2">{t('xr.done.sent')}</CardDescription>
           <Link href="/" className="mt-5 inline-block">
             <Button variant="primary">
               <Home className="h-4 w-4" />
-              Ir al inicio
+              {t('common.goHome')}
             </Button>
           </Link>
         </Card>
@@ -238,7 +250,7 @@ export default function ExamRunner({
           className="flex items-center gap-1 rounded-lg px-2 py-1.5 text-sm text-neutral-500 transition-colors hover:bg-neutral-200/60 disabled:opacity-40 dark:hover:bg-neutral-800/60"
         >
           <X className="h-4 w-4" />
-          <span className="hidden sm:inline">Salir</span>
+          <span className="hidden sm:inline">{t('common.exit')}</span>
         </button>
         <Badge variant={remaining != null && remaining < 60 ? 'error' : 'default'} className="gap-1.5 tabular-nums">
           <Timer className="h-3.5 w-3.5" />
@@ -250,11 +262,14 @@ export default function ExamRunner({
         <span className="text-sm tabular-nums text-neutral-500">
           {answeredCount}/{total}
         </span>
+        {/* Durante el envío no: cambiar idioma refresca los server components y,
+            si la invitación ya pasó a "used", perderíamos la pantalla de resultado. */}
+        {!submitting && <LanguageToggle />}
       </div>
 
       {error && (
         <Alert variant="error" className="mb-4">
-          {error}
+          {'key' in error ? t(error.key) : error.raw}
         </Alert>
       )}
 
@@ -273,7 +288,7 @@ export default function ExamRunner({
           onClick={() => setCurrent((c) => Math.max(0, c - 1))}
         >
           <ChevronLeft className="h-4 w-4" />
-          Anterior
+          {t('exam.prev')}
         </Button>
         {!isLast ? (
           <Button
@@ -282,7 +297,7 @@ export default function ExamRunner({
             disabled={submitting}
             onClick={() => setCurrent((c) => Math.min(total - 1, c + 1))}
           >
-            Siguiente
+            {t('common.next')}
             <ChevronRight className="h-4 w-4" />
           </Button>
         ) : (
@@ -293,7 +308,7 @@ export default function ExamRunner({
             onClick={() => setConfirming(true)}
           >
             <Flag className="h-4 w-4" />
-            {submitting ? 'Enviando…' : 'Terminar'}
+            {submitting ? t('xr.submitting') : t('xr.finish')}
           </Button>
         )}
       </div>
@@ -326,16 +341,16 @@ export default function ExamRunner({
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4 backdrop-blur-sm">
           <Card variant="elevated" size="lg" className="max-w-sm text-center">
             <AlertTriangle className="mx-auto h-8 w-8 text-amber-500" />
-            <h3 className="mt-2 text-lg font-semibold">¿Terminar examen?</h3>
+            <h3 className="mt-2 text-lg font-semibold">{t('xr.confirm.title')}</h3>
             <p className="mt-1 text-sm text-neutral-500">
-              Respondiste {answeredCount} de {total}. No podrás volver a rendir.
+              {t('xr.confirm.desc', { answered: answeredCount, total })}
             </p>
             <div className="mt-4 flex justify-center gap-3">
               <Button variant="outline" onClick={() => setConfirming(false)}>
-                Seguir
+                {t('exam.confirm.keep')}
               </Button>
               <Button variant="primary" onClick={finish}>
-                Terminar
+                {t('xr.finish')}
               </Button>
             </div>
           </Card>
