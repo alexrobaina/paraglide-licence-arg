@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Award, Inbox } from 'lucide-react';
+import { Award, Inbox, ListChecks } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
@@ -86,14 +86,22 @@ export default async function ResultsPage() {
                     {new Date(r.finished_at).toLocaleDateString('es-AR')}
                   </td>
                   <td className="py-3">
-                    {r.passed && (
-                      <Link href={`/diploma/${r.id}`} target="_blank">
+                    <div className="flex items-center justify-end gap-2">
+                      <Link href={`/instructor/results/${r.id}`}>
                         <Button variant="outline" size="sm">
-                          <Award className="h-4 w-4" />
-                          Diploma
+                          <ListChecks className="h-4 w-4" />
+                          Ver detalle
                         </Button>
                       </Link>
-                    )}
+                      {r.passed && (
+                        <Link href={`/diploma/${r.id}`} target="_blank">
+                          <Button variant="outline" size="sm">
+                            <Award className="h-4 w-4" />
+                            Diploma
+                          </Button>
+                        </Link>
+                      )}
+                    </div>
                   </td>
                 </tr>
               ))}
