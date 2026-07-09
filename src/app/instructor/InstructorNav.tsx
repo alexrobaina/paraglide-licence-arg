@@ -7,6 +7,7 @@ import {
   Menu,
   X,
   LogOut,
+  Mountain,
   LayoutDashboard,
   FileText,
   Send,
@@ -26,11 +27,78 @@ const BASE_LINKS = [
   { href: '/instructor/team', icon: Users, label: 'Instructores' },
 ];
 
+type NavLink = { href: string; icon: typeof LayoutDashboard; label: string };
+
+function Brand() {
+  return (
+    <Link href="/instructor" className="flex shrink-0 items-center gap-2 font-semibold">
+      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-900 text-neutral-50 dark:bg-neutral-50 dark:text-neutral-900">
+        <Mountain className="h-5 w-5" />
+      </span>
+      <span className="tracking-tight">
+        Paraglide<span className="text-sky-500">Exam</span>
+        <span className="ml-1.5 text-xs font-normal text-neutral-400">Instructor</span>
+      </span>
+    </Link>
+  );
+}
+
+function NavLinks({
+  links,
+  pathname,
+  onNavigate,
+}: {
+  links: NavLink[];
+  pathname: string;
+  onNavigate?: () => void;
+}) {
+  return (
+    <nav className="flex flex-col gap-1">
+      {links.map((l) => {
+        const Icon = l.icon;
+        const active =
+          l.href === '/instructor'
+            ? pathname === l.href
+            : pathname === l.href || pathname.startsWith(l.href + '/');
+        return (
+          <Link
+            key={l.href}
+            href={l.href}
+            onClick={onNavigate}
+            className={`flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition-colors ${
+              active
+                ? 'bg-neutral-200/70 font-medium text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50'
+                : 'text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60'
+            }`}
+          >
+            <Icon className="h-4 w-4 shrink-0" />
+            {l.label}
+          </Link>
+        );
+      })}
+    </nav>
+  );
+}
+
+function SignOutButton() {
+  return (
+    <form action="/auth/signout" method="post">
+      <button
+        type="submit"
+        className="flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-neutral-600 transition-colors hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60"
+      >
+        <LogOut className="h-4 w-4 shrink-0" />
+        Salir
+      </button>
+    </form>
+  );
+}
+
 export default function InstructorNav({ isAdmin }: { isAdmin: boolean }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  const links = [
+  const links: NavLink[] = [
     ...BASE_LINKS,
     ...(isAdmin ? [{ href: '/instructor/users', icon: UserCog, label: 'Usuarios' }] : []),
     { href: '/instructor/account', icon: UserCircle, label: 'Mi cuenta' },
@@ -38,92 +106,66 @@ export default function InstructorNav({ isAdmin }: { isAdmin: boolean }) {
 
   return (
     <>
-      {/* Desktop nav */}
-      <nav className="hidden items-center gap-1 text-sm lg:flex">
-        {links.map((l) => {
-          const Icon = l.icon;
-          const active = pathname === l.href;
-          return (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={`flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 transition-colors ${
-                active
-                  ? 'bg-neutral-200/70 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50'
-                  : 'text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60'
-              }`}
-            >
-              <Icon className="h-4 w-4" />
-              <span className="hidden xl:inline">{l.label}</span>
-            </Link>
-          );
-        })}
-        <span className="mx-1 h-5 w-px bg-neutral-200 dark:bg-neutral-800" />
-        <LanguageToggle />
-        <ThemeToggle />
-        <SignOutButton />
-      </nav>
+      {/* Desktop sidebar */}
+      <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col border-r border-neutral-200/60 bg-neutral-50/80 backdrop-blur-xl dark:border-neutral-800/60 dark:bg-neutral-950/80 lg:flex">
+        <div className="flex h-16 items-center border-b border-neutral-200/60 px-5 dark:border-neutral-800/60">
+          <Brand />
+        </div>
+        <div className="flex-1 overflow-y-auto px-3 py-4">
+          <NavLinks links={links} pathname={pathname} />
+        </div>
+        <div className="flex flex-col gap-2 border-t border-neutral-200/60 px-3 py-3 dark:border-neutral-800/60">
+          <div className="flex items-center gap-1 px-1">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
+          <SignOutButton />
+        </div>
+      </aside>
 
-      {/* Mobile: toggles + hamburger */}
-      <div className="flex items-center gap-1 lg:hidden">
-        <LanguageToggle />
-        <ThemeToggle />
-        <button
-          onClick={() => setOpen((o) => !o)}
-          aria-label="Menú"
-          className="rounded-lg p-2 text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60"
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
-      </div>
+      {/* Mobile top bar */}
+      <header className="sticky top-0 z-40 flex items-center justify-between border-b border-neutral-200/60 bg-neutral-50/80 px-4 py-3 backdrop-blur-xl dark:border-neutral-800/60 dark:bg-neutral-950/80 lg:hidden">
+        <Brand />
+        <div className="flex items-center gap-1">
+          <LanguageToggle />
+          <ThemeToggle />
+          <button
+            onClick={() => setOpen(true)}
+            aria-label="Abrir menú"
+            className="rounded-lg p-2 text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60"
+          >
+            <Menu className="h-5 w-5" />
+          </button>
+        </div>
+      </header>
 
-      {/* Mobile dropdown */}
+      {/* Mobile drawer */}
       {open && (
-        <div className="absolute left-0 right-0 top-full border-b border-neutral-200/60 bg-neutral-50/95 backdrop-blur-xl dark:border-neutral-800/60 dark:bg-neutral-950/95 lg:hidden">
-          <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3">
-            {links.map((l) => {
-              const Icon = l.icon;
-              const active = pathname === l.href;
-              return (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className={`flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm transition-colors ${
-                    active
-                      ? 'bg-neutral-200/70 font-medium text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50'
-                      : 'text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60'
-                  }`}
-                >
-                  <Icon className="h-4 w-4" />
-                  {l.label}
-                </Link>
-              );
-            })}
-            <div className="mt-1 border-t border-neutral-200/60 pt-1 dark:border-neutral-800/60">
-              <SignOutButton mobile />
+        <div className="fixed inset-0 z-50 lg:hidden">
+          <div
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
+            onClick={() => setOpen(false)}
+          />
+          <div className="absolute inset-y-0 left-0 flex w-72 max-w-[80%] flex-col border-r border-neutral-200/60 bg-neutral-50 dark:border-neutral-800/60 dark:bg-neutral-950">
+            <div className="flex h-16 items-center justify-between border-b border-neutral-200/60 px-4 dark:border-neutral-800/60">
+              <Brand />
+              <button
+                onClick={() => setOpen(false)}
+                aria-label="Cerrar menú"
+                className="rounded-lg p-2 text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <div className="flex-1 overflow-y-auto px-3 py-4">
+              <NavLinks links={links} pathname={pathname} onNavigate={() => setOpen(false)} />
+            </div>
+            <div className="border-t border-neutral-200/60 px-3 py-3 dark:border-neutral-800/60">
+              <SignOutButton />
             </div>
           </div>
         </div>
       )}
     </>
-  );
-}
-
-function SignOutButton({ mobile }: { mobile?: boolean }) {
-  return (
-    <form action="/auth/signout" method="post" className={mobile ? '' : 'ml-1'}>
-      <button
-        type="submit"
-        className={
-          mobile
-            ? 'flex w-full items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60'
-            : 'flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-neutral-600 hover:bg-neutral-200/60 dark:text-neutral-400 dark:hover:bg-neutral-800/60'
-        }
-      >
-        <LogOut className="h-4 w-4" />
-        Salir
-      </button>
-    </form>
   );
 }

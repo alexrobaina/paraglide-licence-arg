@@ -122,6 +122,19 @@ interface Question {
 > El cuestionario reinicia la numeración por tema (hay varias preguntas con el mismo
 > número), por eso cada una lleva un `uid` global único además del `id` visible.
 
+## 🗄️ Base de datos y migraciones
+
+El backend usa **Supabase**. El esquema vive en migraciones versionadas en
+`supabase/migrations/`. **Cada cambio de schema hay que aplicarlo con `npx supabase db push`.**
+
+👉 Guía completa: [`supabase/README.md`](supabase/README.md)
+
+```bash
+export SUPABASE_ACCESS_TOKEN="sbp_..."
+export SUPABASE_DB_PASSWORD="..."
+npx supabase db push        # aplica las migraciones pendientes
+```
+
 ## 📐 Documentación de diseño (BMad)
 
 El proyecto se planificó con el flujo [BMad Method](https://bmadcode.com/). Los

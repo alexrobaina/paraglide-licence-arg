@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
+import Link from 'next/link';
 import {
   Timer,
   ChevronLeft,
@@ -9,6 +10,8 @@ import {
   AlertTriangle,
   CheckCircle2,
   XCircle,
+  Home,
+  X,
 } from 'lucide-react';
 import QuestionCard from '@/components/QuestionCard';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
@@ -111,6 +114,20 @@ export default function ExamRunner({
     return () => clearInterval(id);
   }, [phase, remaining]);
 
+  // Leaving before submitting is safe: no attempt is created yet, the invitation
+  // stays pending, and the pilot can reopen the link to start over.
+  function exitToHome() {
+    if (
+      answeredCount > 0 &&
+      !window.confirm(
+        '¿Salir del examen? Perderás las respuestas de esta sesión (todavía no se guarda nada).'
+      )
+    ) {
+      return;
+    }
+    window.location.href = '/';
+  }
+
   if (questions.length === 0) {
     return (
       <main className="flex min-h-screen items-center justify-center px-4">
@@ -163,6 +180,13 @@ export default function ExamRunner({
           >
             Comenzar examen
           </Button>
+          <Link
+            href="/"
+            className="mt-3 inline-flex items-center gap-1.5 text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300"
+          >
+            <Home className="h-4 w-4" />
+            Volver al inicio
+          </Link>
         </Card>
       </main>
     );
@@ -186,8 +210,14 @@ export default function ExamRunner({
             <span className="text-lg text-neutral-400">/{maxScore}</span>
           </div>
           <CardDescription className="mt-2">
-            Tu resultado fue enviado a tu instructor. Ya puedes cerrar esta página.
+            Tu resultado fue enviado a tu instructor.
           </CardDescription>
+          <Link href="/" className="mt-5 inline-block">
+            <Button variant="primary">
+              <Home className="h-4 w-4" />
+              Ir al inicio
+            </Button>
+          </Link>
         </Card>
       </main>
     );
@@ -201,7 +231,15 @@ export default function ExamRunner({
 
   return (
     <main className="mx-auto max-w-3xl px-4 pb-24 pt-6">
-      <div className="mb-4 flex items-center gap-3">
+      <div className="mb-4 flex items-center gap-2">
+        <button
+          onClick={exitToHome}
+          disabled={submitting}
+          className="flex items-center gap-1 rounded-lg px-2 py-1.5 text-sm text-neutral-500 transition-colors hover:bg-neutral-200/60 disabled:opacity-40 dark:hover:bg-neutral-800/60"
+        >
+          <X className="h-4 w-4" />
+          <span className="hidden sm:inline">Salir</span>
+        </button>
         <Badge variant={remaining != null && remaining < 60 ? 'error' : 'default'} className="gap-1.5 tabular-nums">
           <Timer className="h-3.5 w-3.5" />
           {remaining != null ? formatTime(remaining * 1000) : '∞'}

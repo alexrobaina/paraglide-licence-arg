@@ -3,7 +3,7 @@
 import { Suspense, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { Mountain, Mail, Lock, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Mountain, Mail, Lock, ArrowRight, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
@@ -184,6 +184,14 @@ function LoginForm() {
           ? '¿No tienes cuenta? Crea una'
           : '¿Ya tienes cuenta? Inicia sesión'}
       </button>
+
+      <Link
+        href="/"
+        className="mt-4 flex items-center justify-center gap-1.5 text-sm text-neutral-500 transition-colors hover:text-neutral-700 dark:hover:text-neutral-300"
+      >
+        <ArrowLeft className="h-4 w-4" />
+        Volver al inicio
+      </Link>
     </Card>
   );
 }
