@@ -9,7 +9,7 @@ import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
 import Alert from '@/components/ui/Alert';
 import { useI18n } from '@/i18n/provider';
-import { LICENSE_LEVELS } from '@/lib/practical/levels';
+import { LICENSE_LEVELS, levelPassPct } from '@/lib/practical/levels';
 import { createTemplate, updateTemplate } from './actions';
 
 const inputClass =
@@ -216,7 +216,12 @@ export default function TemplateForm({
               <Field label={t('tf.field.level')}>
                 <select
                   value={licenseLevel}
-                  onChange={(e) => setLicenseLevel(e.target.value)}
+                  onChange={(e) => {
+                    const lvl = e.target.value;
+                    setLicenseLevel(lvl);
+                    // Snap the pass mark to the level's official default (N3 = 65%).
+                    setPassPct(levelPassPct(lvl || null));
+                  }}
                   className={inputClass}
                 >
                   <option value="">{t('tf.field.levelNone')}</option>

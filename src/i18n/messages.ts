@@ -445,17 +445,32 @@ export const DICT = {
   },
   'res.col.pilot': { es: 'Piloto', en: 'Pilot' },
   'res.col.exam': { es: 'Examen', en: 'Exam' },
+  'res.col.level': { es: 'Nivel', en: 'Level' },
   'res.col.score': { es: 'Nota', en: 'Score' },
   'res.col.result': { es: 'Resultado', en: 'Result' },
   'res.col.date': { es: 'Fecha', en: 'Date' },
   'res.detail': { es: 'Ver detalle', en: 'View detail' },
   'res.diploma': { es: 'Diploma', en: 'Diploma' },
+  'res.search': { es: 'Buscar por piloto o examen…', en: 'Search by pilot or exam…' },
+  'res.filter.all': { es: 'Todos', en: 'All' },
+  'res.filter.passed': { es: 'Aprobados', en: 'Passed' },
+  'res.filter.failed': { es: 'Desaprobados', en: 'Failed' },
+  'res.count': { es: '{n} de {total}', en: '{n} of {total}' },
+  'res.noMatch': { es: 'Ningún resultado coincide con el filtro.', en: 'No results match the filter.' },
 
   // Detalle de intento
   'rd.back': { es: 'Volver a Resultados', en: 'Back to Results' },
   'rd.correctCount': {
-    es: '{correct}/{total} preguntas correctas',
-    en: '{correct}/{total} questions correct',
+    es: '{correct}/{total} preguntas perfectas',
+    en: '{correct}/{total} perfect questions',
+  },
+  'rd.pointsBreakdown': {
+    es: '{score} pts = {perfect} de perfectas + {partial} de crédito parcial',
+    en: '{score} pts = {perfect} from perfect + {partial} from partial credit',
+  },
+  'rd.partialNote': {
+    es: 'Cada opción suma o resta: una pregunta no perfecta igual puede sumar puntos.',
+    en: 'Each option adds or subtracts: a non-perfect question can still earn points.',
   },
   'rd.noQuestions': {
     es: 'Este intento no tiene preguntas para mostrar.',
@@ -464,8 +479,8 @@ export const DICT = {
 
   // Estadísticas del intento
   'as.title': { es: 'Desempeño por tema', en: 'Performance by topic' },
-  'as.correct': { es: '{n} correctas', en: '{n} correct' },
-  'as.wrong': { es: '{n} incorrectas', en: '{n} incorrect' },
+  'as.correct': { es: '{n} perfectas', en: '{n} perfect' },
+  'as.wrong': { es: '{n} sin perfeccionar', en: '{n} not perfect' },
   'as.blank': { es: '{n} sin responder', en: '{n} unanswered' },
   'as.hint': {
     es: 'Temas ordenados de más flojo a más fuerte — enfoca el repaso en los primeros.',
@@ -815,6 +830,23 @@ export const DICT = {
     es: 'Progresión de licencias: cada nivel requiere su teórico y su práctico.',
     en: 'Licence progression: each level needs its own theory and practical.',
   },
+  'lic.pendingLeg': { es: 'Pendiente', en: 'Pending' },
+  'lic.inviteTheory': { es: 'Invitar al teórico', en: 'Invite to theory' },
+  'lic.reinvite': { es: 'Volver a invitar', en: 'Invite again' },
+  'lic.newPractical': { es: 'Nueva planilla práctica', en: 'New practical checklist' },
+  'lic.viewResult': { es: 'Ver resultado', en: 'View result' },
+  'lic.viewChecklist': { es: 'Ver planilla', en: 'View checklist' },
+  'lic.needTemplate': {
+    es: 'Creá un examen de {level} para poder invitar.',
+    en: 'Create a {level} exam to be able to invite.',
+  },
+  'lic.pickExam': { es: 'Elegí el examen', en: 'Pick the exam' },
+  'lic.inviteCreated': {
+    es: 'Invitación creada — copiá el enlace o compartilo.',
+    en: 'Invitation created — copy the link or share it.',
+  },
+  'lic.allInvites': { es: 'Ver todas las invitaciones', en: 'See all invitations' },
+  'lic.certificate': { es: 'Certificado', en: 'Certificate' },
 
   // Invitar a examen teórico desde la ficha del alumno
   'stu.invite.title': { es: 'Invitar a examen teórico', en: 'Invite to theory exam' },

@@ -126,7 +126,7 @@ export async function finalizePracticalExam(
   await assertAttemptMatchesStudent(supabase, input.student_id, input.attempt_id);
   await assertDraft(supabase, examId);
 
-  const { error } = await supabase
+  const { data, error } = await supabase
     .from('practical_exams')
     .update({
       ...inputToRow(parsed.data as PracticalExamInput),
@@ -136,9 +136,13 @@ export async function finalizePracticalExam(
       finalized_by: profile.id,
     })
     .eq('id', examId)
-    .eq('created_by', profile.id);
+    .eq('created_by', profile.id)
+    .select('id');
 
   if (error) throw new Error(error.message);
+  // 0 rows updated means the exam isn't this instructor's (or vanished) — don't
+  // report a phantom success.
+  if (!data || data.length === 0) throw new Error('practical_exam_not_found');
   revalidatePath(`/instructor/practical/${examId}`);
   revalidatePath('/instructor/students');
   return { ok: true, id: examId };

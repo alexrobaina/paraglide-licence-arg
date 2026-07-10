@@ -33,3 +33,14 @@ export function levelOrder(code: string | null | undefined): number {
   if (!code) return Number.MAX_SAFE_INTEGER;
   return BY_CODE.get(code as LicenseLevel)?.order ?? Number.MAX_SAFE_INTEGER - 1;
 }
+
+// Official FAVL theory pass threshold per level. N3 = 65% (per the PRE-CERTIFICADO);
+// others default to 75% until confirmed. Used as the create-template default and
+// on the certificate header.
+const PASS_PCT: Partial<Record<LicenseLevel, number>> = { N3: 65 };
+export const DEFAULT_PASS_PCT = 75;
+
+export function levelPassPct(code: string | null | undefined): number {
+  if (!code) return DEFAULT_PASS_PCT;
+  return PASS_PCT[code as LicenseLevel] ?? DEFAULT_PASS_PCT;
+}

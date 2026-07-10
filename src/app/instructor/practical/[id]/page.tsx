@@ -1,6 +1,5 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowLeft } from 'lucide-react';
+import BackLink from '@/components/BackLink';
 import { createClient } from '@/lib/supabase/server';
 import { getT } from '@/i18n/server';
 import { rowToInput } from '@/lib/practical/serialize';
@@ -32,10 +31,7 @@ export default async function PracticalExamPage({
 
   return (
     <>
-      <Link href={`/instructor/students/${row.student_id}`} className="mb-4 inline-flex items-center gap-1.5 text-sm text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-200">
-        <ArrowLeft className="h-4 w-4" />
-        {studentName}
-      </Link>
+      <BackLink fallback={`/instructor/students/${row.student_id}`} label={t('common.back')} />
       <div className="mb-6">
         <h1 className="text-2xl font-bold tracking-tight">{t('pr.title')}</h1>
         <p className="mt-1 text-neutral-600 dark:text-neutral-400">{t('pr.subtitle')}</p>

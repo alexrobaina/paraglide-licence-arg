@@ -75,4 +75,29 @@ describe('summarizeLicencesByLevel', () => {
     const labels = summarizeLicencesByLevel([], []).map((g) => g.label);
     expect(labels).toEqual(['Alumno', 'Nivel 3', 'Nivel 4', 'Nivel 5']);
   });
+
+  it('an empty-string date does not poison the grant date', () => {
+    const groups = summarizeLicencesByLevel(
+      [{ level: 'N3', passed: true, date: '' }],
+      [prac('N3', finalPass, '2025-05-20')],
+    );
+    // the empty theory date must not win over the real practical date
+    expect(groups.find((g) => g.level === 'N3')!.grantedAt).toBe('2025-05-20');
+  });
+
+  it('a null date falls back to the other leg', () => {
+    const groups = summarizeLicencesByLevel(
+      [{ level: 'N3', passed: true, date: null as unknown as string }],
+      [prac('N3', finalPass, '2025-05-20')],
+    );
+    expect(groups.find((g) => g.level === 'N3')!.grantedAt).toBe('2025-05-20');
+  });
+
+  it('an off-ladder level code appears after the ladder, before null', () => {
+    const groups = summarizeLicencesByLevel(
+      [{ level: 'N9', passed: true, date: '2025-01-01' }, { level: null, passed: true, date: '2025-01-01' }],
+      [prac('N9', finalPass), prac(null, finalPass)],
+    );
+    expect(groups.map((g) => g.level)).toEqual(['ALU', 'N3', 'N4', 'N5', 'N9', null]);
+  });
 });

@@ -91,8 +91,10 @@ export function summarizeLicencesByLevel(
         const pDate = earliest(
           pr.filter((p) => p.status === 'final' && p.result_declared === true).map((p) => p.date),
         );
-        // Complete when the later of the two first-passes happened.
-        grantedAt = tDate && pDate ? (tDate > pDate ? tDate : pDate) : (tDate ?? pDate);
+        // Complete when the later of the two first-passes happened. Use explicit
+        // null checks (not truthiness) so an empty-string date is still compared.
+        grantedAt =
+          tDate != null && pDate != null ? (tDate > pDate ? tDate : pDate) : (tDate ?? pDate);
       } else if (hasActivity) {
         status = 'in_progress';
       }

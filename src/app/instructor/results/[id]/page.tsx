@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowLeft, CheckCircle2, XCircle, Inbox } from 'lucide-react';
+import { CheckCircle2, XCircle, Inbox } from 'lucide-react';
+import BackLink from '@/components/BackLink';
 import { createClient } from '@/lib/supabase/server';
 import { QUESTIONS_BY_ID } from '@/lib/questions';
 import { gradeQuestion } from '@/lib/scoring';
@@ -56,17 +56,13 @@ export default async function AttemptDetailPage({
     });
 
   const correctCount = entries.filter((e) => e.result.perfect).length;
+  const perfectPoints = entries.filter((e) => e.result.perfect).reduce((s, e) => s + e.result.score, 0);
+  const partialPoints = entries.filter((e) => !e.result.perfect).reduce((s, e) => s + e.result.score, 0);
   const pilot = attempt.student_name ?? attempt.invitation?.student_email ?? '—';
 
   return (
     <>
-      <Link
-        href="/instructor/results"
-        className="mb-4 inline-flex items-center gap-1.5 text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300"
-      >
-        <ArrowLeft className="h-4 w-4" />
-        {t('rd.back')}
-      </Link>
+      <BackLink fallback="/instructor/results" label={t('common.back')} />
 
       <Card variant="modern" size="lg" className="mb-6">
         <div className="flex flex-wrap items-start justify-between gap-4">
@@ -89,6 +85,17 @@ export default async function AttemptDetailPage({
                   total: entries.length,
                 })}
               </div>
+              {/* Only when the re-grade still adds up to the stored score (i.e. the
+                  question bank hasn't drifted since the attempt was taken). */}
+              {partialPoints > 0 && perfectPoints + partialPoints === attempt.score && (
+                <div className="mt-0.5 text-[11px] text-neutral-400" title={t('rd.partialNote')}>
+                  {t('rd.pointsBreakdown', {
+                    score: attempt.score,
+                    perfect: perfectPoints,
+                    partial: partialPoints,
+                  })}
+                </div>
+              )}
             </div>
             <Badge
               variant={attempt.passed ? 'success' : 'error'}
