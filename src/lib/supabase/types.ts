@@ -38,7 +38,10 @@ export interface Invitation {
 export interface Attempt {
   id: string;
   invitation_id: string;
-  student_id: string;
+  /** The alumno (students.id). Null for legacy attempts not yet backfilled. */
+  student_id: string | null;
+  /** Legacy: the logged-in account that took the exam. Almost always null. */
+  student_profile_id: string | null;
   template_id: string;
   score: number;
   max_score: number;
@@ -46,4 +49,17 @@ export interface Attempt {
   answers: Record<string, string[]>;
   started_at: string | null;
   finished_at: string;
+}
+
+export interface Student {
+  id: string;
+  instructor_id: string;
+  last_name: string;
+  first_name: string;
+  dni: string | null;
+  email: string | null;
+  club: string | null;
+  phone: string | null;
+  notes: string | null;
+  created_at: string;
 }
