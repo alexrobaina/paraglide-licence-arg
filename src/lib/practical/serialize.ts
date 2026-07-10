@@ -14,9 +14,11 @@ export type PracticalExamStatus = 'draft' | 'final';
 export interface PracticalExamRow {
   id: string;
   student_id: string;
+  attempt_id: string | null;
   created_by: string;
   form_version: number;
   status: PracticalExamStatus;
+  license_level: string | null;
   license_type: string;
   exam_date: string;
   place: string;
@@ -75,6 +77,8 @@ export function rowToInput(row: PracticalExamRow): PracticalExamInput {
 
   return {
     student_id: row.student_id,
+    attempt_id: row.attempt_id,
+    license_level: (row.license_level as PracticalExamInput['license_level']) ?? null,
     license_type: row.license_type,
     exam_date: row.exam_date,
     place: row.place,

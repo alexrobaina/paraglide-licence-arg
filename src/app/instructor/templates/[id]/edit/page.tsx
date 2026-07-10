@@ -35,6 +35,7 @@ export default async function EditTemplatePage({
         description: tpl.description ?? '',
         passPct,
         timeLimit: tpl.time_limit_min != null ? String(tpl.time_limit_min) : '',
+        licenseLevel: tpl.license_level ?? '',
         selectedUids: tpl.question_uids,
       }}
     />

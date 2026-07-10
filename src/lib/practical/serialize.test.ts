@@ -8,6 +8,8 @@ const STUDENT_ID = '3f1c2f4e-9a1b-4c1d-8e2f-0a1b2c3d4e5f';
 function input() {
   return {
     student_id: STUDENT_ID,
+    attempt_id: null,
+    license_level: 'N3' as const,
     license_type: 'Piloto Básico Nivel 3',
     exam_date: '2025-05-28',
     place: 'Cuchi Corral',

@@ -16,6 +16,7 @@ import type { ItemCode, ItemValue, SectionKey, SectionsValue, TestNo } from '@/l
 import {
   computeResult, diffMinutes, formatDuration, isSectionApproved, isSectionAttempted,
 } from '@/lib/practical/evaluate';
+import { LICENSE_LEVELS } from '@/lib/practical/levels';
 import { savePracticalDraft, finalizePracticalExam } from './actions';
 import type { PracticalExamInput } from '@/lib/practical/schema';
 
@@ -101,16 +102,27 @@ function SectionCard({
   );
 }
 
+export interface TheoryOption {
+  id: string;
+  title: string;
+  score: number;
+  max_score: number;
+  passed: boolean;
+  finished_at: string;
+}
+
 export function PracticalForm({
   studentName,
   initial,
   examId,
   status,
+  theoryAttempts,
 }: {
   studentName: string;
   initial: PracticalExamInput;
   examId?: string;
   status: 'draft' | 'final';
+  theoryAttempts: TheoryOption[];
 }) {
   const t = useT();
   const router = useRouter();
@@ -194,7 +206,7 @@ export function PracticalForm({
   return (
     <div className="flex flex-col gap-5">
       {locked && (
-        <Alert variant="info" icon={Lock}>{t('pr.locked')}</Alert>
+        <Alert variant="info" icon={<Lock className="h-5 w-5" />}>{t('pr.locked')}</Alert>
       )}
       {note && <Alert variant="success">{note}</Alert>}
       {Object.keys(errors).length > 0 && <Alert variant="error">{t('pr.hasErrors')}</Alert>}
@@ -204,6 +216,17 @@ export function PracticalForm({
         <CardTitle size="sm">Datos del examen</CardTitle>
         <div className="mt-1 text-sm text-neutral-500">Alumno: <strong className="text-neutral-800 dark:text-neutral-200">{studentName}</strong></div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <label>
+            <span className={labelCls}>Nivel de licencia</span>
+            <select className={fieldCls} disabled={locked}
+              value={input.license_level ?? ''}
+              onChange={(e) => setField('license_level', (e.target.value || null) as PracticalExamInput['license_level'])}>
+              <option value="">Sin nivel</option>
+              {LICENSE_LEVELS.map((l) => (
+                <option key={l.code} value={l.code}>{l.label}</option>
+              ))}
+            </select>
+          </label>
           <label>
             <span className={labelCls}>Tipo de licencia *</span>
             <input className={`${fieldCls} ${errCls('license_type')}`} disabled={locked}
@@ -243,6 +266,22 @@ export function PracticalForm({
               <option value="SI">SI</option>
               <option value="NA">N/A</option>
             </select>
+          </label>
+          <label className="sm:col-span-2">
+            <span className={labelCls}>Examen teórico vinculado</span>
+            <select className={fieldCls} disabled={locked}
+              value={input.attempt_id ?? ''}
+              onChange={(e) => setField('attempt_id', e.target.value || null)}>
+              <option value="">— Sin vincular (teórico rendido en otro lado) —</option>
+              {theoryAttempts.map((a) => (
+                <option key={a.id} value={a.id}>
+                  {a.title} · {a.score}/{a.max_score} · {a.passed ? 'Aprobado' : 'Desaprobado'} · {new Date(a.finished_at).toLocaleDateString('es-AR')}
+                </option>
+              ))}
+            </select>
+            {theoryAttempts.length === 0 && (
+              <span className="mt-1 block text-xs text-neutral-400">El alumno todavía no tiene exámenes teóricos registrados.</span>
+            )}
           </label>
         </div>
       </Card>
@@ -340,7 +379,7 @@ export function PracticalForm({
         {err('result_declared') && <p className="text-xs text-red-500">{err('result_declared')}</p>}
 
         {input.result_declared != null && input.result_declared !== computed && (
-          <Alert variant="warning" icon={AlertTriangle}>
+          <Alert variant="warning" icon={<AlertTriangle className="h-5 w-5" />}>
             El resultado declarado no coincide con las pruebas. Fundamentá el motivo en observaciones.
           </Alert>
         )}

@@ -375,6 +375,8 @@ export const DICT = {
   'tf.field.passPct': { es: 'Aprobado (%)', en: 'Pass mark (%)' },
   'tf.field.time': { es: 'Tiempo (min)', en: 'Time (min)' },
   'tf.field.timePlaceholder': { es: 'Sin límite', en: 'No limit' },
+  'tf.field.level': { es: 'Nivel de licencia', en: 'Licence level' },
+  'tf.field.levelNone': { es: 'Sin nivel', en: 'No level' },
   'tf.summary.questions': { es: 'Preguntas', en: 'Questions' },
   'tf.summary.maxScore': { es: 'Puntaje máximo', en: 'Max score' },
   'tf.summary.passWith': { es: 'Aprobar con', en: 'Pass with' },
@@ -782,6 +784,52 @@ export const DICT = {
     es: 'Planilla cerrada (declaración jurada). No editable.',
     en: 'Closed checklist (sworn statement). Not editable.',
   },
+
+  // Estado de licencia (teórico + práctico)
+  'lic.title': { es: 'Estado de licencia', en: 'Licence status' },
+  'lic.ready': { es: 'En condiciones de licencia', en: 'Ready for licence' },
+  'lic.pending': { es: 'Licencia pendiente', en: 'Licence pending' },
+  'lic.theory': { es: 'Teórico', en: 'Theory' },
+  'lic.practical': { es: 'Práctico', en: 'Practical' },
+  'lic.passed': { es: 'Aprobado', en: 'Passed' },
+  'lic.missing': { es: 'Pendiente', en: 'Pending' },
+  'lic.readyHint': {
+    es: 'El alumno aprobó teórico y práctico. Puede otorgarse la licencia.',
+    en: 'The student passed theory and practical. The licence can be granted.',
+  },
+  'lic.pendingHint': {
+    es: 'Falta aprobar teórico y/o práctico para completar la licencia.',
+    en: 'Theory and/or practical still pending to complete the licence.',
+  },
+  'lic.linkedTheory': { es: 'Teórico vinculado', en: 'Linked theory' },
+  'lic.noLink': { es: 'Sin teórico vinculado', en: 'No linked theory' },
+  'lic.none': {
+    es: 'Todavía no hay exámenes para calcular el estado de licencia.',
+    en: 'No exams yet to compute the licence status.',
+  },
+
+  // Invitar a examen teórico desde la ficha del alumno
+  'stu.invite.title': { es: 'Invitar a examen teórico', en: 'Invite to theory exam' },
+  'stu.invite.desc': {
+    es: 'Crea un enlace único para que el alumno rinda. Queda vinculado por su email.',
+    en: 'Create a unique link for the student to take. Linked by their email.',
+  },
+  'stu.invite.create': { es: 'Crear invitación', en: 'Create invitation' },
+  'stu.invite.creating': { es: 'Creando…', en: 'Creating…' },
+  'stu.invite.noEmail': {
+    es: 'Agregá un email al alumno para poder invitarlo.',
+    en: 'Add an email to the student to be able to invite them.',
+  },
+  'stu.invite.noTemplates': {
+    es: 'Primero creá un examen para poder invitar.',
+    en: 'Create an exam first to be able to invite.',
+  },
+  'stu.invite.created': {
+    es: '✅ Invitación creada. Copiá el enlace o compartilo por WhatsApp.',
+    en: '✅ Invitation created. Copy the link or share it on WhatsApp.',
+  },
+  'stu.invite.error': { es: 'No se pudo crear la invitación.', en: 'Could not create the invitation.' },
+  'stu.invite.manageAll': { es: 'Ver todas las invitaciones', en: 'See all invitations' },
 } as const;
 
 /** Locale para formatear fechas con toLocaleDateString. */

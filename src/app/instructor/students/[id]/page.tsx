@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowLeft, FileText, ClipboardList, Plus, Mail, Phone, IdCard } from 'lucide-react';
+import { ArrowLeft, FileText, ClipboardList, Plus, Mail, Phone, IdCard, Award, Link2, CheckCircle2, Circle } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { getT } from '@/i18n/server';
 import { DATE_LOCALE } from '@/i18n/messages';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
+import { summarizeLicencesByLevel } from '@/lib/practical/licence';
+import { StudentInviteCard } from './StudentInviteCard';
 import type { Student } from '@/lib/supabase/types';
 
 export const dynamic = 'force-dynamic';
@@ -17,14 +19,16 @@ interface TheoryRow {
   max_score: number;
   passed: boolean;
   finished_at: string;
-  template: { title: string } | null;
+  template: { title: string; license_level: string | null } | null;
 }
 interface PracticalRow {
   id: string;
   status: 'draft' | 'final';
   exam_date: string;
   license_type: string;
+  license_level: string | null;
   result_declared: boolean | null;
+  attempt_id: string | null;
 }
 
 export default async function StudentDetailPage({
@@ -40,22 +44,35 @@ export default async function StudentDetailPage({
   if (!student) notFound();
   const s = student as Student;
 
-  const [{ data: theory }, { data: practical }] = await Promise.all([
+  const [{ data: theory }, { data: practical }, { data: templatesData }] = await Promise.all([
     supabase
       .from('attempts')
-      .select('id, score, max_score, passed, finished_at, template:exam_templates(title)')
+      .select('id, score, max_score, passed, finished_at, template:exam_templates(title, license_level)')
       .eq('student_id', id)
       .order('finished_at', { ascending: false }),
     supabase
       .from('practical_exams')
-      .select('id, status, exam_date, license_type, result_declared')
+      .select('id, status, exam_date, license_type, license_level, result_declared, attempt_id')
       .eq('student_id', id)
       .order('exam_date', { ascending: false }),
+    supabase
+      .from('exam_templates')
+      .select('id, title')
+      .order('created_at', { ascending: false }),
   ]);
+
+  const templates = (templatesData as { id: string; title: string }[]) ?? [];
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 
   const theoryRows = (theory as unknown as TheoryRow[]) ?? [];
   const practicalRows = (practical as PracticalRow[]) ?? [];
   const fullName = `${s.last_name}${s.first_name ? `, ${s.first_name}` : ''}`;
+
+  const licences = summarizeLicencesByLevel(
+    theoryRows.map((a) => ({ level: a.template?.license_level ?? null, passed: a.passed })),
+    practicalRows.map((p) => ({ level: p.license_level, status: p.status, result_declared: p.result_declared })),
+  );
+  const theoryTitleById = new Map(theoryRows.map((a) => [a.id, a.template?.title ?? 'Examen teórico']));
 
   function fmtDate(d: string) {
     return new Date(d).toLocaleDateString(DATE_LOCALE[locale]);
@@ -79,6 +96,39 @@ export default async function StudentDetailPage({
         {s.notes && <p className="mt-2 max-w-2xl text-sm text-neutral-500">{s.notes}</p>}
       </div>
 
+      {/* Estado de licencia por nivel (cada nivel es una licencia distinta) */}
+      <div className="mb-3 flex items-center gap-2">
+        <Award className="h-4 w-4 text-neutral-500" />
+        <h2 className="text-sm font-semibold text-neutral-500">{t('lic.title')}</h2>
+      </div>
+      {licences.length === 0 ? (
+        <Card variant="minimal" size="sm" className="mb-8">
+          <CardDescription>{t('lic.none')}</CardDescription>
+        </Card>
+      ) : (
+        <div className="mb-8 grid grid-cols-1 gap-2 sm:grid-cols-2">
+          {licences.map((lic) => (
+            <Card key={lic.level ?? 'none'} variant="modern" size="sm">
+              <div className="flex items-center justify-between">
+                <CardTitle size="sm">{lic.label}</CardTitle>
+                <Badge variant={lic.ready ? 'success' : 'warning'}>
+                  {lic.ready ? t('lic.ready') : t('lic.pending')}
+                </Badge>
+              </div>
+              <div className="flex gap-6">
+                <LicenceLeg label={t('lic.theory')} passed={lic.theoryPassed}
+                  passedLabel={t('lic.passed')} missingLabel={t('lic.missing')} />
+                <LicenceLeg label={t('lic.practical')} passed={lic.practicalPassed}
+                  passedLabel={t('lic.passed')} missingLabel={t('lic.missing')} />
+              </div>
+            </Card>
+          ))}
+        </div>
+      )}
+
+      {/* Invitar a examen teórico (email precargado del alumno) */}
+      <StudentInviteCard templates={templates} studentEmail={s.email} siteUrl={siteUrl} />
+
       {/* Prácticos */}
       <div className="mb-3 flex items-center justify-between">
         <h2 className="flex items-center gap-2 text-sm font-semibold text-neutral-500">
@@ -98,6 +148,12 @@ export default async function StudentDetailPage({
                 <div>
                   <div className="text-sm font-medium">{p.license_type}</div>
                   <div className="text-xs text-neutral-400">{fmtDate(p.exam_date)}</div>
+                  <div className="mt-0.5 flex items-center gap-1 text-xs text-neutral-400">
+                    <Link2 className="h-3 w-3" />
+                    {p.attempt_id
+                      ? `${t('lic.linkedTheory')}: ${theoryTitleById.get(p.attempt_id) ?? '—'}`
+                      : t('lic.noLink')}
+                  </div>
                 </div>
                 <div className="flex items-center gap-2">
                   {p.result_declared != null && (
@@ -143,5 +199,27 @@ export default async function StudentDetailPage({
         </div>
       )}
     </>
+  );
+}
+
+function LicenceLeg({
+  label, passed, passedLabel, missingLabel,
+}: {
+  label: string;
+  passed: boolean;
+  passedLabel: string;
+  missingLabel: string;
+}) {
+  const Icon = passed ? CheckCircle2 : Circle;
+  return (
+    <div className="flex items-center gap-2">
+      <Icon className={`h-5 w-5 ${passed ? 'text-emerald-600' : 'text-neutral-300 dark:text-neutral-600'}`} />
+      <div>
+        <div className="text-sm font-medium">{label}</div>
+        <div className={`text-xs ${passed ? 'text-emerald-600' : 'text-neutral-400'}`}>
+          {passed ? passedLabel : missingLabel}
+        </div>
+      </div>
+    </div>
   );
 }

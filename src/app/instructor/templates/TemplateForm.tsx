@@ -9,6 +9,7 @@ import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
 import Alert from '@/components/ui/Alert';
 import { useI18n } from '@/i18n/provider';
+import { LICENSE_LEVELS } from '@/lib/practical/levels';
 import { createTemplate, updateTemplate } from './actions';
 
 const inputClass =
@@ -19,6 +20,7 @@ export interface TemplateFormInitial {
   description: string;
   passPct: number;
   timeLimit: string;
+  licenseLevel: string;
   selectedUids: string[];
 }
 
@@ -36,6 +38,7 @@ export default function TemplateForm({
   const [description, setDescription] = useState(initial?.description ?? '');
   const [passPct, setPassPct] = useState(initial?.passPct ?? 75);
   const [timeLimit, setTimeLimit] = useState<string>(initial?.timeLimit ?? '');
+  const [licenseLevel, setLicenseLevel] = useState<string>(initial?.licenseLevel ?? '');
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState<Set<string>>(
     new Set(initial?.selectedUids ?? [])
@@ -102,6 +105,7 @@ export default function TemplateForm({
           question_uids: [...selected],
           pass_pct: passPct,
           time_limit_min: timeLimit ? Number(timeLimit) : null,
+          license_level: licenseLevel || null,
         };
         if (mode === 'edit' && templateId) {
           await updateTemplate(templateId, payload);
@@ -208,6 +212,18 @@ export default function TemplateForm({
                   rows={2}
                   className={`${inputClass} resize-none`}
                 />
+              </Field>
+              <Field label={t('tf.field.level')}>
+                <select
+                  value={licenseLevel}
+                  onChange={(e) => setLicenseLevel(e.target.value)}
+                  className={inputClass}
+                >
+                  <option value="">{t('tf.field.levelNone')}</option>
+                  {LICENSE_LEVELS.map((l) => (
+                    <option key={l.code} value={l.code}>{l.label}</option>
+                  ))}
+                </select>
               </Field>
               <div className="grid grid-cols-2 gap-3">
                 <Field label={t('tf.field.passPct')}>

@@ -123,7 +123,7 @@ export default function InstructorNav({ isAdmin }: { isAdmin: boolean }) {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col border-r border-neutral-200/60 bg-neutral-50/80 backdrop-blur-xl dark:border-neutral-800/60 dark:bg-neutral-950/80 lg:flex">
+      <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col border-r border-neutral-200/60 bg-neutral-50/80 backdrop-blur-xl dark:border-neutral-800/60 dark:bg-neutral-950/80 lg:flex print:hidden">
         <div className="flex h-16 items-center border-b border-neutral-200/60 px-5 dark:border-neutral-800/60">
           <Brand />
         </div>
@@ -140,7 +140,7 @@ export default function InstructorNav({ isAdmin }: { isAdmin: boolean }) {
       </aside>
 
       {/* Mobile top bar */}
-      <header className="sticky top-0 z-40 flex items-center justify-between border-b border-neutral-200/60 bg-neutral-50/80 px-4 py-3 backdrop-blur-xl dark:border-neutral-800/60 dark:bg-neutral-950/80 lg:hidden">
+      <header className="sticky top-0 z-40 flex items-center justify-between border-b border-neutral-200/60 bg-neutral-50/80 px-4 py-3 backdrop-blur-xl dark:border-neutral-800/60 dark:bg-neutral-950/80 lg:hidden print:hidden">
         <Brand />
         <div className="flex items-center gap-1">
           <LanguageToggle />

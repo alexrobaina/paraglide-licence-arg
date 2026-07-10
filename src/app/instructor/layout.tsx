@@ -63,9 +63,9 @@ export default async function InstructorLayout({
   }
 
   return (
-    <div className="min-h-screen lg:pl-60">
+    <div className="min-h-screen lg:pl-60 print:pl-0">
       <InstructorNav isAdmin={Boolean(isAdmin)} />
-      <main className="mx-auto max-w-5xl px-4 pb-20 pt-8">{children}</main>
+      <main className="mx-auto max-w-5xl px-4 pb-20 pt-8 print:max-w-none print:p-0">{children}</main>
     </div>
   );
 }

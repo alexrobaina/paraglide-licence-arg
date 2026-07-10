@@ -20,6 +20,7 @@ interface InvitationLite {
   student_email: string;
   status: 'pending' | 'used' | 'expired';
   created_at: string;
+  template?: { title: string } | null;
 }
 
 const STATUS: Record<
@@ -59,9 +60,9 @@ export function InviteClient({
   function examUrl(token: string) {
     return `${siteUrl}/exam/${token}`;
   }
-  function waHref(token: string, studentEmail: string) {
+  function waHref(token: string, studentEmail: string, title: string) {
     const msg = t('invite.waMessage', {
-      title: templateTitle,
+      title,
       email: studentEmail,
       url: examUrl(token),
     });
@@ -138,7 +139,7 @@ export function InviteClient({
               key={inv.id}
               inv={inv}
               url={examUrl(inv.token)}
-              waHref={waHref(inv.token, inv.student_email)}
+              waHref={waHref(inv.token, inv.student_email, inv.template?.title ?? templateTitle)}
             />
           ))}
         </div>
@@ -180,6 +181,9 @@ function InvitationRow({
             <span className="truncate">{inv.student_email}</span>
             <Badge variant={status.variant}>{t(status.labelKey)}</Badge>
           </div>
+          {inv.template?.title && (
+            <div className="mt-0.5 truncate text-xs font-medium text-neutral-500">{inv.template.title}</div>
+          )}
           <div className="mt-0.5 truncate text-xs text-neutral-400">{url}</div>
         </div>
 

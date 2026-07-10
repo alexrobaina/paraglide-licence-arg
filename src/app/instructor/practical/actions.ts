@@ -38,6 +38,22 @@ async function assertOwnsStudent(
   if (!data) throw new Error('student_not_found');
 }
 
+/** A linked theory attempt must belong to the very student being examined. */
+async function assertAttemptMatchesStudent(
+  supabase: Awaited<ReturnType<typeof createClient>>,
+  studentId: string,
+  attemptId: string | null,
+) {
+  if (!attemptId) return;
+  const { data } = await supabase
+    .from('attempts')
+    .select('id')
+    .eq('id', attemptId)
+    .eq('student_id', studentId)
+    .maybeSingle();
+  if (!data) throw new Error('attempt_student_mismatch');
+}
+
 /** Refuses to touch an exam that is already a sworn, closed planilla. */
 async function assertDraft(
   supabase: Awaited<ReturnType<typeof createClient>>,
@@ -63,6 +79,7 @@ export async function savePracticalDraft(
 
   const supabase = await createClient();
   await assertOwnsStudent(supabase, profile.id, input.student_id);
+  await assertAttemptMatchesStudent(supabase, input.student_id, input.attempt_id);
 
   const row = {
     ...inputToRow(parsed.data as PracticalExamInput),
@@ -106,6 +123,7 @@ export async function finalizePracticalExam(
 
   const supabase = await createClient();
   await assertOwnsStudent(supabase, profile.id, input.student_id);
+  await assertAttemptMatchesStudent(supabase, input.student_id, input.attempt_id);
   await assertDraft(supabase, examId);
 
   const { error } = await supabase

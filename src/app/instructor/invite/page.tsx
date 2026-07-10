@@ -47,17 +47,20 @@ export default async function InvitePage({
       ? template
       : templates[0].id;
 
+  // Show ALL of this instructor's invitations, not just the selected exam's —
+  // otherwise the copy-link list looks empty whenever the default (newest)
+  // template has no invites. Each row carries its exam title.
   const { data: invitationsData } = await supabase
     .from('invitations')
-    .select('id, token, student_email, status, created_at')
-    .eq('template_id', currentTemplateId)
+    .select('id, token, student_email, status, created_at, template:exam_templates(title)')
+    .eq('instructor_id', profile!.id)
     .order('created_at', { ascending: false });
 
   const invitations =
-    (invitationsData as Pick<
+    (invitationsData as unknown as (Pick<
       Invitation,
       'id' | 'token' | 'student_email' | 'status' | 'created_at'
-    >[]) ?? [];
+    > & { template: { title: string } | null })[]) ?? [];
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 

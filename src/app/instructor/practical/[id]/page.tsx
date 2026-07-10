@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/server';
 import { getT } from '@/i18n/server';
 import { rowToInput } from '@/lib/practical/serialize';
 import { PracticalForm } from '../PracticalForm';
+import { fetchTheoryOptions } from '../theory';
 import type { PracticalExamRow } from '@/lib/practical/serialize';
 import type { Student } from '@/lib/supabase/types';
 
@@ -27,6 +28,7 @@ export default async function PracticalExamPage({
     .from('students').select('*').eq('id', row.student_id).maybeSingle();
   const s = studentData as Student | null;
   const studentName = s ? `${s.last_name}${s.first_name ? `, ${s.first_name}` : ''}` : '—';
+  const theoryAttempts = await fetchTheoryOptions(supabase, row.student_id);
 
   return (
     <>
@@ -43,6 +45,7 @@ export default async function PracticalExamPage({
         initial={rowToInput(row)}
         examId={row.id}
         status={row.status}
+        theoryAttempts={theoryAttempts}
       />
     </>
   );

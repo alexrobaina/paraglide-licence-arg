@@ -50,6 +50,10 @@ const weatherSchema = z
 
 const baseSchema = z.strictObject({
   student_id: z.uuid(),
+  /** The theory attempt this planilla pairs with; null if taken elsewhere. */
+  attempt_id: z.uuid().nullable(),
+  /** FAVL ladder level (N1..N5); null = sin nivel. Groups the licence. */
+  license_level: z.enum(['N1', 'N2', 'N3', 'N4', 'N5']).nullable(),
   // Blank while a draft; required to close (see REQUIRED_TO_CLOSE).
   license_type: z.string().trim().max(120),
   exam_date: z.string().regex(ISO_DATE, 'Formato AAAA-MM-DD'),

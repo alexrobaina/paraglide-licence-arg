@@ -20,6 +20,7 @@ export interface ExamTemplate {
   pass_mark: number;
   max_score: number;
   time_limit_min: number | null;
+  license_level: string | null;
   created_at: string;
 }
 

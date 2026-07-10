@@ -6,6 +6,7 @@ import { getCurrentProfile } from '@/lib/auth';
 import { getT } from '@/i18n/server';
 import { emptySections } from '@/lib/practical/form';
 import { PracticalForm } from '../PracticalForm';
+import { fetchTheoryOptions } from '../theory';
 import type { PracticalExamInput } from '@/lib/practical/schema';
 import type { Student } from '@/lib/supabase/types';
 
@@ -28,8 +29,12 @@ export default async function NewPracticalPage({
   const s = data as Student;
   const studentName = `${s.last_name}${s.first_name ? `, ${s.first_name}` : ''}`;
 
+  const theoryAttempts = await fetchTheoryOptions(supabase, s.id);
+
   const initial: PracticalExamInput = {
     student_id: s.id,
+    attempt_id: null,
+    license_level: 'N3',
     license_type: 'Piloto Básico Nivel 3',
     exam_date: new Date().toISOString().slice(0, 10),
     place: '',
@@ -57,7 +62,7 @@ export default async function NewPracticalPage({
         <h1 className="text-2xl font-bold tracking-tight">{t('pr.title')}</h1>
         <p className="mt-1 text-neutral-600 dark:text-neutral-400">{t('pr.subtitle')}</p>
       </div>
-      <PracticalForm studentName={studentName} initial={initial} status="draft" />
+      <PracticalForm studentName={studentName} initial={initial} status="draft" theoryAttempts={theoryAttempts} />
     </>
   );
 }

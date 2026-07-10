@@ -13,6 +13,13 @@ export interface CreateTemplateInput {
   question_uids: string[];
   pass_pct?: number; // pass threshold as a percentage (default 75)
   time_limit_min?: number | null;
+  license_level?: string | null;
+}
+
+const LEVEL_CODES = new Set(['N1', 'N2', 'N3', 'N4', 'N5']);
+/** Keep only a valid ladder code; anything else becomes "sin nivel". */
+function cleanLevel(value?: string | null): string | null {
+  return value && LEVEL_CODES.has(value) ? value : null;
 }
 
 export async function createTemplate(input: CreateTemplateInput) {
@@ -46,6 +53,7 @@ export async function createTemplate(input: CreateTemplateInput) {
     pass_mark: passMark,
     max_score: maxScore,
     time_limit_min: input.time_limit_min ?? null,
+    license_level: cleanLevel(input.license_level),
   });
 
   if (error) throw new Error(error.message);
@@ -84,6 +92,7 @@ export async function updateTemplate(id: string, input: CreateTemplateInput) {
       pass_mark: passMark,
       max_score: maxScore,
       time_limit_min: input.time_limit_min ?? null,
+      license_level: cleanLevel(input.license_level),
     })
     .eq('id', id)
     .eq('instructor_id', profile.id);

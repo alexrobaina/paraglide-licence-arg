@@ -21,6 +21,8 @@ function passedSections(): SectionsValue {
 function validFinal() {
   return {
     student_id: STUDENT_ID,
+    attempt_id: null,
+    license_level: 'N3',
     license_type: 'Piloto Básico Nivel 3',
     exam_date: '2025-05-28',
     place: 'Cuchi Corral',
@@ -47,6 +49,8 @@ describe('practicalDraftSchema', () => {
   it('accepts an all-blank planilla — a draft is a work in progress', () => {
     const draft = {
       student_id: STUDENT_ID,
+      attempt_id: null,
+      license_level: null,
       license_type: 'Piloto Básico Nivel 3',
       exam_date: '2025-05-28',
       place: '',
