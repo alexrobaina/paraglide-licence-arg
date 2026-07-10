@@ -305,6 +305,7 @@ export const DICT = {
   'nav.exams': { es: 'Exámenes', en: 'Exams' },
   'nav.invite': { es: 'Invitar', en: 'Invite' },
   'nav.results': { es: 'Resultados', en: 'Results' },
+  'nav.students': { es: 'Alumnos', en: 'Students' },
   'nav.instructors': { es: 'Instructores', en: 'Instructors' },
   'nav.users': { es: 'Usuarios', en: 'Users' },
   'nav.account': { es: 'Mi cuenta', en: 'My account' },
@@ -699,6 +700,87 @@ export const DICT = {
   'act.cannotDeleteSelf': {
     es: 'No puedes borrarte a ti mismo.',
     en: 'You cannot delete yourself.',
+  },
+
+  // Comunes de formularios
+  'common.cancel': { es: 'Cancelar', en: 'Cancel' },
+  'common.edit': { es: 'Editar', en: 'Edit' },
+  'common.delete': { es: 'Eliminar', en: 'Delete' },
+  'common.back': { es: 'Volver', en: 'Back' },
+  'common.optional': { es: 'opcional', en: 'optional' },
+
+  // Alumnos — listado
+  'stu.title': { es: 'Alumnos', en: 'Students' },
+  'stu.subtitle': {
+    es: 'Tus alumnos: exámenes teóricos rendidos y planillas prácticas.',
+    en: 'Your students: theory exams taken and practical checklists.',
+  },
+  'stu.new': { es: 'Nuevo alumno', en: 'New student' },
+  'stu.count': { es: '{n} alumnos', en: '{n} students' },
+  'stu.search': { es: 'Buscar por apellido, DNI o email…', en: 'Search by last name, DNI or email…' },
+  'stu.empty.title': { es: 'Todavía no hay alumnos', en: 'No students yet' },
+  'stu.empty.desc': {
+    es: 'Crea un alumno o impórtalos desde las invitaciones ya enviadas.',
+    en: 'Create a student or import them from the invitations you already sent.',
+  },
+  'stu.backfill': { es: 'Importar de invitaciones', en: 'Import from invitations' },
+  'stu.backfill.running': { es: 'Importando…', en: 'Importing…' },
+  'stu.backfill.done': {
+    es: '{created} alumnos creados, {linked} exámenes vinculados.',
+    en: '{created} students created, {linked} exams linked.',
+  },
+  'stu.col.name': { es: 'Alumno', en: 'Student' },
+  'stu.col.dni': { es: 'DNI', en: 'DNI' },
+  'stu.col.club': { es: 'Club', en: 'Club' },
+  'stu.col.exams': { es: 'Exámenes', en: 'Exams' },
+
+  // Alumnos — formulario
+  'stu.form.newTitle': { es: 'Nuevo alumno', en: 'New student' },
+  'stu.form.editTitle': { es: 'Editar alumno', en: 'Edit student' },
+  'stu.form.lastName': { es: 'Apellido', en: 'Last name' },
+  'stu.form.firstName': { es: 'Nombres', en: 'First names' },
+  'stu.form.dni': { es: 'DNI', en: 'ID number' },
+  'stu.form.email': { es: 'Email', en: 'Email' },
+  'stu.form.club': { es: 'Club', en: 'Club' },
+  'stu.form.phone': { es: 'Teléfono', en: 'Phone' },
+  'stu.form.notes': { es: 'Notas', en: 'Notes' },
+  'stu.form.lastNameRequired': { es: 'El apellido es obligatorio.', en: 'Last name is required.' },
+  'stu.form.error': { es: 'No se pudo guardar el alumno.', en: 'Could not save the student.' },
+  'stu.delete.confirm': {
+    es: '¿Eliminar a {name}? Se borran también sus planillas prácticas en borrador.',
+    en: 'Delete {name}? Their draft practical checklists are removed too.',
+  },
+
+  // Ficha del alumno
+  'stu.detail.theory': { es: 'Exámenes teóricos', en: 'Theory exams' },
+  'stu.detail.practical': { es: 'Exámenes prácticos', en: 'Practical exams' },
+  'stu.detail.noTheory': { es: 'Sin exámenes teóricos rendidos.', en: 'No theory exams taken.' },
+  'stu.detail.noPractical': { es: 'Sin exámenes prácticos.', en: 'No practical exams.' },
+  'stu.detail.newPractical': { es: 'Nueva planilla práctica', en: 'New practical checklist' },
+
+  // Planilla práctica
+  'pr.title': { es: 'Examen práctico', en: 'Practical exam' },
+  'pr.subtitle': { es: 'Cuestionario FAVL para la rendición del examen práctico.', en: 'FAVL practical exam checklist.' },
+  'pr.status.draft': { es: 'Borrador', en: 'Draft' },
+  'pr.status.final': { es: 'Cerrada', en: 'Closed' },
+  'pr.result.approved': { es: 'Aprobado', en: 'Passed' },
+  'pr.result.failed': { es: 'Desaprobado', en: 'Failed' },
+  'pr.result.pending': { es: 'Sin resultado', en: 'No result' },
+  'pr.saveDraft': { es: 'Guardar borrador', en: 'Save draft' },
+  'pr.saving': { es: 'Guardando…', en: 'Saving…' },
+  'pr.saved': { es: 'Borrador guardado.', en: 'Draft saved.' },
+  'pr.finalize': { es: 'Cerrar planilla', en: 'Close checklist' },
+  'pr.finalizing': { es: 'Cerrando…', en: 'Closing…' },
+  'pr.finalize.confirm': {
+    es: 'Al cerrar, la planilla queda firmada como declaración jurada y NO podrá editarse. ¿Continuar?',
+    en: 'Once closed, the checklist is signed as a sworn statement and can NOT be edited. Continue?',
+  },
+  'pr.hasErrors': { es: 'Revisá los campos marcados antes de cerrar.', en: 'Check the flagged fields before closing.' },
+  'pr.print': { es: 'Imprimir', en: 'Print' },
+  'pr.viewFinal': { es: 'Ver planilla', en: 'View checklist' },
+  'pr.locked': {
+    es: 'Planilla cerrada (declaración jurada). No editable.',
+    en: 'Closed checklist (sworn statement). Not editable.',
   },
 } as const;
 

@@ -13,6 +13,7 @@ import {
   Send,
   BarChart3,
   Users,
+  GraduationCap,
   UserCog,
   UserCircle,
 } from 'lucide-react';
@@ -25,6 +26,7 @@ const BASE_LINKS = [
   { href: '/instructor', icon: LayoutDashboard, labelKey: 'nav.dashboard' },
   { href: '/instructor/templates', icon: FileText, labelKey: 'nav.exams' },
   { href: '/instructor/invite', icon: Send, labelKey: 'nav.invite' },
+  { href: '/instructor/students', icon: GraduationCap, labelKey: 'nav.students' },
   { href: '/instructor/results', icon: BarChart3, labelKey: 'nav.results' },
   { href: '/instructor/team', icon: Users, labelKey: 'nav.instructors' },
 ] satisfies NavLink[];
