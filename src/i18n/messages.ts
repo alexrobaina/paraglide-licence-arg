@@ -807,6 +807,14 @@ export const DICT = {
     es: 'Todavía no hay exámenes para calcular el estado de licencia.',
     en: 'No exams yet to compute the licence status.',
   },
+  'lic.granted': { es: 'Otorgada', en: 'Granted' },
+  'lic.inProgress': { es: 'En curso', en: 'In progress' },
+  'lic.notStarted': { es: 'No iniciada', en: 'Not started' },
+  'lic.grantedOn': { es: 'Otorgada el {date}', en: 'Granted on {date}' },
+  'lic.subtitle': {
+    es: 'Progresión de licencias: cada nivel requiere su teórico y su práctico.',
+    en: 'Licence progression: each level needs its own theory and practical.',
+  },
 
   // Invitar a examen teórico desde la ficha del alumno
   'stu.invite.title': { es: 'Invitar a examen teórico', en: 'Invite to theory exam' },

@@ -4,10 +4,12 @@ import { ArrowLeft, FileText, ClipboardList, Plus, Mail, Phone, IdCard, Award, L
 import { createClient } from '@/lib/supabase/server';
 import { getT } from '@/i18n/server';
 import { DATE_LOCALE } from '@/i18n/messages';
+import type { MessageKey } from '@/i18n/messages';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
 import { summarizeLicencesByLevel } from '@/lib/practical/licence';
+import type { LicenceStatus } from '@/lib/practical/licence';
 import { StudentInviteCard } from './StudentInviteCard';
 import type { Student } from '@/lib/supabase/types';
 
@@ -69,8 +71,8 @@ export default async function StudentDetailPage({
   const fullName = `${s.last_name}${s.first_name ? `, ${s.first_name}` : ''}`;
 
   const licences = summarizeLicencesByLevel(
-    theoryRows.map((a) => ({ level: a.template?.license_level ?? null, passed: a.passed })),
-    practicalRows.map((p) => ({ level: p.license_level, status: p.status, result_declared: p.result_declared })),
+    theoryRows.map((a) => ({ level: a.template?.license_level ?? null, passed: a.passed, date: a.finished_at })),
+    practicalRows.map((p) => ({ level: p.license_level, status: p.status, result_declared: p.result_declared, date: p.exam_date })),
   );
   const theoryTitleById = new Map(theoryRows.map((a) => [a.id, a.template?.title ?? 'Examen teórico']));
 
@@ -96,35 +98,26 @@ export default async function StudentDetailPage({
         {s.notes && <p className="mt-2 max-w-2xl text-sm text-neutral-500">{s.notes}</p>}
       </div>
 
-      {/* Estado de licencia por nivel (cada nivel es una licencia distinta) */}
+      {/* Progresión de licencias — la escalera completa (Alumno → N3 → N4 → N5) */}
       <div className="mb-3 flex items-center gap-2">
         <Award className="h-4 w-4 text-neutral-500" />
         <h2 className="text-sm font-semibold text-neutral-500">{t('lic.title')}</h2>
       </div>
-      {licences.length === 0 ? (
-        <Card variant="minimal" size="sm" className="mb-8">
-          <CardDescription>{t('lic.none')}</CardDescription>
-        </Card>
-      ) : (
-        <div className="mb-8 grid grid-cols-1 gap-2 sm:grid-cols-2">
+      <Card variant="modern" size="md" className="mb-8" spacing="none">
+        <ol className="divide-y divide-neutral-100 dark:divide-neutral-800">
           {licences.map((lic) => (
-            <Card key={lic.level ?? 'none'} variant="modern" size="sm">
-              <div className="flex items-center justify-between">
-                <CardTitle size="sm">{lic.label}</CardTitle>
-                <Badge variant={lic.ready ? 'success' : 'warning'}>
-                  {lic.ready ? t('lic.ready') : t('lic.pending')}
-                </Badge>
-              </div>
-              <div className="flex gap-6">
-                <LicenceLeg label={t('lic.theory')} passed={lic.theoryPassed}
-                  passedLabel={t('lic.passed')} missingLabel={t('lic.missing')} />
-                <LicenceLeg label={t('lic.practical')} passed={lic.practicalPassed}
-                  passedLabel={t('lic.passed')} missingLabel={t('lic.missing')} />
-              </div>
-            </Card>
+            <LicenceRung
+              key={lic.level ?? 'none'}
+              label={lic.label}
+              status={lic.status}
+              theoryPassed={lic.theoryPassed}
+              practicalPassed={lic.practicalPassed}
+              grantedAt={lic.grantedAt ? fmtDate(lic.grantedAt) : null}
+              t={t}
+            />
           ))}
-        </div>
-      )}
+        </ol>
+      </Card>
 
       {/* Invitar a examen teórico (email precargado del alumno) */}
       <StudentInviteCard templates={templates} studentEmail={s.email} siteUrl={siteUrl} />
@@ -202,24 +195,54 @@ export default async function StudentDetailPage({
   );
 }
 
-function LicenceLeg({
-  label, passed, passedLabel, missingLabel,
+type Translate = (key: MessageKey, vars?: Record<string, string | number>) => string;
+
+const STATUS_STYLE: Record<LicenceStatus, { dot: string; badge: 'success' | 'warning' | 'default'; key: MessageKey }> = {
+  granted: { dot: 'bg-emerald-500', badge: 'success', key: 'lic.granted' },
+  in_progress: { dot: 'bg-amber-500', badge: 'warning', key: 'lic.inProgress' },
+  not_started: { dot: 'bg-neutral-300 dark:bg-neutral-700', badge: 'default', key: 'lic.notStarted' },
+};
+
+function LicenceRung({
+  label, status, theoryPassed, practicalPassed, grantedAt, t,
 }: {
   label: string;
-  passed: boolean;
-  passedLabel: string;
-  missingLabel: string;
+  status: LicenceStatus;
+  theoryPassed: boolean;
+  practicalPassed: boolean;
+  grantedAt: string | null;
+  t: Translate;
 }) {
-  const Icon = passed ? CheckCircle2 : Circle;
+  const style = STATUS_STYLE[status];
+  const muted = status === 'not_started';
   return (
-    <div className="flex items-center gap-2">
-      <Icon className={`h-5 w-5 ${passed ? 'text-emerald-600' : 'text-neutral-300 dark:text-neutral-600'}`} />
+    <li className="flex flex-wrap items-center justify-between gap-3 py-3 first:pt-0 last:pb-0">
       <div>
-        <div className="text-sm font-medium">{label}</div>
-        <div className={`text-xs ${passed ? 'text-emerald-600' : 'text-neutral-400'}`}>
-          {passed ? passedLabel : missingLabel}
+        <div className="flex items-center gap-2">
+          <span className={`h-2.5 w-2.5 rounded-full ${style.dot}`} />
+          <span className={`font-medium ${muted ? 'text-neutral-400' : ''}`}>{label}</span>
+        </div>
+        <div className="mt-1 flex gap-4 pl-[18px] text-xs">
+          <Leg label={t('lic.theory')} passed={theoryPassed} />
+          <Leg label={t('lic.practical')} passed={practicalPassed} />
         </div>
       </div>
-    </div>
+      <div className="text-right">
+        <Badge variant={style.badge}>{t(style.key)}</Badge>
+        {grantedAt && (
+          <div className="mt-1 text-xs text-neutral-400">{t('lic.grantedOn', { date: grantedAt })}</div>
+        )}
+      </div>
+    </li>
+  );
+}
+
+function Leg({ label, passed }: { label: string; passed: boolean }) {
+  const Icon = passed ? CheckCircle2 : Circle;
+  return (
+    <span className={`inline-flex items-center gap-1 ${passed ? 'text-emerald-600' : 'text-neutral-400'}`}>
+      <Icon className="h-3.5 w-3.5" />
+      {label}
+    </span>
   );
 }

@@ -28,38 +28,76 @@ export function summarizeLicence(theory: TheoryLike[], practical: PracticalLike[
 }
 
 // --- Per-level licences ------------------------------------------------------
-// A student climbs the FAVL ladder; each level is its own licence. These group
-// theory + practical by level so N3 theory never counts toward an N4 licence.
+// A student climbs the FAVL ladder; each rung is its own licence. The full
+// ladder is always shown (even not-started rungs), so the instructor sees the
+// whole progression. N3 theory never counts toward an N4 licence.
 
-import { levelLabel, levelOrder } from './levels';
+import { LICENSE_LEVEL_CODES, levelLabel, levelOrder } from './levels';
+
+export type LicenceStatus = 'granted' | 'in_progress' | 'not_started';
 
 export interface LeveledTheory extends TheoryLike {
   level: string | null;
+  date: string;
 }
 export interface LeveledPractical extends PracticalLike {
   level: string | null;
+  date: string;
 }
 
-export interface LevelLicence extends LicenceSummary {
+export interface LevelLicence {
   level: string | null;
   label: string;
+  theoryPassed: boolean;
+  practicalPassed: boolean;
+  status: LicenceStatus;
+  /** ISO date the licence became complete (both legs met), else null. */
+  grantedAt: string | null;
+}
+
+/** Earliest ISO date in a list, or null. ISO strings compare lexicographically. */
+function earliest(dates: string[]): string | null {
+  return dates.length ? dates.reduce((a, b) => (a < b ? a : b)) : null;
 }
 
 export function summarizeLicencesByLevel(
   theory: LeveledTheory[],
   practical: LeveledPractical[],
 ): LevelLicence[] {
-  const levels = new Set<string | null>();
-  for (const t of theory) levels.add(t.level);
-  for (const p of practical) levels.add(p.level);
+  const present = new Set<string | null>([
+    ...theory.map((t) => t.level),
+    ...practical.map((p) => p.level),
+  ]);
 
-  return [...levels]
+  // The whole ladder, always — plus any off-ladder or null (legacy) buckets in use.
+  const ladder: (string | null)[] = [...LICENSE_LEVEL_CODES];
+  const extras = [...present].filter((l): l is string => l != null && !LICENSE_LEVEL_CODES.includes(l as never));
+  const levels: (string | null)[] = [...ladder, ...extras];
+  if (present.has(null)) levels.push(null);
+
+  return levels
     .map((level) => {
-      const summary = summarizeLicence(
-        theory.filter((t) => t.level === level),
-        practical.filter((p) => p.level === level),
-      );
-      return { level, label: levelLabel(level), ...summary };
+      const th = theory.filter((t) => t.level === level);
+      const pr = practical.filter((p) => p.level === level);
+      const theoryPassed = th.some((t) => t.passed);
+      const practicalPassed = pr.some((p) => p.status === 'final' && p.result_declared === true);
+      const hasActivity = th.length > 0 || pr.length > 0;
+
+      let status: LicenceStatus = 'not_started';
+      let grantedAt: string | null = null;
+      if (theoryPassed && practicalPassed) {
+        status = 'granted';
+        const tDate = earliest(th.filter((t) => t.passed).map((t) => t.date));
+        const pDate = earliest(
+          pr.filter((p) => p.status === 'final' && p.result_declared === true).map((p) => p.date),
+        );
+        // Complete when the later of the two first-passes happened.
+        grantedAt = tDate && pDate ? (tDate > pDate ? tDate : pDate) : (tDate ?? pDate);
+      } else if (hasActivity) {
+        status = 'in_progress';
+      }
+
+      return { level, label: levelLabel(level), theoryPassed, practicalPassed, status, grantedAt };
     })
     .sort((a, b) => levelOrder(a.level) - levelOrder(b.level));
 }

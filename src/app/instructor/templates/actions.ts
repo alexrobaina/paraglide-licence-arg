@@ -16,7 +16,7 @@ export interface CreateTemplateInput {
   license_level?: string | null;
 }
 
-const LEVEL_CODES = new Set(['N1', 'N2', 'N3', 'N4', 'N5']);
+const LEVEL_CODES = new Set(['ALU', 'N3', 'N4', 'N5']);
 /** Keep only a valid ladder code; anything else becomes "sin nivel". */
 function cleanLevel(value?: string | null): string | null {
   return value && LEVEL_CODES.has(value) ? value : null;
